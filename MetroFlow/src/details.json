@@ -1,0 +1,725 @@
+{
+  "metro_schedule": {
+    "city_name": "Summit City",
+    "authority_name": "Timberline Transit Authority (TTA)",
+    "motto": "Timberline Transit: Your Path Through Every Vista. 76 miles and Growing!",
+    "line_colors": ["red", "blue", "green", "yellow"],
+    "line_cards": [
+        "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fred-day.png?alt=media&token=326a252c-243c-46c8-a318-f1cdd444f9e6",
+        "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fblue-day.png?alt=media&token=801985c1-dce3-4727-92ff-b5d5d8e1b835",
+        "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fgreen-day.png?alt=media&token=1e82c4d1-d236-48bd-ae11-96f24ef8a235",
+        "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fyellow-day.png?alt=media&token=9a6f5fc8-24ce-4e44-971f-3c7a800c1420"
+    ],
+    "light_rail_lines": [
+      {
+        "name": "Red Line",
+        "line_id": "1f4w-2f52",
+        "theme": {
+          "light": "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fred-day.png?alt=media&token=326a252c-243c-46c8-a318-f1cdd444f9e6",
+          "dark": "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fred-night.png?alt=media&token=7784cdc1-3deb-4165-8d40-06be31d1e4f3"
+        },
+        "line_properties": {
+          "headway_minutes": 10,
+          "first_departure_time": "06:00",
+          "minimum_trains_required": 17
+        },
+        "info": [
+          {
+            "intro": "The Red Line offers a vital north-south connection, linking diverse communities and key city destinations.",
+            "color": "#fec89a"
+          },
+          {
+            "intro": "It's ideal for commuters heading to the Civic Center, Market Square business district, or the Central Library's regional resources.",
+            "color": "#06d6a0"
+          },
+          {
+            "color": "#4895ef",
+            "intro": "Travelers can enjoy retail therapy at Market Square, catch events at Chauncey Arena Junction, or explore the vibrant Southside area."
+          },
+          {
+            "intro": "This line also provides direct access to Tubman University, the sprawling City Park & Zoo, and the critical General Hospital.",
+            "color": "#bc4749"
+          }
+        ],
+        "stops": [
+          {
+            "name": "Red Line Terminus North",
+            "is_transfer": false,
+            "latitude": 40.85,
+            "longitude": -111.95,
+            "distance_to_next_stop_km": 3.0,
+            "travel_time_to_next_stop_minutes": 5,
+            "dwell_time_minutes": 1,
+            "stop_info": "The northern gateway to the Red Line, serving expanding suburban communities. Nearby bus routes 801 and 802 offer feeder services."
+          },
+          {
+            "name": "Parkside",
+            "is_transfer": false,
+            "latitude": 40.83,
+            "longitude": -111.94,
+            "distance_to_next_stop_km": 2.5,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 1,
+            "stop_info": "Located adjacent to a large, tranquil city park, perfect for morning strolls or evening relaxation. Connects to local bus route 810."
+          },
+          {
+            "name": "Civic Center",
+            "is_transfer": false,
+            "latitude": 40.81,
+            "longitude": -111.93,
+            "distance_to_next_stop_km": 2.0,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 1,
+            "stop_info": "Direct access to city hall, government offices, and the main public library. A central point for administrative and community services. Served by bus routes 820, 821."
+          },
+          {
+            "name": "Market Square",
+            "is_transfer": false,
+            "latitude": 40.79,
+            "longitude": -111.92,
+            "distance_to_next_stop_km": 1.5,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 1,
+            "stop_info": "A vibrant commercial hub with a bustling outdoor market, diverse restaurants, and boutique shops. Excellent for retail and dining. Bus routes 830, 835 are nearby."
+          },
+          {
+            "name": "Central Station",
+            "is_transfer": true,
+            "transfer_to": [
+              "Blue Line",
+              "Green Line",
+              "Yellow Line",
+              "Express Rail"
+            ],
+            "latitude": 40.76,
+            "longitude": -111.9,
+            "distance_to_next_stop_km": 1.8,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 4,
+            "stop_info": "The primary interchange for the entire metro system, connecting all light rail lines and the Express Rail. Steps away from the city's financial district, major hotels, and numerous bus lines and taxi services."
+          },
+          {
+            "name": "Riverside",
+            "is_transfer": false,
+            "latitude": 40.74,
+            "longitude": -111.89,
+            "distance_to_next_stop_km": 2.2,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 1,
+            "stop_info": "Offers access to the scenic riverwalk, popular for leisure activities and outdoor events. A mix of residential and small businesses. Served by bus route 840."
+          },
+          {
+            "name": "Chauncey Arena Junction",
+            "is_transfer": true,
+            "transfer_to": ["Green Line"],
+            "latitude": 40.72,
+            "longitude": -111.88,
+            "distance_to_next_stop_km": 2.0,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 2,
+            "stop_info": "Gateway to the city's premier sports and entertainment venue, Chauncey Arena. Ideal for concert-goers and sports fans. Direct transfer to the Green Line and special event bus shuttles."
+          },
+          {
+            "name": "Tubman University Crossing",
+            "is_transfer": true,
+            "transfer_to": ["Blue Line"],
+            "latitude": 40.7,
+            "longitude": -111.87,
+            "distance_to_next_stop_km": 2.8,
+            "travel_time_to_next_stop_minutes": 5,
+            "dwell_time_minutes": 2,
+            "stop_info": "A crucial stop for students and faculty, providing direct access to the main campus of Tubman University. Connects seamlessly with the Blue Line and multiple university bus loops and city routes 850, 855."
+          },
+          {
+            "name": "Central Library (Deandre Little Regional Library)",
+            "is_transfer": false,
+            "latitude": 40.68,
+            "longitude": -111.86,
+            "distance_to_next_stop_km": 1.9,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 1,
+            "stop_info": "Home to the impressive Deandre Little Regional Library, a significant cultural and educational landmark. Surrounded by quiet residential streets and academic institutions. Served by bus route 860."
+          },
+          {
+            "name": "Southside",
+            "is_transfer": false,
+            "latitude": 40.66,
+            "longitude": -111.85,
+            "distance_to_next_stop_km": 2.1,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 1,
+            "stop_info": "A vibrant and diverse residential neighborhood known for its local eateries, community centers, and lively street life. Bus routes 870, 871 connect throughout the area."
+          },
+          {
+            "name": "Red Line Terminus South",
+            "is_transfer": false,
+            "latitude": 40.64,
+            "longitude": -111.84,
+            "distance_to_next_stop_km": 2.0,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 1,
+            "stop_info": "An entry point for residents from the immediate southern suburbs, providing commuter parking and access to several local bus routes 880, 882."
+          },
+          {
+            "name": "City Park & Zoo",
+            "is_transfer": false,
+            "latitude": 40.62,
+            "longitude": -111.83,
+            "distance_to_next_stop_km": 2.3,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 2,
+            "stop_info": "Direct access to the expansive City Park, home to the popular City Zoo, botanical gardens, and recreational facilities. Ideal for family outings. Seasonal park shuttles available."
+          },
+          {
+            "name": "Willow Creek",
+            "is_transfer": false,
+            "latitude": 40.6,
+            "longitude": -111.82,
+            "distance_to_next_stop_km": 1.8,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 1,
+            "stop_info": "A quiet, rapidly developing residential community known for its modern housing and new schools. Local bus route 890 provides neighborhood coverage."
+          },
+          {
+            "name": "General Hospital",
+            "is_transfer": false,
+            "latitude": 40.58,
+            "longitude": -111.81,
+            "distance_to_next_stop_km": 2.5,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 2,
+            "stop_info": "Provides essential access to the city's largest medical complex, General Hospital, and numerous healthcare facilities. Frequent medical campus shuttles connect from here."
+          },
+          {
+            "name": "Old Mill Road",
+            "is_transfer": false,
+            "latitude": 40.56,
+            "longitude": -111.8,
+            "distance_to_next_stop_km": 1.7,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 1,
+            "stop_info": "A historical area transitioning with new small businesses and light industrial spaces. Features a few charming heritage buildings. Bus route 900 serves the area."
+          },
+          {
+            "name": "South Hills",
+            "is_transfer": false,
+            "latitude": 40.54,
+            "longitude": -111.79,
+            "distance_to_next_stop_km": 1.5,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 1,
+            "stop_info": "Perched on the city's southern hills, offering panoramic views and access to quiet residential enclaves and local parks. Connects to bus routes 910, 911."
+          },
+          {
+            "name": "Red Line Terminus Far South",
+            "is_transfer": false,
+            "latitude": 40.52,
+            "longitude": -111.78,
+            "distance_to_next_stop_km": 0.0,
+            "travel_time_to_next_stop_minutes": 0,
+            "dwell_time_minutes": 2,
+            "stop_info": "The southernmost end of the Red Line, serving newly developed residential areas and providing connections to regional express bus services (routes 920, 925) for outer-city travel."
+          }
+        ]
+      },
+      {
+        "name": "Blue Line",
+        "line_id": "2f4v-43f5",
+        "theme": {
+          "light": "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fblue-day.png?alt=media&token=801985c1-dce3-4727-92ff-b5d5d8e1b835",
+          "dark": "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fblue-night.png?alt=media&token=8e9ee2dc-c6b0-43c4-8a5e-a43afb513bb1"
+        },
+        "line_properties": {
+          "headway_minutes": 12,
+          "first_departure_time": "06:05",
+          "minimum_trains_required": 11
+        },
+        "info": [
+          {
+            "intro": "The Blue Line connects the western parts of the city with the downtown core and eastern neighborhoods, offering scenic views along the way.",
+            "color": "orange"
+          },
+          {
+            "intro": "It's a key route for those heading to the Financial District (via Central Station), businesses around Downtown East, and students at Tubman University Crossing.",
+            "color": "blue"
+          },
+          {
+            "intro": "Enjoy shopping at Chancellor Hills Shopping Center, explore the vibrant Art District, or discover unique finds at Eastside Market.",
+            "color": "green"
+          },
+          {
+            "intro": "This line offers access to historical areas like Gold Town West, riverside parks, and the significant Quincy Lazarus African Heritage Museum.",
+            "color": "yellow"
+          }
+        ],
+        "stops": [
+          {
+            "name": "Blue Line Terminus West",
+            "is_transfer": false,
+            "latitude": 40.76,
+            "longitude": -112.05,
+            "distance_to_next_stop_km": 3.5,
+            "travel_time_to_next_stop_minutes": 6,
+            "dwell_time_minutes": 1,
+            "stop_info": "The westernmost point of the Blue Line, serving growing residential communities and providing access to regional bus lines 601, 602."
+          },
+          {
+            "name": "River View",
+            "is_transfer": false,
+            "latitude": 40.76,
+            "longitude": -112.01,
+            "distance_to_next_stop_km": 2.8,
+            "travel_time_to_next_stop_minutes": 5,
+            "dwell_time_minutes": 1,
+            "stop_info": "Offers picturesque views of the city riverfront, with access to recreational paths and a popular fishing pier. Connects to local bus route 610."
+          },
+          {
+            "name": "Chancellor Hills Shopping Center",
+            "is_transfer": true,
+            "transfer_to": ["Green Line"],
+            "latitude": 40.76,
+            "longitude": -111.98,
+            "distance_to_next_stop_km": 2.0,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 2,
+            "stop_info": "A bustling retail hub featuring a large shopping mall, various restaurants, and cinema. Direct connection to the Green Line and bus routes 620, 621, 625."
+          },
+          {
+            "name": "Gold Town West",
+            "is_transfer": false,
+            "latitude": 40.76,
+            "longitude": -111.94,
+            "distance_to_next_stop_km": 1.5,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 1,
+            "stop_info": "Named for its historic mining past, this area now features charming boutiques, antique shops, and local eateries. Served by bus route 630."
+          },
+          {
+            "name": "Central Station",
+            "is_transfer": true,
+            "transfer_to": [
+              "Red Line",
+              "Green Line",
+              "Yellow Line",
+              "Express Rail"
+            ],
+            "latitude": 40.76,
+            "longitude": -111.9,
+            "distance_to_next_stop_km": 1.7,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 4,
+            "stop_info": "The central transit hub of the city, providing unparalleled access to the main downtown district, government offices, and all major light rail and express rail lines. Extensive bus connections and taxi stands available."
+          },
+          {
+            "name": "Downtown East",
+            "is_transfer": false,
+            "latitude": 40.76,
+            "longitude": -111.88,
+            "distance_to_next_stop_km": 2.3,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 1,
+            "stop_info": "Serves the eastern edge of the downtown business core, with many corporate offices and modern residential towers. Nearby bus routes include 701, 705."
+          },
+          {
+            "name": "Art District",
+            "is_transfer": false,
+            "latitude": 40.76,
+            "longitude": -111.85,
+            "distance_to_next_stop_km": 2.1,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 1,
+            "stop_info": "Home to numerous galleries, independent theaters, and performance venues. A vibrant cultural center with unique cafes and street art. Served by bus routes 710, 712."
+          },
+          {
+            "name": "Tubman University Crossing",
+            "is_transfer": true,
+            "transfer_to": ["Red Line"],
+            "latitude": 40.7,
+            "longitude": -111.87,
+            "distance_to_next_stop_km": 2.5,
+            "travel_time_to_next_stop_minutes": 5,
+            "dwell_time_minutes": 2,
+            "stop_info": "A key transfer point to the Red Line, this stop provides direct access to Tubman University's main campus and its surrounding student amenities. Multiple university shuttle and city bus lines (routes 720, 721) converge here."
+          },
+          {
+            "name": "Maplewood Station",
+            "is_transfer": false,
+            "latitude": 40.68,
+            "longitude": -111.84,
+            "distance_to_next_stop_km": 2.2,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 1,
+            "stop_info": "A suburban residential stop surrounded by quiet streets and community parks. Local bus route 730 provides neighborhood access."
+          },
+          {
+            "name": "Industrial Bridge",
+            "is_transfer": false,
+            "latitude": 40.66,
+            "longitude": -111.82,
+            "distance_to_next_stop_km": 2.0,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 1,
+            "stop_info": "Connects to a smaller industrial and warehouse district. Essential for freight and logistics workers. Limited bus connections, mainly route 740."
+          },
+          {
+            "name": "Eastside Market",
+            "is_transfer": false,
+            "latitude": 40.64,
+            "longitude": -111.8,
+            "distance_to_next_stop_km": 1.8,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 1,
+            "stop_info": "Home to a popular daily market, offering fresh produce, artisan goods, and diverse street food. A vibrant local gathering spot. Serves bus routes 750, 751."
+          },
+          {
+            "name": "Quincy Lazarus African Heritage Museum",
+            "is_transfer": false,
+            "latitude": 40.62,
+            "longitude": -111.78,
+            "distance_to_next_stop_km": 0.0,
+            "travel_time_to_next_stop_minutes": 0,
+            "dwell_time_minutes": 2,
+            "stop_info": "The eastern terminus, offering direct access to the renowned Quincy Lazarus African Heritage Museum. Surrounded by growing residential areas with connecting bus routes 760, 765, 770."
+          }
+        ]
+      },
+      {
+        "name": "Green Line",
+        "line_id": "4f3d-33fe",
+        "theme": {
+          "light": "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fgreen-day.png?alt=media&token=1e82c4d1-d236-48bd-ae11-96f24ef8a235",
+          "dark": "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fgreen-night.png?alt=media&token=59cde50f-69a7-4677-9cc7-d7662814a720"
+        },
+        "line_properties": {
+          "headway_minutes": 15,
+          "first_departure_time": "06:00",
+          "minimum_trains_required": 7
+        },
+        "info": [
+          {
+            "intro": "The Green Line serves as a vital north-south artery, connecting mountainous suburbs to the downtown core and industrial areas.",
+            "color": "orange"
+          },
+          {
+            "intro": "It's a convenient route for accessing employment at the Industrial Park and offers direct transfers at Central Station for the Financial District.",
+            "color": "blue"
+          },
+          {
+            "intro": "Passengers can find recreational opportunities at Fairgrounds or explore shopping and dining options at Northwood Junction.",
+            "color": "green"
+          },
+          {
+            "intro": "This line is perfect for residents in Mountain View and Forest Hills, providing easy access to city attractions and a transfer at Park Junction for further exploration.",
+            "color": "yellow"
+          }
+        ],
+        "stops": [
+          {
+            "name": "Green Line Terminus North",
+            "is_transfer": false,
+            "latitude": 40.9,
+            "longitude": -111.88,
+            "distance_to_next_stop_km": 3.2,
+            "travel_time_to_next_stop_minutes": 6,
+            "dwell_time_minutes": 1,
+            "stop_info": "The northernmost point of the Green Line, primarily serving residential communities with connections to local bus routes 101, 102."
+          },
+          {
+            "name": "Mountain View",
+            "is_transfer": false,
+            "latitude": 40.87,
+            "longitude": -111.88,
+            "distance_to_next_stop_km": 2.7,
+            "travel_time_to_next_stop_minutes": 5,
+            "dwell_time_minutes": 1,
+            "stop_info": "Nestled at the base of the city's scenic mountains, offering access to hiking trails, a community college, and nearby bus route 105."
+          },
+          {
+            "name": "Northwood Junction",
+            "is_transfer": true,
+            "transfer_to": ["Blue Line"],
+            "latitude": 40.76,
+            "longitude": -111.98,
+            "distance_to_next_stop_km": 2.1,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 2,
+            "stop_info": "A bustling transfer point to the Blue Line, surrounded by a mix of local shops, cafes, and bus lines 201, 203 connecting to northern districts."
+          },
+          {
+            "name": "Forest Hills",
+            "is_transfer": false,
+            "latitude": 40.84,
+            "longitude": -111.88,
+            "distance_to_next_stop_km": 2.1,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 1,
+            "stop_info": "Serves a leafy residential area known for its tranquil parks and family-friendly amenities. Nearest bus stops for routes 310, 311 are just outside."
+          },
+          {
+            "name": "Central Station",
+            "is_transfer": true,
+            "transfer_to": [
+              "Red Line",
+              "Blue Line",
+              "Yellow Line",
+              "Express Rail"
+            ],
+            "latitude": 40.76,
+            "longitude": -111.9,
+            "distance_to_next_stop_km": 2.5,
+            "travel_time_to_next_stop_minutes": 5,
+            "dwell_time_minutes": 4,
+            "stop_info": "The heart of the city's transit network. Directly connects to the main downtown business district, government buildings, and numerous bus, taxi, and ride-share services."
+          },
+          {
+            "name": "Industrial Park",
+            "is_transfer": false,
+            "latitude": 40.74,
+            "longitude": -111.92,
+            "distance_to_next_stop_km": 2.0,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 1,
+            "stop_info": "Gateway to the city's largest industrial and manufacturing complex, serving thousands of daily commuters. Local bus shuttles connect directly to various business campuses."
+          },
+          {
+            "name": "Park Junction",
+            "is_transfer": true,
+            "transfer_to": ["Red Line"],
+            "latitude": 40.72,
+            "longitude": -111.88,
+            "distance_to_next_stop_km": 2.2,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 2,
+            "stop_info": "A convenient transfer to the Red Line, this stop is adjacent to a large urban green space, popular for picnics and outdoor activities. Bus routes 401, 402 serve the surrounding residential areas."
+          },
+          {
+            "name": "Fairgrounds",
+            "is_transfer": false,
+            "latitude": 40.72,
+            "longitude": -111.93,
+            "distance_to_next_stop_km": 2.2,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 1,
+            "stop_info": "Direct access to the city's fairgrounds and exhibition center, host to annual events, concerts, and markets. Special event bus services often operate from here."
+          },
+          {
+            "name": "Green Line Terminus South",
+            "is_transfer": false,
+            "latitude": 40.7,
+            "longitude": -111.94,
+            "distance_to_next_stop_km": 0.0,
+            "travel_time_to_next_stop_minutes": 0,
+            "dwell_time_minutes": 2,
+            "stop_info": "The southern end of the Green Line, providing access to sprawling residential districts and a large regional park. Connects to bus routes 501, 502, 503."
+          }
+        ]
+      },
+      {
+        "name": "Yellow Line",
+        "line_id": "7d4f-3ff5",
+        "theme": {
+          "light": "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fyellow-day.png?alt=media&token=9a6f5fc8-24ce-4e44-971f-3c7a800c1420",
+          "dark": "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fyellow-night.png?alt=media&token=983b9b71-9a28-4604-b97e-d5cc96c17282"
+        },
+        "line_properties": {
+          "headway_minutes": 10,
+          "first_departure_time": "06:10",
+          "minimum_trains_required": 7
+        },
+        "info": [
+          {
+            "intro": "The Yellow Line is your direct link between the eastern suburbs and the city's innovative technology hubs, passing through scenic areas.",
+            "color": "orange"
+          },
+          {
+            "intro": "It's the primary route for professionals commuting to Technology Park and accessing key downtown business districts via Central Station.",
+            "color": "blue"
+          },
+          {
+            "intro": "Enjoy leisurely visits to Lakeside, take in the views along Sunset Boulevard, or explore various retail options near its termini.",
+            "color": "green"
+          },
+          {
+            "intro": "This line offers convenient access for residents and provides a scenic journey through diverse parts of the city.",
+            "color": "yellow"
+          }
+        ],
+        "stops": [
+          {
+            "name": "Yellow Line Terminus East",
+            "is_transfer": false,
+            "latitude": 40.7,
+            "longitude": -111.75,
+            "distance_to_next_stop_km": 3.0,
+            "travel_time_to_next_stop_minutes": 5,
+            "dwell_time_minutes": 1
+          },
+          {
+            "name": "Lakeside",
+            "is_transfer": false,
+            "latitude": 40.72,
+            "longitude": -111.78,
+            "distance_to_next_stop_km": 2.5,
+            "travel_time_to_next_stop_minutes": 4,
+            "dwell_time_minutes": 1
+          },
+          {
+            "name": "Bulwinkle Boulevard",
+            "is_transfer": false,
+            "latitude": 40.74,
+            "longitude": -111.82,
+            "distance_to_next_stop_km": 2.0,
+            "travel_time_to_next_stop_minutes": 3,
+            "dwell_time_minutes": 1
+          },
+          {
+            "name": "Central Station",
+            "is_transfer": true,
+            "transfer_to": [
+              "Red Line",
+              "Blue Line",
+              "Green Line",
+              "Express Rail"
+            ],
+            "latitude": 40.76,
+            "longitude": -111.9,
+            "distance_to_next_stop_km": 2.8,
+            "travel_time_to_next_stop_minutes": 5,
+            "dwell_time_minutes": 4
+          },
+          {
+            "name": "Technology Park",
+            "is_transfer": false,
+            "latitude": 40.78,
+            "longitude": -111.95,
+            "distance_to_next_stop_km": 3.1,
+            "travel_time_to_next_stop_minutes": 5,
+            "dwell_time_minutes": 1
+          },
+          {
+            "name": "Yellow Line Terminus West",
+            "is_transfer": false,
+            "latitude": 40.8,
+            "longitude": -111.98,
+            "distance_to_next_stop_km": 0.0,
+            "travel_time_to_next_stop_minutes": 0,
+            "dwell_time_minutes": 2
+          }
+        ]
+      }
+    ],
+    "commuter_rail_line": {
+      "name": "Martin Express Rail",
+      "line_id": "5g3d-gg35",
+      "line_properties": {
+        "headway_minutes": 20,
+        "first_departure_time": "05:45",
+        "minimum_trains_required": 5
+      },
+      "info": [
+        "The Martin Express Rail provides the fastest and most direct connections across the greater metropolitan area.",
+        "It's your premier link to the International Airport, offering swift service directly to the Airport Station for all travelers.",
+        "Seamlessly access major business districts, the bustling Financial District, and the state-of-the-art Convention Center.",
+        "Central Station serves as the critical interchange, allowing easy transfers to all four Light Rail Lines (Red, Blue, Green, Yellow) for onward journeys.",
+        "Connects rapidly to key suburban centers like Suburban Hub and Northern Spire, facilitating convenient commutes for outer-city residents.",
+        "For leisure and hospitality, the line provides direct access to the Airport Hotel & Tech Park, an emerging hub for innovation and entertainment.",
+        "Designed for efficiency, Express Rail trains offer fewer stops and higher speeds, ensuring quicker travel times for long-distance commuters.",
+        "Experience a comfortable and reliable journey, making the Express Rail the preferred choice for business travelers, airport passengers, and suburban commuters alike."
+      ],
+      "stops": [
+        {
+          "name": "Martin Express Rail Terminus North",
+          "is_transfer": false,
+          "latitude": 40.73,
+          "longitude": -111.68,
+          "distance_to_next_stop_km": 8.0,
+          "travel_time_to_next_stop_minutes": 8,
+          "dwell_time_minutes": 1,
+          "stop_info": "The northernmost gateway for the Express Rail, ideal for visitors exploring the scenic northern countryside or accessing regional tours. Ample park-and-ride facilities are available, with connections to intercity bus lines."
+        },
+        {
+          "name": "Northern Spire",
+          "is_transfer": false,
+          "latitude": 40.74,
+          "longitude": -111.76,
+          "distance_to_next_stop_km": 7.0,
+          "travel_time_to_next_stop_minutes": 7,
+          "dwell_time_minutes": 1,
+          "stop_info": "This stop provides access to modern residential areas with stunning skyline views. It's a convenient base for exploring local parks and suburban dining. Local bus routes 930 and 935 provide neighborhood connections."
+        },
+        {
+          "name": "Suburban Hub",
+          "is_transfer": false,
+          "latitude": 40.75,
+          "longitude": -111.83,
+          "distance_to_next_stop_km": 6.0,
+          "travel_time_to_next_stop_minutes": 6,
+          "dwell_time_minutes": 1,
+          "stop_info": "A major transfer point for suburban bus routes (routes 940, 941, 945), connecting visitors to extensive residential and smaller commercial districts. Useful for reaching family or friends living outside the immediate city center."
+        },
+        {
+          "name": "Central Station",
+          "is_transfer": true,
+          "transfer_to": ["Red Line", "Blue Line", "Green Line", "Yellow Line"],
+          "latitude": 40.76,
+          "longitude": -111.9,
+          "distance_to_next_stop_km": 3.0,
+          "travel_time_to_next_stop_minutes": 3,
+          "dwell_time_minutes": 5,
+          "stop_info": "The bustling heart of the city's public transport network. This grand station offers immediate access to the Financial District's skyscrapers, iconic city landmarks, top-tier hotels, and renowned restaurants. It's the central hub for all Light Rail lines, making it easy to reach virtually any part of the city. Taxis, ride-shares, and numerous city bus routes are available directly outside."
+        },
+        {
+          "name": "Convention Center",
+          "is_transfer": false,
+          "latitude": 40.77,
+          "longitude": -111.93,
+          "distance_to_next_stop_km": 2.0,
+          "travel_time_to_next_stop_minutes": 2,
+          "dwell_time_minutes": 1,
+          "stop_info": "Directly serves the impressive City Convention Center, a host for major conferences, trade shows, and public events throughout the year. Ideal for business travelers and attendees. Surrounding area includes business hotels and dining options. Special event bus routes often operate from here."
+        },
+        {
+          "name": "Financial District",
+          "is_transfer": false,
+          "latitude": 40.77,
+          "longitude": -111.92,
+          "distance_to_next_stop_km": 4.5,
+          "travel_time_to_next_stop_minutes": 4,
+          "dwell_time_minutes": 1,
+          "stop_info": "The pulse of the city's economy, this stop is surrounded by towering office buildings, headquarters of major corporations, and sophisticated dining establishments. Perfect for business meetings or experiencing the city's modern architecture. Limited local bus connections (route 950) cater to business hours."
+        },
+        {
+          "name": "Gateway Plaza",
+          "is_transfer": false,
+          "latitude": 40.77,
+          "longitude": -111.95,
+          "distance_to_next_stop_km": 3.0,
+          "travel_time_to_next_stop_minutes": 3,
+          "dwell_time_minutes": 1,
+          "stop_info": "A revitalized urban area offering a mix of modern apartments, trendy eateries, and public art installations. It's a short walk to the riverfront promenade and various entertainment venues. Connects to express bus route 960 to the western suburbs."
+        },
+        {
+          "name": "Airport Hotel & Tech Park",
+          "is_transfer": false,
+          "latitude": 40.78,
+          "longitude": -111.98,
+          "distance_to_next_stop_km": 2.0,
+          "travel_time_to_next_stop_minutes": 2,
+          "dwell_time_minutes": 1,
+          "stop_info": "The designated stop for major airport-area hotels and the burgeoning tech and leisure park. Ideal for overnight stays before or after flights, with direct shuttle services to hotel lobbies and tech campus buildings. A growing area for entertainment and dining options."
+        },
+        {
+          "name": "Airport Station",
+          "is_transfer": false,
+          "latitude": 40.78,
+          "longitude": -112.0,
+          "distance_to_next_stop_km": 0.0,
+          "travel_time_to_next_stop_minutes": 0,
+          "dwell_time_minutes": 3,
+          "stop_info": "The ultimate destination for air travelers, providing direct, seamless access to all airport terminals for arrivals and departures. Connects to airport shuttles, rental car services, and regional express buses (routes 970, 975) serving distant towns. Facilities include baggage claim assistance and information kiosks."
+        }
+      ]
+    },
+    "__version": 0
+  }
+}
