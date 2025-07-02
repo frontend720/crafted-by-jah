@@ -1,14 +1,17 @@
 {
   "metro_schedule": {
     "city_name": "Summit City",
+    "population": 1030000,
+    "base": 50000,
+    "ridership": 24.06,
     "authority_name": "Timberline Transit Authority (TTA)",
     "motto": "Timberline Transit: Your Path Through Every Vista. 76 miles and Growing!",
     "line_colors": ["red", "blue", "green", "yellow"],
     "line_cards": [
-        "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fred-day.png?alt=media&token=326a252c-243c-46c8-a318-f1cdd444f9e6",
-        "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fblue-day.png?alt=media&token=801985c1-dce3-4727-92ff-b5d5d8e1b835",
-        "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fgreen-day.png?alt=media&token=1e82c4d1-d236-48bd-ae11-96f24ef8a235",
-        "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fyellow-day.png?alt=media&token=9a6f5fc8-24ce-4e44-971f-3c7a800c1420"
+      "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fred-day.png?alt=media&token=326a252c-243c-46c8-a318-f1cdd444f9e6",
+      "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fblue-day.png?alt=media&token=801985c1-dce3-4727-92ff-b5d5d8e1b835",
+      "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fgreen-day.png?alt=media&token=1e82c4d1-d236-48bd-ae11-96f24ef8a235",
+      "https://firebasestorage.googleapis.com/v0/b/bate-mates.appspot.com/o/images%2F(TTA)%2Fyellow-day.png?alt=media&token=9a6f5fc8-24ce-4e44-971f-3c7a800c1420"
     ],
     "light_rail_lines": [
       {
@@ -617,14 +620,7 @@
         "minimum_trains_required": 5
       },
       "info": [
-        "The Martin Express Rail provides the fastest and most direct connections across the greater metropolitan area.",
-        "It's your premier link to the International Airport, offering swift service directly to the Airport Station for all travelers.",
-        "Seamlessly access major business districts, the bustling Financial District, and the state-of-the-art Convention Center.",
-        "Central Station serves as the critical interchange, allowing easy transfers to all four Light Rail Lines (Red, Blue, Green, Yellow) for onward journeys.",
-        "Connects rapidly to key suburban centers like Suburban Hub and Northern Spire, facilitating convenient commutes for outer-city residents.",
-        "For leisure and hospitality, the line provides direct access to the Airport Hotel & Tech Park, an emerging hub for innovation and entertainment.",
-        "Designed for efficiency, Express Rail trains offer fewer stops and higher speeds, ensuring quicker travel times for long-distance commuters.",
-        "Experience a comfortable and reliable journey, making the Express Rail the preferred choice for business travelers, airport passengers, and suburban commuters alike."
+        "Martin Express Rail Overview The Martin Express Rail is Summit City's flagship commuter artery—engineered for velocity, precision, and place-based storytelling. Designed with long-distance travelers, professionals, and cultural explorers in mind, it connects the metropolitan core with its most vital civic and innovation zones.\n- From skyline to soil, the line offers express service between Central Station, the city's monumental transfer hub, and the greater Summit region, with seamless links to all four Light Rail lines (Red, Blue, Green, Yellow).\n- Begin your journey in the Financial District at The Ledger Gate, a kinetic atrium station enveloped in civic poetry and market pulse—your direct line into Summit’s economic engine.\n- Transfer easily to the Convention Center Station, where hospitality and transit converge beneath soaring glass pavilions shared by two landmark hotels: Grand Pinnacle Summit and boutique Crescendo Suites.\n- Just beyond, Gateway Plaza Station brings color and cadence with food halls, art walks, and quick strolls to the riverfront promenade. A cultural stopover teeming with life and express bus 960 links to the western suburbs.\n- For suburban connectivity, the rail links to SubHub Station, Summit’s premier park-and-ride interchange set in Commons Ridge—home to family-friendly walkways and community-square urbanism.\n- Heading north, Northern Spire Station bridges residential elegance with natural overlook trails, connecting Skybend Ridge’s hillside homes to the greater network.\n- Anchoring the line’s northern cap is Terminus North, The Convergence Spire, a multimodal innovation node offering regional transfers to tech campuses and research labs in Northpoint.\n- Rounding out the southern corridor, Airport Hotel & Tech Park Station welcomes travelers into a next-gen hospitality zone of modular lodging suites, AI-synced rest pods, and conference-ready green commons.\nWith its high-speed intervals, minimalist stops, and comfort-optimized interiors, the Martin Express Rail is more than a commute—it’s Summit’s moving backbone, shaping everything from commerce to community rhythm."
       ],
       "stops": [
         {

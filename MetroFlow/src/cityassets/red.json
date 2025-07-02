@@ -1,0 +1,1397 @@
+[
+  {
+    "name": "Parkside Station",
+    "nickname": "The Heritage Gate",
+    "line": "Red Line",
+    "type": "Neighborhood Legacy Stop",
+    "design_style": "Restored Beaux-Arts pavilion with ivy-clad brickwork",
+    "features": [
+      "Hand-painted station name plaques from the original 1894 build",
+      "Ornamental ironwork benches and gaslight-style lanterns",
+      "Clock tower with soft hourly chimes audible throughout the park",
+      "Heritage mural series recounting Summit City’s transit history"
+    ],
+    "function": "Historic gateway to urban green space and intergenerational memory",
+    "transit_data": {
+      "average_daily_footfall": "8,600 passengers",
+      "modal_split": {
+        "light_rail": "65%",
+        "bus": "20%",
+        "pedestrian": "15%"
+      }
+    },
+    "neighborhood": {
+      "name": "Linden Commons",
+      "vibe": "Verdant, story-rich, and full of familiar pathways",
+      "landmarks": [
+        {
+          "name": "Linden Commons Park",
+          "type": "Historic urban green with Victorian glasshouse and duck ponds",
+          "estimated_value_usd": "40,000,000 - 65,000,000"
+        },
+        {
+          "name": "Parkside Pavilion",
+          "type": "Community bandstand and seasonal market",
+          "estimated_value_usd": "8,000,000 - 12,000,000"
+        },
+        {
+          "name": "Rosewood Reading Hall",
+          "type": "Carnegie-era library with hidden garden nooks",
+          "estimated_value_usd": "18,000,000 - 28,000,000"
+        },
+        {
+          "name": "The Porchlight Café",
+          "type": "Local bakery with old rail photos and antique menus",
+          "estimated_value_usd": "3,000,000 - 6,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "69,000,000 - 111,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "Cobble Lane",
+          "style": "Vintage rowhomes with polished stone steps",
+          "residents": [
+            "Retired rail conductors",
+            "Teachers and city archivists",
+            "Multi-generational families"
+          ],
+          "vibe": "Windchime breezes, stoop storytelling, weekend chess on porch tables",
+          "estimated_value_usd": "55,000,000 - 85,000,000"
+        },
+        {
+          "name": "Chime Alley",
+          "style": "Courtyard flats in brick carriage houses",
+          "residents": ["Young couples", "Librarians", "Landscape painters"],
+          "vibe": "Soft bell tones, hand-lettered mailboxes, hopscotch drawn in chalk",
+          "estimated_value_usd": "38,000,000 - 62,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "93,000,000 - 147,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Historic Preservation Overlay",
+        "Park-Adjacency Quiet Zone",
+        "Rail Heritage Tourism Zone",
+        "Intergenerational Access Equity Zone"
+      ]
+    },
+    "estimated_individual_station_value_usd": "125,000,000 - 180,000,000",
+    "estimated_combined_area_value_usd": "287,000,000 - 438,000,000"
+  },
+
+  {
+    "name": "Civic Center Station",
+    "nickname": "The Rotunda Link",
+    "line": "Red Line",
+    "type": "Civic Access Core Stop",
+    "design_style": "Stone-clad pillars with modern glass oculus and archival etchings",
+    "features": [
+      "Rotunda lobby shared with City Hall’s public gallery wing",
+      "Digital civic timeline etched into the floor with interactive touchpoints",
+      "Glass columns containing rotating civic arts installations",
+      "Public plaza with flag canopy and audio loop of past mayoral speeches"
+    ],
+    "function": "Transit-anchored gateway to Summit’s democratic institutions, civil records, and policy life",
+    "transit_data": {
+      "average_daily_footfall": "17,400 passengers",
+      "modal_split": {
+        "light_rail": "63%",
+        "bus": "28%",
+        "pedestrian": "9%"
+      },
+      "served_bus_routes": [820, 821]
+    },
+    "neighborhood": {
+      "name": "Summit Civic District",
+      "vibe": "Orderly, symbolic, engaged—equal parts protocol and public access",
+      "landmarks": [
+        {
+          "name": "Summit City Hall",
+          "type": "Government seat with public art rotunda and council chamber gallery",
+          "estimated_value_usd": "210,000,000 - 320,000,000"
+        },
+        {
+          "name": "Summit Public Library Main Branch",
+          "type": "Flagship research and media library with rooftop reading deck",
+          "estimated_value_usd": "95,000,000 - 130,000,000"
+        },
+        {
+          "name": "Justice Court Annex",
+          "type": "Modern judicial wing and civic mediation space",
+          "estimated_value_usd": "60,000,000 - 85,000,000"
+        },
+        {
+          "name": "Unity Fountain Plaza",
+          "type": "Protest-permitted public square with mist sculpture and message wall",
+          "estimated_value_usd": "25,000,000 - 40,000,000"
+        },
+        {
+          "name": "Glass Cube Civic Forum",
+          "type": "Transparent public debate space with city-facing acoustics and live-captioned panels",
+          "estimated_value_usd": "38,000,000 - 52,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "428,000,000 - 627,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "Charter Row",
+          "style": "Civil-service rowhouses with public stoops and porch flags",
+          "residents": [
+            "Clerks of record",
+            "Retired public defenders",
+            "Ordinance archivists"
+          ],
+          "vibe": "Mailbox debates, rulebook clubs, early morning paper runs",
+          "estimated_value_usd": "82,000,000 - 120,000,000"
+        },
+        {
+          "name": "Library Ridge",
+          "style": "Gothic-brick flats with second-floor reading porches",
+          "residents": [
+            "Reference librarians",
+            "Civic educators",
+            "Urban studies undergraduates"
+          ],
+          "vibe": "Lamp-lit nooks, silent courtyards, placard-stamped windowpanes",
+          "estimated_value_usd": "66,000,000 - 96,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "148,000,000 - 216,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Civic Core Function Zone",
+        "Transparency Access Buffer",
+        "Democratic Expression Corridor",
+        "Institutional Quiet-Use Envelope"
+      ]
+    },
+    "estimated_individual_station_value_usd": "275,000,000 - 395,000,000",
+    "estimated_combined_area_value_usd": "851,000,000 - 1,238,000,000"
+  },
+  [
+    {
+      "name": "Market Square Station",
+      "nickname": "The Merchant's Walk",
+      "line": "Red Line",
+      "type": "Commercial Quarter Stop",
+      "design_style": "Open-air mezzanine with glass canopy and urban stallfront motifs",
+      "features": [
+        "Arcade-style station entrance with storefront windows lining the concourse",
+        "Rotating vendor kiosk integration on the plaza edge",
+        "Digital neighborhood menu board with live queue times and dish spotlights",
+        "Transit breezeway lined with café seating and street musician zones"
+      ],
+      "function": "Summit City’s key transit-accessible retail and dining destination",
+      "transit_data": {
+        "average_daily_footfall": "23,600 passengers",
+        "modal_split": {
+          "light_rail": "57%",
+          "bus": "34%",
+          "pedestrian": "9%"
+        },
+        "served_bus_routes": [830, 835]
+      },
+      "neighborhood": {
+        "name": "Market Square District",
+        "vibe": "Lively, eclectic, sensory-rich—built on foot traffic and open air",
+        "landmarks": [
+          {
+            "name": "Summit Open Market",
+            "type": "Outdoor marketplace for produce, textiles, and street food",
+            "estimated_value_usd": "75,000,000 - 110,000,000"
+          },
+          {
+            "name": "Golden Lantern Arcade",
+            "type": "Historic mercantile row reborn as local crafts and indie boutiques",
+            "estimated_value_usd": "45,000,000 - 70,000,000"
+          },
+          {
+            "name": "Merchant’s Deck",
+            "type": "Dining terrace overlooking transit plaza and evening lantern path",
+            "estimated_value_usd": "25,000,000 - 38,000,000"
+          },
+          {
+            "name": "Summit Culinary House",
+            "type": "Civic kitchen space for pop-up chefs and culinary apprenticeships",
+            "estimated_value_usd": "36,000,000 - 48,000,000"
+          }
+        ],
+        "estimated_landmark_value_combined_usd": "181,000,000 - 266,000,000"
+      },
+      "residential_assets": {
+        "executive_towers": [],
+        "micro_neighborhoods": [
+          {
+            "name": "Lantern Lane",
+            "style": "Mixed-use lofts with street-level retail bays",
+            "residents": [
+              "Restaurateurs",
+              "Local artisans",
+              "Young professionals"
+            ],
+            "vibe": "Hanging flower baskets, rooftop tasting nights, handmade banner walks",
+            "estimated_value_usd": "77,000,000 - 112,000,000"
+          },
+          {
+            "name": "Spice Square",
+            "style": "Colorful flats above international grocers and food halls",
+            "residents": [
+              "Culinary students",
+              "Family business owners",
+              "Retail trend researchers"
+            ],
+            "vibe": "Late-night spice waft, handwritten flyers, multilingual vendor tags",
+            "estimated_value_usd": "68,000,000 - 96,000,000"
+          }
+        ],
+        "estimated_micro_neighborhoods_value_combined_usd": "145,000,000 - 208,000,000"
+      },
+      "zoning_overlays": {
+        "overlay_types": [
+          "Market Stall Integration Overlay",
+          "Retail Density Flex Zone",
+          "Transit-Fronted Dining Corridor",
+          "Evening Activation Priority Zone"
+        ]
+      },
+      "estimated_individual_station_value_usd": "220,000,000 - 320,000,000",
+      "estimated_combined_area_value_usd": "546,000,000 - 794,000,000"
+    }
+  ],
+  [
+    {
+      "name": "Riverside Station",
+      "nickname": "The Driftwalk Stop",
+      "line": "Red Line",
+      "type": "Leisure-Lined Waterfront Node",
+      "design_style": "Steel-frame canopy with driftwood accents and terrace seating",
+      "features": [
+        "Riverstone mosaic flooring echoing water flow patterns",
+        "Station-side boardwalk with seasonal vendor pop-ups",
+        "Cascading stairs doubling as amphitheater benches facing the riverfront",
+        "Transit signage framed in repurposed marina wood"
+      ],
+      "function": "Access point for recreation, weekend events, and riverside culture",
+      "transit_data": {
+        "average_daily_footfall": "13,200 passengers",
+        "modal_split": {
+          "light_rail": "61%",
+          "bus": "30%",
+          "pedestrian": "9%"
+        },
+        "served_bus_routes": [840]
+      },
+      "neighborhood": {
+        "name": "Riverside Commons",
+        "vibe": "Laid-back, scenic, micro-business friendly with strong community roots",
+        "landmarks": [
+          {
+            "name": "Summit Riverwalk",
+            "type": "Scenic promenade with boat launches, running paths, and hammock nooks",
+            "estimated_value_usd": "82,000,000 - 120,000,000"
+          },
+          {
+            "name": "The Drift Market",
+            "type": "Open-air weekend bazaar for local crafts and produce",
+            "estimated_value_usd": "22,000,000 - 34,000,000"
+          },
+          {
+            "name": "Boathouse Stage",
+            "type": "Performance platform for buskers, sunset readings, and jazz trios",
+            "estimated_value_usd": "9,000,000 - 14,000,000"
+          },
+          {
+            "name": "Riverlight Café Row",
+            "type": "Cluster of small-batch bakeries and fusion carts beneath string lights",
+            "estimated_value_usd": "44,000,000 - 66,000,000"
+          }
+        ],
+        "estimated_landmark_value_combined_usd": "157,000,000 - 234,000,000"
+      },
+      "residential_assets": {
+        "executive_towers": [],
+        "micro_neighborhoods": [
+          {
+            "name": "Bendview Row",
+            "style": "Riverside townhomes with bike alcoves and brick patios",
+            "residents": [
+              "Outdoor instructors",
+              "Retired musicians",
+              "Gallery apprentices"
+            ],
+            "vibe": "Windowplaned artwork, community float-in movie nights, riverside potlucks",
+            "estimated_value_usd": "61,000,000 - 88,000,000"
+          },
+          {
+            "name": "Marina Grove",
+            "style": "Low-rise cottages interspersed with garden courtyards",
+            "residents": [
+              "Freelance illustrators",
+              "Boat repair artists",
+              "Weekend paddleboard guides"
+            ],
+            "vibe": "Windswept porches, chalk menus, linen line drying above flowerbeds",
+            "estimated_value_usd": "49,000,000 - 72,000,000"
+          }
+        ],
+        "estimated_micro_neighborhoods_value_combined_usd": "110,000,000 - 160,000,000"
+      },
+      "zoning_overlays": {
+        "overlay_types": [
+          "Riverwalk Viewline Protection Zone",
+          "Small Business Activation Overlay",
+          "Weekend Vendor Facilitation Permit Zone",
+          "Low-Impact Residential Conservation Buffer"
+        ]
+      },
+      "estimated_individual_station_value_usd": "190,000,000 - 265,000,000",
+      "estimated_combined_area_value_usd": "457,000,000 - 659,000,000"
+    }
+  ],
+  [
+    {
+      "name": "Tubman University Crossing",
+      "nickname": "The Knowledge Loop",
+      "line": "Red Line",
+      "type": "Academic Urban Nexus",
+      "design_style": "Contemporary collegiate brick-and-glass fusion with transit pavilion arches",
+      "features": [
+        "Open-air student plaza flowing directly into platform terraces",
+        "Digital orator wall with daily rotating lectures, quotes, and student-designed prompts",
+        "Transit-adjacent amphitheater with informal seating for debate circles and public philosophy sessions",
+        "Real-time course schedule overlays at station kiosks for navigation between lectures and labs",
+        "Student-run general store kiosk offering snacks, course materials, and club merch",
+        "Publicly owned farmers market stall and community-operated café open weekdays and weekends",
+        "Two mid-rise dormitory towers with ground-level entrances within 50 feet of station platform"
+      ],
+      "function": "Key node serving Tubman University’s main academic campus, student life centers, and daily university commuter needs",
+      "transit_data": {
+        "average_daily_footfall": "31,000 passengers",
+        "modal_split": {
+          "light_rail": "54%",
+          "university_shuttle": "30%",
+          "city_bus": "12%",
+          "pedestrian/bike": "4%"
+        },
+        "served_bus_routes": [850, 855],
+        "connectivity": [
+          "Blue Line main spine",
+          "University loop shuttles to South Campus, Arts Bloc, and Ridge Labs",
+          "Cycle link to Knowledge Promenade and Research Greenway"
+        ]
+      },
+      "neighborhood": {
+        "name": "Tubman Commons",
+        "vibe": "Collegiate, high-achieving, radically expressive—where discourse meets generational momentum",
+        "landmarks": [
+          {
+            "name": "Tubman Central Library",
+            "type": "Five-story academic and civic resource center with rooftop study groves",
+            "estimated_value_usd": "135,000,000 - 190,000,000"
+          },
+          {
+            "name": "The Agora Hall",
+            "type": "Hybrid lecture/performance/convening arena with modular seating",
+            "estimated_value_usd": "85,000,000 - 130,000,000"
+          },
+          {
+            "name": "Society Studio Lane",
+            "type": "Cluster of public theory shops and interdisciplinary makerspaces",
+            "estimated_value_usd": "40,000,000 - 65,000,000"
+          },
+          {
+            "name": "The Quotidian Café",
+            "type": "Faculty-run café with rotating student panels and cappuccino-fueled manifestos",
+            "estimated_value_usd": "18,000,000 - 24,000,000"
+          },
+          {
+            "name": "The Learning Market Pavilion",
+            "type": "Publicly-owned student-market corridor for produce, student food stands, and debate-hour coffee pop-ups",
+            "estimated_value_usd": "12,000,000 - 18,000,000"
+          }
+        ],
+        "estimated_landmark_value_combined_usd": "290,000,000 - 427,000,000"
+      },
+      "residential_assets": {
+        "executive_towers": [
+          {
+            "name": "Union Hall",
+            "style": "Modern mid-rise with study balconies and shared tech lounges",
+            "features": [
+              "Dual lobby access from Commons Loop and Blue Line platform",
+              "Biometric access tied to student ID"
+            ],
+            "estimated_value_usd": "110,000,000 - 160,000,000"
+          },
+          {
+            "name": "Justice Dormitory",
+            "style": "Utilitarian concrete-glass hybrid with community kitchen clusters",
+            "features": [
+              "Resident-run media lab and late-night rooftop jam decks",
+              "Platform-facing entrance 40 feet from Track 2"
+            ],
+            "estimated_value_usd": "92,000,000 - 140,000,000"
+          }
+        ],
+        "micro_neighborhoods": [
+          {
+            "name": "Inquiry Row",
+            "style": "Student co-ops and honors dorms along discussion gardens",
+            "residents": [
+              "Philosophy undergrads",
+              "Visiting lecturers",
+              "Mock trial captains"
+            ],
+            "vibe": "Balcony debates, book-cart bazaars, windownote arguments",
+            "estimated_value_usd": "92,000,000 - 130,000,000"
+          },
+          {
+            "name": "Civic Circle Quads",
+            "style": "Urban academic flats with group kitchens and communal debate atriums",
+            "residents": [
+              "Grad seminar assistants",
+              "Campus journalists",
+              "Student organizers"
+            ],
+            "vibe": "Café-lit midnight dialogues, community whiteboards, annotated chalk curbs",
+            "estimated_value_usd": "74,000,000 - 102,000,000"
+          },
+          {
+            "name": "Legacy Heights",
+            "style": "Mixed-income walkups and rowhomes for alumni families, adjuncts, and off-campus athletes",
+            "residents": [
+              "Alumni advisors",
+              "Local artists",
+              "Single parents in continuing ed"
+            ],
+            "vibe": "Shared garden lots, heritage murals, late afternoon porch lectures",
+            "estimated_value_usd": "88,000,000 - 122,000,000"
+          }
+        ],
+        "estimated_residential_value_combined_usd": "456,000,000 - 684,000,000"
+      },
+      "zoning_overlays": {
+        "overlay_types": [
+          "Academic-Civic Fusion Zone",
+          "Youth Voice Activation Buffer",
+          "Transit-Education Synchronization District",
+          "Lecture Spillover Commons Corridor",
+          "Mixed-Income Campus Living Overlay",
+          "Student Platform Commerce Incentive"
+        ]
+      },
+      "transfer_link": {
+        "is_transfer_station": true,
+        "connects_to": ["Blue Line"],
+        "function": "Academic anchor transfer node with integrated university shuttle docks and direct campus entry",
+        "design_notes": [
+          "Elevated concourse connection between eastbound and westbound Blue Line platforms",
+          "Real-time arrival data integrated with class schedules and student mobile apps",
+          "Dual access: commuter-side and campus-side entrances to minimize crowding"
+        ]
+      },
+      "estimated_individual_station_value_usd": "345,000,000 - 510,000,000",
+      "estimated_combined_area_value_usd": "1,091,000,000 - 1,621,000,000"
+    }
+  ],
+  [
+    {
+      "name": "Central Library Station",
+      "nickname": "The Deandre Little Civic Forum",
+      "line": "Red Line",
+      "type": "Cultural-Educational Landmark Node",
+      "design_style": "Civic-modern blend with stepped plaza and mosaic story panels",
+      "features": [
+        "Canopy façade inscribed with quotes from Deandre Little’s nonviolent protest writings",
+        "Terrace reading lawn descending from station to library plaza",
+        "Platform benches engraved with library card numbers donated by founding neighborhood residents",
+        "Midday public reading circle zone with built-in shade sails and acoustic amplifiers"
+      ],
+      "function": "A quiet, reflective stop offering deep access to cultural memory and academic outreach",
+      "transit_data": {
+        "average_daily_footfall": "14,200 passengers",
+        "modal_split": {
+          "light_rail": "60%",
+          "bus": "34%",
+          "pedestrian": "6%"
+        },
+        "served_bus_routes": [860]
+      },
+      "neighborhood": {
+        "name": "Little Commons",
+        "vibe": "Hushed, learning-centered, cross-generational—where story, resilience, and scholarship meet",
+        "landmarks": [
+          {
+            "name": "Deandre Little Regional Library",
+            "type": "Three-level civic library and memory center with a civil rights archive wing",
+            "estimated_value_usd": "160,000,000 - 220,000,000"
+          },
+          {
+            "name": "March Reflection Court",
+            "type": "Linear water wall plaza with footprints inscribed from the protest march route",
+            "estimated_value_usd": "18,000,000 - 26,000,000"
+          },
+          {
+            "name": "ReadTogether Hall",
+            "type": "Community literary venue for book launches, civic reads, and cross-school debates",
+            "estimated_value_usd": "28,000,000 - 42,000,000"
+          },
+          {
+            "name": "Quiet Spoon Café",
+            "type": "Library-adjacent café run by local culinary arts high school students",
+            "estimated_value_usd": "12,000,000 - 16,000,000"
+          }
+        ],
+        "estimated_landmark_value_combined_usd": "218,000,000 - 304,000,000"
+      },
+      "residential_assets": {
+        "executive_towers": [],
+        "micro_neighborhoods": [
+          {
+            "name": "Archive Hill",
+            "style": "Porchfront flats and semi-detached cottages behind the library ridge",
+            "residents": [
+              "Retired educators",
+              "Youth literacy volunteers",
+              "Multigenerational households"
+            ],
+            "vibe": "Windowpaned calendars, footpath chalk poems, community lending shelves",
+            "estimated_value_usd": "66,000,000 - 94,000,000"
+          },
+          {
+            "name": "Stackline Row",
+            "style": "Academic dormitory-style apartments for interns, tutors, and artists-in-residence",
+            "residents": [
+              "Education grad students",
+              "Junior librarians",
+              "Literary muralists"
+            ],
+            "vibe": "Quiet stairwells, skyline bookmarks, block club potlucks",
+            "estimated_value_usd": "54,000,000 - 78,000,000"
+          }
+        ],
+        "estimated_micro_neighborhoods_value_combined_usd": "120,000,000 - 172,000,000"
+      },
+      "zoning_overlays": {
+        "overlay_types": [
+          "Memory-Civic District Preservation Zone",
+          "Neighborhood Education Access Buffer",
+          "Reflective Pedestrian Corridor",
+          "Quiet Use and Literacy Activation Overlay"
+        ]
+      },
+      "estimated_individual_station_value_usd": "205,000,000 - 300,000,000",
+      "estimated_combined_area_value_usd": "543,000,000 - 776,000,000"
+    }
+  ],
+  [
+    {
+      "name": "Southside Station",
+      "nickname": "The Corner Pulse",
+      "line": "Red Line",
+      "type": "Cultural-Residential Heartline Stop",
+      "design_style": "Canopied market-stall motif with colorful tile murals and open-air breezeways",
+      "features": [
+        "Platform awnings painted by rotating local youth art collectives",
+        "Community message board kiosk with QR links to mutual aid and neighborhood events",
+        "Transit porch with food cart bays and folding stage for weekend talent shows",
+        "Sound-reactive lighting that pulses softly to music during street festivals"
+      ],
+      "function": "Hyperlocal transit anchor serving dense, walkable blocks full of culture and neighborhood rhythm",
+      "transit_data": {
+        "average_daily_footfall": "21,300 passengers",
+        "modal_split": {
+          "light_rail": "53%",
+          "bus": "36%",
+          "pedestrian": "11%"
+        },
+        "served_bus_routes": [870, 871]
+      },
+      "neighborhood": {
+        "name": "Southside Quarter",
+        "vibe": "Expressive, rooted, delicious—built on community ties, taste, and sidewalk charisma",
+        "landmarks": [
+          {
+            "name": "Southside Food Porch",
+            "type": "String of food stalls with Caribbean, Vietnamese, soul food, and taquería fusions",
+            "estimated_value_usd": "36,000,000 - 52,000,000"
+          },
+          {
+            "name": "Unity House Community Hub",
+            "type": "Public-use building with free daycare, GED classes, and community elder programs",
+            "estimated_value_usd": "28,000,000 - 42,000,000"
+          },
+          {
+            "name": "Open Hands Plaza",
+            "type": "Public square for music festivals, storytelling circles, and market days",
+            "estimated_value_usd": "19,000,000 - 29,000,000"
+          },
+          {
+            "name": "Southside SoulStage",
+            "type": "Outdoor mural-wrapped amphitheater for spoken word, gospel, and youth rap showcases",
+            "estimated_value_usd": "15,000,000 - 20,000,000"
+          }
+        ],
+        "estimated_landmark_value_combined_usd": "98,000,000 - 143,000,000"
+      },
+      "residential_assets": {
+        "executive_towers": [],
+        "micro_neighborhoods": [
+          {
+            "name": "Juniper Walk",
+            "style": "Tree-lined side streets of bungalows and jazz-blaring stoops",
+            "residents": [
+              "Local chefs",
+              "Retired bus drivers",
+              "Church volunteers"
+            ],
+            "vibe": "Grill smoke on Sundays, porch dominoes, gospel through windowpanes",
+            "estimated_value_usd": "74,000,000 - 98,000,000"
+          },
+          {
+            "name": "Fulton Terrace",
+            "style": "Four-story walkups with murals, balcony flags, and corner gardens",
+            "residents": [
+              "Student baristas",
+              "Union organizers",
+              "Shopkeepers’ families"
+            ],
+            "vibe": "Late-night debates, communal laundry jams, windchimes over barbecue scent",
+            "estimated_value_usd": "62,000,000 - 88,000,000"
+          },
+          {
+            "name": "Heritage Lofts",
+            "style": "Mixed-income apartments with historical steel signage and cultural co-ops",
+            "residents": [
+              "Aspiring poets",
+              "Multilingual dispatchers",
+              "Return-to-school moms"
+            ],
+            "vibe": "Patchwork balcony rugs, dance class flyers, rec center piano echoes",
+            "estimated_value_usd": "84,000,000 - 116,000,000"
+          }
+        ],
+        "estimated_micro_neighborhoods_value_combined_usd": "220,000,000 - 302,000,000"
+      },
+      "zoning_overlays": {
+        "overlay_types": [
+          "Cultural District Recognition Overlay",
+          "Affordable Housing Preservation Zone",
+          "Street Activation Encouragement Corridor",
+          "Transit-Community Arts Alignment Buffer"
+        ]
+      },
+      "estimated_individual_station_value_usd": "245,000,000 - 325,000,000",
+      "estimated_combined_area_value_usd": "563,000,000 - 770,000,000"
+    }
+  ],
+  [
+    {
+      "name": "Red Line Terminus South",
+      "nickname": "The South Gate",
+      "line": "Red Line",
+      "type": "Suburban Commuter Gateway",
+      "design_style": "Elevated glass canopy with sandstone columns and solar-paneled park deck",
+      "features": [
+        "Multi-level commuter parking garage with green roof and carpool lanes",
+        "Bus loop integrated with real-time scheduling canopy and shade structures",
+        "Park-and-ride path lined with native plants and transit history signposts",
+        "Entry pavilion with neighborhood bulletin board and local transit info center"
+      ],
+      "function": "Southernmost anchor of the Red Line network, serving high-volume suburban commuters and car-free riders entering Summit proper",
+      "transit_data": {
+        "average_daily_footfall": "15,800 passengers",
+        "modal_split": {
+          "light_rail": "45%",
+          "bus": "40%",
+          "carpool drop-off": "15%"
+        },
+        "served_bus_routes": [880, 882]
+      },
+      "neighborhood": {
+        "name": "Southgate Commons",
+        "vibe": "Orderly, suburban-adjacent, community-commute hybrid with a commuter-first rhythm",
+        "landmarks": [
+          {
+            "name": "South Station Park & Grove",
+            "type": "Grassy commons area beside the garage for lunch breaks, family drop-offs, and early evening buskers",
+            "estimated_value_usd": "18,000,000 - 24,000,000"
+          },
+          {
+            "name": "Railhouse Market",
+            "type": "Converted train crew quarters turned café and morning snack depot",
+            "estimated_value_usd": "12,000,000 - 18,000,000"
+          },
+          {
+            "name": "Bus Link Pavilion",
+            "type": "Weatherproofed platform ring for synchronized bus staging with digital canopy",
+            "estimated_value_usd": "20,000,000 - 28,000,000"
+          },
+          {
+            "name": "Southgate Mobility Hub",
+            "type": "Last-mile scooter/bike depot for onward travel into adjacent districts",
+            "estimated_value_usd": "9,000,000 - 13,000,000"
+          }
+        ],
+        "estimated_landmark_value_combined_usd": "59,000,000 - 83,000,000"
+      },
+      "residential_assets": {
+        "executive_towers": [],
+        "micro_neighborhoods": [
+          {
+            "name": "Parkview Bend",
+            "style": "Single-family homes with front-facing transit paths and backyard fruit trees",
+            "residents": [
+              "Tech commuters",
+              "Teachers",
+              "Retired delivery coordinators"
+            ],
+            "vibe": "Curbside mailboxes, early morning shuttlewalks, kids with helmets zooming to side trails",
+            "estimated_value_usd": "102,000,000 - 138,000,000"
+          },
+          {
+            "name": "Depot Lane Row",
+            "style": "Townhouses and duplexes within walking distance of the garage access trail",
+            "residents": [
+              "Junior analysts",
+              "Single-car families",
+              "Local delivery staff"
+            ],
+            "vibe": "Early risers, clean sidewalks, sociable commutes under sunrise skies",
+            "estimated_value_usd": "76,000,000 - 98,000,000"
+          }
+        ],
+        "estimated_micro_neighborhoods_value_combined_usd": "178,000,000 - 236,000,000"
+      },
+      "zoning_overlays": {
+        "overlay_types": [
+          "Suburban Transit Integration Zone",
+          "Commuter Parking Efficiency Overlay",
+          "Last-Mile Mobility Incentive District",
+          "Bus-Rail Synchronization Corridor"
+        ]
+      },
+      "estimated_individual_station_value_usd": "165,000,000 - 225,000,000",
+      "estimated_combined_area_value_usd": "402,000,000 - 544,000,000"
+    }
+  ],
+  [
+    {
+      "name": "City Park & Zoo Station",
+      "nickname": "The Wild Loop",
+      "line": "Red Line",
+      "type": "Recreational-Heritage Leisure Stop",
+      "design_style": "Art Deco canopy with animal reliefs and botanical tile inlays",
+      "features": [
+        "Station archways depicting stylized flora and fauna native to the region",
+        "Seasonal shuttle loop kiosk connecting to Zoo Gate, Swan Lake, and Observatory Vista",
+        "Children’s tram stop mural made from recycled zoo signage",
+        "Platform benches shaped like folded picnic blankets under vine-covered pergolas"
+      ],
+      "function": "Family-focused entry to the city’s largest recreational and zoological reserve, rooted in urban memory and intergenerational leisure",
+      "transit_data": {
+        "average_daily_footfall": "19,500 passengers",
+        "modal_split": {
+          "light_rail": "58%",
+          "bus": "33%",
+          "pedestrian": "9%"
+        },
+        "served_bus_routes": [880, 882],
+        "shuttle_routes": [
+          "Swan Loop Express",
+          "Zoo Ridge Shuttle",
+          "Stargazer Line (Observatory Night Tours)"
+        ]
+      },
+      "neighborhood": {
+        "name": "City Park District",
+        "vibe": "Verdant, intergenerational, harmonized—where vintage elegance meets playful urban nature",
+        "landmarks": [
+          {
+            "name": "Summit City Zoo",
+            "type": "Expansive zoological garden with immersive regional habitats and skybridge walkways",
+            "estimated_value_usd": "240,000,000 - 320,000,000"
+          },
+          {
+            "name": "Swan Lake",
+            "type": "Serene waterbody with paddle boat rentals and concentric walking trails",
+            "estimated_value_usd": "48,000,000 - 65,000,000"
+          },
+          {
+            "name": "Astral Point Observatory",
+            "type": "Restored 1897 planetarium and telescope hall open for tours and astronomy nights",
+            "estimated_value_usd": "33,000,000 - 48,000,000"
+          },
+          {
+            "name": "Guilded Grove",
+            "type": "Victorian-laced tree alleys surrounding restored Gilded Age residences",
+            "estimated_value_usd": "72,000,000 - 96,000,000"
+          }
+        ],
+        "estimated_landmark_value_combined_usd": "393,000,000 - 529,000,000"
+      },
+      "residential_assets": {
+        "executive_towers": [
+          {
+            "name": "Parkhaus Terraces",
+            "style": "Sleek mid-rise towers with full-glass corner units and balcony planters",
+            "features": [
+              "360° sunset decks",
+              "Concierge-for-keeps artist residency program"
+            ],
+            "estimated_value_usd": "135,000,000 - 185,000,000"
+          }
+        ],
+        "micro_neighborhoods": [
+          {
+            "name": "Zooline Grove",
+            "style": "Charming residential row with angled sightlines into the giraffe and savanna enclosures",
+            "residents": [
+              "Wildlife photographers",
+              "Local veterinarians",
+              "Park docents"
+            ],
+            "vibe": "Binocular balconies, animal call lullabies, breakfast beside zebras",
+            "estimated_value_usd": "82,000,000 - 120,000,000"
+          },
+          {
+            "name": "Sears Crescent",
+            "style": "Meticulously restored Sears mail-order homes from the 1930s–1950s",
+            "residents": [
+              "Archivists",
+              "Civil engineers",
+              "Storybook illustrators"
+            ],
+            "vibe": "Trimmed hedgerows, time-stamped doorbells, lemonade stoops in architectural harmony",
+            "estimated_value_usd": "66,000,000 - 94,000,000"
+          }
+        ],
+        "estimated_residential_value_combined_usd": "283,000,000 - 399,000,000"
+      },
+      "zoning_overlays": {
+        "overlay_types": [
+          "Zoo View Preservation Corridor",
+          "Historic Homes Conservation Overlay",
+          "Waterfront Activity Quiet Zone",
+          "Cultural-Nature Recreation Blend District"
+        ]
+      },
+      "estimated_individual_station_value_usd": "230,000,000 - 310,000,000",
+      "estimated_combined_area_value_usd": "906,000,000 - 1,238,000,000"
+    }
+  ],
+  [
+    {
+      "name": "Willow Creek Station",
+      "nickname": "The Porchlight Spur",
+      "line": "Red Line",
+      "type": "Suburban Growth Corridor Node",
+      "design_style": "Contemporary canopy with gabled touches and timber-column breezeways",
+      "features": [
+        "Platform art wall with handprints from the first 100 Willow Creek school students",
+        "Covered waiting zone styled after farmhouse porticos with swing benches",
+        "Digital homebuilder showcase board rotating new development highlights",
+        "Neighborhood welcome center with first-time rider guides and PTA flyers"
+      ],
+      "function": "Modern residential transfer point in a family-focused, newly blossoming education district",
+      "transit_data": {
+        "average_daily_footfall": "12,300 passengers",
+        "modal_split": {
+          "light_rail": "49%",
+          "bus": "37%",
+          "pedestrian/bike": "14%"
+        },
+        "served_bus_routes": [890]
+      },
+      "neighborhood": {
+        "name": "Willow Creek",
+        "vibe": "Quiet, upwardly mobile, new-traditional—where blueprints turn to block parties",
+        "landmarks": [
+          {
+            "name": "Willow Creek Elementary & STEM Magnet",
+            "type": "Walkable grade school campus with robotics wing and farm-to-lunch program",
+            "estimated_value_usd": "55,000,000 - 75,000,000"
+          },
+          {
+            "name": "Builder’s Court Park",
+            "type": "Neighborhood green with shade trellis pavilion and model home design playground",
+            "estimated_value_usd": "16,000,000 - 22,000,000"
+          },
+          {
+            "name": "Willow Creek Welcome House",
+            "type": "Historic turn-of-century farmstead now a visitor center and trailhead",
+            "estimated_value_usd": "8,000,000 - 12,000,000"
+          },
+          {
+            "name": "The Market Barn",
+            "type": "Weekend vendor and tool library hub with teaching kitchen and design studio",
+            "estimated_value_usd": "24,000,000 - 34,000,000"
+          }
+        ],
+        "estimated_landmark_value_combined_usd": "103,000,000 - 143,000,000"
+      },
+      "residential_assets": {
+        "executive_towers": [],
+        "micro_neighborhoods": [
+          {
+            "name": "Willow Ridge Commons",
+            "style": "Semi-custom homes with Craftsman and Prairie-style facades",
+            "residents": [
+              "Young families",
+              "School counselors",
+              "Custom carpenters"
+            ],
+            "vibe": "Tidy porches, lawn chalk, block-wide lemonade stands on summer Saturdays",
+            "estimated_value_usd": "142,000,000 - 202,000,000"
+          },
+          {
+            "name": "Creekside Bluffs",
+            "style": "Rowhouse-style townhomes with private terraces and shared play meadows",
+            "residents": [
+              "Grad student parents",
+              "Digital nomads",
+              "Transit-first commuters"
+            ],
+            "vibe": "Scooter races after dinner, PTA handoffs, smart blinds and sunlit silence",
+            "estimated_value_usd": "106,000,000 - 144,000,000"
+          }
+        ],
+        "estimated_micro_neighborhoods_value_combined_usd": "248,000,000 - 346,000,000"
+      },
+      "zoning_overlays": {
+        "overlay_types": [
+          "Family Growth Residential Encouragement Zone",
+          "Transit-Oriented Development Incentive District",
+          "Academic Proximity Planning Buffer",
+          "New Home Builder Transparency Overlay",
+          "Future Development Reserve Zone"
+        ]
+      },
+      "future_growth": {
+        "parade_lawn": {
+          "name": "Parade Lawn",
+          "type": "Rotating development parcel for seasonal home showcases and outdoor builder expos",
+          "features": [
+            "Model walk-through homes",
+            "Pop-up design workshops",
+            "Builder presentations on sustainable planning"
+          ],
+          "location": "Southern edge of Willow Creek Commons, adjacent to trail loop"
+        },
+        "builder_pavilion": {
+          "name": "Builder’s Pavilion",
+          "type": "Civic-run exhibitor and application hub for semi-custom homebuilders",
+          "purpose": "Streamline builder-resident engagement, show off innovation, and distribute permit education",
+          "operated_by": "Summit City Planning Office and Willow Creek Civic Partners"
+        }
+      },
+      "estimated_individual_station_value_usd": "155,000,000 - 210,000,000",
+      "estimated_combined_area_value_usd": "506,000,000 - 699,000,000"
+    }
+  ],
+  [
+    {
+      "name": "General Hospital Station",
+      "nickname": "The Pulse Level",
+      "line": "Red Line",
+      "type": "Medical Access and Vital Service Stop",
+      "design_style": "Brutalist-forward with warm-paneled accents and adaptive gradient lighting",
+      "features": [
+        "Concrete archways with etched heart monitor patterns and patient story quotes",
+        "Elevator bank wrapped in glass mosaic honoring frontline workers",
+        "Patient assist zone with shuttle dispatch canopy and temperature-controlled waiting bay",
+        "Skyline-view perch overlooking the General Hospital campus on the hill"
+      ],
+      "function": "Primary access point for emergency services, medical staff, visiting families, and long-term care commuters",
+      "transit_data": {
+        "average_daily_footfall": "26,800 passengers",
+        "modal_split": {
+          "light_rail": "51%",
+          "bus": "34%",
+          "medical shuttle": "15%"
+        },
+        "served_bus_routes": [880, 882],
+        "campus_shuttle_service": [
+          "General Hospital Blue Line",
+          "Visitor Connect Express",
+          "Staff Rapid Loop"
+        ]
+      },
+      "neighborhood": {
+        "name": "Clifftop Medical District",
+        "vibe": "Uptempo, essential, densely lived-in—a place where scrubs meet families and routine meets urgency",
+        "landmarks": [
+          {
+            "name": "General Hospital Main Campus",
+            "type": "Brutalist flagship facility with emergency, research, and outpatient towers",
+            "estimated_value_usd": "540,000,000 - 720,000,000"
+          },
+          {
+            "name": "Wellbridge Walk",
+            "type": "Public stair-garden path from the base platform up to patient pavilion",
+            "estimated_value_usd": "22,000,000 - 33,000,000"
+          },
+          {
+            "name": "South Summit Medical Archives",
+            "type": "Historic building of medical records, training videos, and rotating science exhibits",
+            "estimated_value_usd": "28,000,000 - 38,000,000"
+          },
+          {
+            "name": "Redridge Center Mall",
+            "type": "Legacy indoor mall with pharmacies, call centers, and civic utility anchors",
+            "estimated_value_usd": "66,000,000 - 94,000,000"
+          }
+        ],
+        "estimated_landmark_value_combined_usd": "656,000,000 - 885,000,000"
+      },
+      "residential_assets": {
+        "executive_towers": [],
+        "micro_neighborhoods": [
+          {
+            "name": "Oxycline Flats",
+            "style": "60s–80s mid-rises with textured façades and deep balconies overlooking the hospital hill",
+            "residents": [
+              "Medical technicians",
+              "Transcribers",
+              "Traveling nurses"
+            ],
+            "vibe": "Emergency sirens as lullabies, neon brake lights, hospital break-room spillover laughs",
+            "estimated_value_usd": "118,000,000 - 172,000,000"
+          },
+          {
+            "name": "Cardio Terrace",
+            "style": "Stacked rowhouses and apartments along slope-facing arteries with mature shade trees",
+            "residents": [
+              "Cafeteria managers",
+              "Family members in long-term stays",
+              "Post-op home health teams"
+            ],
+            "vibe": "Soft-boil streetlight glow, leaf-swept curbs, folded scrubs drying on balconies",
+            "estimated_value_usd": "102,000,000 - 138,000,000"
+          }
+        ],
+        "estimated_micro_neighborhoods_value_combined_usd": "220,000,000 - 310,000,000"
+      },
+      "zoning_overlays": {
+        "overlay_types": [
+          "Medical Facilities Priority Access Zone",
+          "Emergency Response Connectivity Buffer",
+          "Aging Infrastructure Revitalization Overlay",
+          "Health Workforce Housing Incentive District"
+        ]
+      },
+      "estimated_individual_station_value_usd": "215,000,000 - 295,000,000",
+      "estimated_combined_area_value_usd": "1,091,000,000 - 1,490,000,000"
+    }
+  ],
+  [
+    {
+      "name": "Old Mill Road Station",
+      "nickname": "The Brew Line Bend",
+      "line": "Red Line",
+      "type": "Industrial-Heritage Transition Node",
+      "design_style": "Brick-and-iron industrial chic with exposed timber beams and amber backlighting",
+      "features": [
+        "Arched steel canopy with etched hops and wheat motifs honoring brewery patronage",
+        "Platform clock tower made from repurposed grain silo components",
+        "Brewline Bench Row—tap-handle-shaped seating with donation plaques from the brewery founders",
+        "Wayfinding columns styled after fermentation tanks with map engravings burned into wood"
+      ],
+      "function": "Legacy industrial access point revitalized by small business growth, culinary anchors, and future mixed-use plans",
+      "transit_data": {
+        "average_daily_footfall": "11,200 passengers",
+        "modal_split": {
+          "light_rail": "52%",
+          "bus": "34%",
+          "pedestrian/bike": "14%"
+        },
+        "served_bus_routes": [900]
+      },
+      "neighborhood": {
+        "name": "Old Mill Corridor",
+        "vibe": "Rugged, repurposed, quietly surging—where brick warehouses meet bread ovens and band rehearsals",
+        "landmarks": [
+          {
+            "name": "Summit Foundry Brewing Co.",
+            "type": "Oldest operational brewery in Summit with copper-brew tower and beer history gallery",
+            "estimated_value_usd": "85,000,000 - 120,000,000"
+          },
+          {
+            "name": "The Gearhall",
+            "type": "Historic millworks venue now used for co-working and metal arts residencies",
+            "estimated_value_usd": "36,000,000 - 52,000,000"
+          },
+          {
+            "name": "Mill Market Mews",
+            "type": "Food hall and maker hub with boutique spice shop and fermentation school",
+            "estimated_value_usd": "44,000,000 - 58,000,000"
+          },
+          {
+            "name": "Old Mill Archives",
+            "type": "Civil-era stone building converted into a walkable history museum and oral history booth",
+            "estimated_value_usd": "20,000,000 - 28,000,000"
+          }
+        ],
+        "estimated_landmark_value_combined_usd": "185,000,000 - 258,000,000"
+      },
+      "residential_assets": {
+        "executive_towers": [],
+        "micro_neighborhoods": [
+          {
+            "name": "Brickline Row",
+            "style": "Converted warehouse lofts with clerestory windows and pulley-balcony nooks",
+            "residents": [
+              "Graphic designers",
+              "Craft brewers",
+              "Street muralists"
+            ],
+            "vibe": "Skateboards in stairwells, hop-scented courtyards, chalkboard dinner invites",
+            "estimated_value_usd": "88,000,000 - 120,000,000"
+          },
+          {
+            "name": "Millstone Terrace",
+            "style": "Modest mid-century walkups with gear-accented gates and patio zines",
+            "residents": [
+              "Bike couriers",
+              "Aging metalworkers",
+              "Young couples with pop-up dreams"
+            ],
+            "vibe": "String lights in shared gardens, porch pottery wheels, thrift finds turned furniture",
+            "estimated_value_usd": "62,000,000 - 84,000,000"
+          }
+        ],
+        "estimated_micro_neighborhoods_value_combined_usd": "150,000,000 - 204,000,000"
+      },
+      "zoning_overlays": {
+        "overlay_types": [
+          "Industrial-Cultural Transition Zone",
+          "Brewery Benefactor Partnership Overlay",
+          "Mixed-Use Artisan Expansion Buffer",
+          "Heritage Façade Preservation District"
+        ]
+      },
+      "future_growth": {
+        "development_lots": "Significant acreage south of the brewery earmarked for future commercial and residential expansion",
+        "plans_in_discussion": [
+          "Transit-oriented business incubator district",
+          "Stacked live-work artisan housing clusters",
+          "Event grounds for BrewFest, music markets, and gearhead swap meets"
+        ],
+        "brewery_investment_notes": {
+          "summit_foundry_donation": "$7,500,000 toward station construction and local urban trailway",
+          "conditions": "Architectural homage, beer history panel display, and community board naming rights"
+        }
+      },
+      "estimated_individual_station_value_usd": "185,000,000 - 260,000,000",
+      "estimated_combined_area_value_usd": "520,000,000 - 722,000,000"
+    }
+  ],
+  [
+    {
+      "name": "South Hills Station",
+      "nickname": "The Lantern Overlook",
+      "line": "Red Line",
+      "type": "Scenic Ridge Community Stop",
+      "design_style": "Terrace-style platform with glass-pane wind shelters and natural stone garden walls",
+      "features": [
+        "Elevated viewing perch with telescope nooks and evening picnic platforms",
+        "Twilight chime bell that softly rings at sunset from the hillside wall",
+        "Panoramic mural of Summit City’s skyline etched into station railing with topographic markers",
+        "Skyline orientation poles that light up when the signal tower beacon activates"
+      ],
+      "function": "Hilltop access node connecting serene residential enclaves, park trails, and one of the city’s most beloved twilight traditions",
+      "transit_data": {
+        "average_daily_footfall": "9,700 passengers",
+        "modal_split": {
+          "light_rail": "48%",
+          "bus": "42%",
+          "pedestrian/bike": "10%"
+        },
+        "served_bus_routes": [910, 911]
+      },
+      "neighborhood": {
+        "name": "South Hills Ridge",
+        "vibe": "Airy, contemplative, quietly magnetic—where porch lights flicker below a hillside beacon",
+        "landmarks": [
+          {
+            "name": "The Signal Tower",
+            "type": "Iconic communications spire that lights up the hill on select nights with a spectral glow that captivates the city",
+            "estimated_value_usd": "42,000,000 - 60,000,000"
+          },
+          {
+            "name": "Beacon Terrace Trail",
+            "type": "Hill-crown walking path with sweeping skyline views and stargazer benches",
+            "estimated_value_usd": "18,000,000 - 26,000,000"
+          },
+          {
+            "name": "South Hills Conservancy Park",
+            "type": "Quiet parklands with garden groves and a hillside playground under old pines",
+            "estimated_value_usd": "36,000,000 - 52,000,000"
+          },
+          {
+            "name": "Twilight House",
+            "type": "Community arts retreat and observatory café named for the tower’s glow",
+            "estimated_value_usd": "22,000,000 - 30,000,000"
+          }
+        ],
+        "estimated_landmark_value_combined_usd": "118,000,000 - 168,000,000"
+      },
+      "residential_assets": {
+        "executive_towers": [],
+        "micro_neighborhoods": [
+          {
+            "name": "Lantern Heights",
+            "style": "Winding hillside homes with tower-facing picture windows and deckside telescopes",
+            "residents": [
+              "Retired meteorologists",
+              "Novelists",
+              "Late-night amateur astronomers"
+            ],
+            "vibe": "Windchimes, tea in wool sweaters, reverent silence when the tower ignites",
+            "estimated_value_usd": "92,000,000 - 132,000,000"
+          },
+          {
+            "name": "South Bend Hollow",
+            "style": "Quiet cul-de-sacs and sloped-roof townhomes nestled among eucalyptus groves",
+            "residents": [
+              "Nonprofit directors",
+              "Night-shift nurses",
+              "Quiet gardeners"
+            ],
+            "vibe": "Steep driveways, porch lamps flickering to tower pulse, kids bundled for moonlight picnics",
+            "estimated_value_usd": "76,000,000 - 104,000,000"
+          }
+        ],
+        "estimated_micro_neighborhoods_value_combined_usd": "168,000,000 - 236,000,000"
+      },
+      "zoning_overlays": {
+        "overlay_types": [
+          "Hillside Lighting Sensitivity Zone",
+          "Viewline Preservation Overlay",
+          "Low-Impact Woodland Access Buffer",
+          "Night Beacon Cultural Heritage District"
+        ]
+      },
+      "estimated_individual_station_value_usd": "135,000,000 - 185,000,000",
+      "estimated_combined_area_value_usd": "539,000,000 - 757,000,000"
+    }
+  ],
+  [
+  {
+    "name": "Red Line Terminus Far South",
+    "nickname": "The Apex Gate",
+    "line": "Red Line",
+    "type": "Destination-Facing Suburban Terminus",
+    "design_style": "Angular urban-edge canopy with LED-lit architectural fins and promenade arcades",
+    "features": [
+      "Platform promenade with date-night seating alcoves and transit-integrated ticketing kiosks",
+      "Neon directional lights synced to IMAX showtimes and outlet flash sales",
+      "Digital skyline projection wall displaying concept art of upcoming development zones",
+      "Transit concierge booth with evening restaurant menus, rideshare lanes, and skyline-view reservations"
+    ],
+    "function": "Red Line’s experiential endpoint, merging lifestyle, retail, and future-forward housing into a regional draw",
+    "transit_data": {
+      "average_daily_footfall": "14,900 passengers",
+      "modal_split": {
+        "light_rail": "44%",
+        "regional_bus": "42%",
+        "rideshare/pedestrian": "14%"
+      },
+      "served_bus_routes": [920, 925]
+    },
+    "neighborhood": {
+      "name": "South Apex District",
+      "vibe": "Emergent, aspirational, amenity-rich—where date nights, outlet hauls, and skyline bets converge",
+      "landmarks": [
+        {
+          "name": "Starlight IMAX & Dining Lounge",
+          "type": "Boutique cinema complex with reserved reclining seats, rooftop cocktail patio, and post-show dessert bar",
+          "estimated_value_usd": "78,000,000 - 110,000,000"
+        },
+        {
+          "name": "Summit South Outlet Plaza",
+          "type": "Modern outdoor retail center with flagship outlet brands, evening yoga courtyard, and pop-up vendor lanes",
+          "estimated_value_usd": "130,000,000 - 180,000,000"
+        },
+        {
+          "name": "Dining Loop Promenade",
+          "type": "Brick-lined restaurant alley with dessert carts, fire-lit patios, and digital wine-pairing menus",
+          "estimated_value_usd": "52,000,000 - 70,000,000"
+        },
+        {
+          "name": "Apex Core Commons",
+          "type": "Flexible civic plaza used for food truck rodeos, real estate showcases, and weekend date concerts",
+          "estimated_value_usd": "20,000,000 - 28,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "280,000,000 - 388,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [
+        {
+          "name": "Apex One Residences",
+          "style": "Glass-angled luxury towers with concierge gardens, infinity fitness decks, and skyline-linked drone delivery pads",
+          "features": [
+            "Smart glass balconies",
+            "Transit-level wine lockers",
+            "Pre-furnished staging suites for visiting investors"
+          ],
+          "estimated_value_usd": "220,000,000 - 310,000,000"
+        }
+      ],
+      "micro_neighborhoods": [
+        {
+          "name": "Villa Pair Lane",
+          "style": "Paired single-family modern homes with elevated porches, semi-custom landscaping, and weekend viewing porches",
+          "residents": [
+            "Remote executives",
+            "Pilot startup founders",
+            "Couples seeking edge-of-city quiet"
+          ],
+          "vibe": "Dog-walk doublewide drives, smart keyless breezeways, sunset-view wine chats",
+          "estimated_value_usd": "142,000,000 - 190,000,000"
+        },
+        {
+          "name": "Showhome Horizon",
+          "style": "Rotating seasonal showcase block with model homes by top semi-custom builders",
+          "residents": [
+            "Builder reps",
+            "Prospective buyers",
+            "Architect interns"
+          ],
+          "vibe": "Framed-in-progress windows, coffee-cart cul-de-sacs, clipboard couples on weekends",
+          "estimated_value_usd": "102,000,000 - 140,000,000"
+        }
+      ],
+      "estimated_residential_value_combined_usd": "464,000,000 - 640,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Transit-Lifestyle Integration Overlay",
+        "Live-Entertainment Development Zone",
+        "Pilot Luxury Housing Incentive Buffer",
+        "Flex-Retail Housing Expansion Corridor",
+        "Semi-Custom Builder Rotation District"
+      ]
+    },
+    "future_growth": {
+      "strategic_notes": [
+        "Designated skyline tower cluster pads north of the cinema promenade",
+        "Permit-ready parcels for modular stacked housing with express-bus interlinking",
+        "Showroom and viewing decks planned atop outlet’s future expansion wing"
+      ],
+      "development_vision": "Merge Summit’s next lifestyle frontier with streamlined mobility and urban-rural edge flair"
+    },
+    "estimated_individual_station_value_usd": "245,000,000 - 330,000,000",
+    "estimated_combined_area_value_usd": "989,000,000 - 1,358,000,000"
+  }
+]
+]

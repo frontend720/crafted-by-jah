@@ -1,0 +1,587 @@
+[
+  {
+    "name": "Green Line Terminus North",
+    "nickname": "The Mountain Gate",
+    "line": "Green Line",
+    "type": "Suburban-Wildland Interface Stop",
+    "design_style": "Rugged A-frame design with heavy timber, natural stone, and expansive glass looking towards the mountains",
+    "features": [
+      "A large stone hearth with a digital fire display in the main waiting area",
+      "Live trail condition and weather feeds for the adjacent mountain parks",
+      "Secure, long-term parking for hikers and campers",
+      "A small outfitter café serving coffee and trail snacks"
+    ],
+    "function": "Northernmost terminus serving mountain-adjacent residential communities and acting as a primary access point for regional hiking and recreation.",
+    "transit_data": {
+      "average_daily_footfall": "8,900 passengers",
+      "modal_split": {
+        "light_rail": "55%",
+        "bus": "30%",
+        "car/pedestrian": "15%"
+      },
+      "served_bus_routes": ["101", "102"]
+    },
+    "neighborhood": {
+      "name": "Mountain's Foot",
+      "vibe": "Adventurous, serene, and self-reliant—where the city grid gives way to mountain trails.",
+      "landmarks": [
+        {
+          "name": "North Summit Regional Park Trailhead",
+          "type": "Primary entry point to an extensive network of hiking and mountain biking trails",
+          "estimated_value_usd": "45,000,000 - 65,000,000"
+        },
+        {
+          "name": "The Base Camp Bar & Grill",
+          "type": "Popular post-hike gathering spot for food and drinks",
+          "estimated_value_usd": "6,000,000 - 10,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "51,000,000 - 75,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "Pine Ridge Estates",
+          "style": "Large custom homes on wooded lots with panoramic views",
+          "residents": [
+            "Outdoor enthusiasts",
+            "Professionals seeking privacy",
+            "Well-established families"
+          ],
+          "vibe": "The scent of pine, quiet winding roads, and a deep connection to the natural environment",
+          "estimated_value_usd": "160,000,000 - 230,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "160,000,000 - 230,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Wildland-Urban Interface Zone",
+        "Hillside Protection Overlay",
+        "Low-Density Residential Zoning"
+      ]
+    },
+    "estimated_individual_station_value_usd": "110,000,000 - 150,000,000",
+    "estimated_combined_area_value_usd": "321,000,000 - 455,000,000"
+  },
+  {
+    "name": "Mountain View",
+    "nickname": "The Collegiate Overlook",
+    "line": "Green Line",
+    "type": "Educational-Residential Stop",
+    "design_style": "Modern campus-integrated design with brick and metal panels, featuring open study areas and wide, inviting staircases",
+    "features": [
+      "Direct pedestrian bridge to the Mountain View Community College campus",
+      "Outdoor plaza with tiered seating for students and the public",
+      "Digital bulletin boards with campus events and transit information",
+      "Station art created by students from the college's art program"
+    ],
+    "function": "Serves the Mountain View Community College and the surrounding residential neighborhoods, acting as a hub for students and faculty.",
+    "transit_data": {
+      "average_daily_footfall": "11,500 passengers",
+      "modal_split": {
+        "light_rail": "60%",
+        "bus": "35%",
+        "pedestrian": "5%"
+      },
+      "served_bus_routes": ["105"]
+    },
+    "neighborhood": {
+      "name": "College Park",
+      "vibe": "Youthful, academic, and aspirational, with a rhythm dictated by the school calendar.",
+      "landmarks": [
+        {
+          "name": "Mountain View Community College",
+          "type": "A sprawling campus known for its strong technical programs and beautiful mountain backdrop",
+          "estimated_value_usd": "150,000,000 - 210,000,000"
+        },
+        {
+          "name": "The Study Grind Café",
+          "type": "A popular 24/7 coffee shop and study spot for students",
+          "estimated_value_usd": "3,000,000 - 5,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "153,000,000 - 215,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "Professor's Row",
+          "style": "Modest single-family homes and duplexes popular with college faculty and staff",
+          "residents": [
+            "College professors and instructors",
+            "Graduate students",
+            "Long-term local families"
+          ],
+          "vibe": "Quiet streets, scholarly discussions at the local park, and a strong focus on education",
+          "estimated_value_usd": "110,000,000 - 150,000,000"
+        },
+        {
+          "name": "The View Apartments",
+          "style": "Large apartment complexes catering primarily to the student population",
+          "residents": [
+            "College students"
+          ],
+          "vibe": "Late-night study sessions, the ebb and flow of students between classes, and a constant youthful energy",
+          "estimated_value_usd": "95,000,000 - 130,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "205,000,000 - 280,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Educational Institutional Zone",
+        "High-Density Residential Overlay (Student Housing)",
+        "Transit-Oriented Development Incentive District"
+      ]
+    },
+    "estimated_individual_station_value_usd": "130,000,000 - 180,000,000",
+    "estimated_combined_area_value_usd": "488,000,000 - 675,000,000"
+  },
+  {
+    "name": "Chancellor Hills Shopping Center",
+    "nickname": "Northwood Junction",
+    "line": "Green Line",
+    "type": "Commercial-Transit Hub",
+    "design_style": "Modern, open-air design integrated directly with the shopping mall's entrance, featuring extensive glass and steel elements",
+    "features": [
+      "A covered walkway leading directly into the mall's main concourse",
+      "A large, well-lit bus plaza for easy transfers",
+      "Art installations sponsored by the mall's flagship stores"
+    ],
+    "function": "A major hub for retail, dining, and entertainment, connecting shoppers from across the city.",
+    "transit_data": {
+      "average_daily_footfall": "18,500 passengers",
+      "modal_split": {
+        "light_rail": "55%",
+        "bus": "40%",
+        "pedestrian": "5%"
+      },
+      "served_bus_routes": ["620", "621", "625", "201", "203"],
+      "transfer_link": {
+        "is_transfer_station": true,
+        "connects_to": ["Blue Line"]
+      }
+    },
+    "neighborhood": {
+      "name": "Chancellor Hills",
+      "vibe": "Busy, consumer-focused, and convenient—the epicenter of the city's retail scene.",
+      "landmarks": [
+        {
+          "name": "Chancellor Hills Mall",
+          "type": "Large indoor shopping mall with anchor department stores, a cinema, and a food court",
+          "estimated_value_usd": "300,000,000 - 450,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "300,000,000 - 450,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "The Courtyards at Chancellor",
+          "style": "Gated community of garden-style apartments and townhomes",
+          "residents": [
+            "Retail managers",
+            "Young professionals",
+            "Service industry workers"
+          ],
+          "vibe": "Quiet and orderly, with a focus on convenience and proximity to shopping and work",
+          "estimated_value_usd": "150,000,000 - 210,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "150,000,000 - 210,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Major Commercial Retail Zone",
+        "Transit Hub Incentive District"
+      ]
+    },
+    "estimated_individual_station_value_usd": "180,000,000 - 250,000,000",
+    "estimated_combined_area_value_usd": "630,000,000 - 910,000,000"
+  },
+    {
+    "name": "Forest Hills",
+    "nickname": "The Green Canopy",
+    "line": "Green Line",
+    "type": "Established Residential Stop",
+    "design_style": "Mid-century modern aesthetic with clean lines, large glass panes, and shelters that integrate into the surrounding mature tree canopy",
+    "features": [
+      "Platforms and walkways designed to preserve existing large trees",
+      "Quiet, sound-dampening materials used in construction",
+      "Community art celebrating the neighborhood's history and natural beauty",
+      "Integrated 'Safe Routes to School' pathways for local children"
+    ],
+    "function": "Serves a tranquil, affluent, and well-established residential area known for its leafy streets and family-friendly atmosphere.",
+    "transit_data": {
+      "average_daily_footfall": "6,200 passengers",
+      "modal_split": {
+        "light_rail": "70%",
+        "bus": "20%",
+        "pedestrian": "10%"
+      },
+      "served_bus_routes": ["310", "311"]
+    },
+    "neighborhood": {
+      "name": "Forest Hills Estates",
+      "vibe": "Peaceful, affluent, and green—an oasis of suburban calm with strong community roots.",
+      "landmarks": [
+        {
+          "name": "Forest Hills Country Club",
+          "type": "A private golf and social club that is a central landmark of the community",
+          "estimated_value_usd": "70,000,000 - 100,000,000"
+        },
+        {
+          "name": "The Old Grove Park",
+          "type": "A cherished local park with old-growth trees, walking paths, and a historic bandstand",
+          "estimated_value_usd": "25,000,000 - 40,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "95,000,000 - 140,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "The Grove",
+          "style": "Sprawling single-family homes from various architectural periods, all on large, wooded lots",
+          "residents": [
+            "Corporate executives",
+            "Medical professionals",
+            "Legacy families"
+          ],
+          "vibe": "Manicured lawns, quiet streets, and a strong emphasis on privacy and exclusivity",
+          "estimated_value_usd": "350,000,000 - 500,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "350,000,000 - 500,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Large-Lot Single-Family Residential Zone",
+        "Neighborhood Conservation District",
+        "Tree Canopy Preservation Ordinance"
+      ]
+    },
+    "estimated_individual_station_value_usd": "120,000,000 - 170,000,000",
+    "estimated_combined_area_value_usd": "565,000,000 - 810,000,000"
+  },
+  {
+    "name": "Central Station",
+    "nickname": "The Grand Confluence",
+    "line": "Green Line",
+    "type": "Intermodal Transfer Hub",
+    "design_style": "Cathedral-scale transit hall with arched glass vaults",
+    "features": [
+      "Interactive ceiling map of Summit's transit evolution",
+      "Terraced ticketing concourse with sculptural light columns",
+      "Surround-sound boarding alerts in multiple languages",
+      "Dining promenade with micro-kitchens from all districts"
+    ],
+    "function": "Summit City's main light rail interchange and civic showcase. The bustling heart of the city's public transport network.",
+    "transit_data": {
+      "average_daily_footfall": "64,000 passengers",
+      "modal_split": {
+        "light_rail": "62%",
+        "bus/taxi": "25%",
+        "pedestrian/bike": "13%"
+      },
+      "served_bus_routes": ["15+ city bus routes"],
+      "transfer_link": {
+        "is_transfer_station": true,
+        "connects_to": ["Red Line", "Blue Line", "Yellow Line", "Martin Express Rail"]
+      }
+    },
+    "neighborhood": {
+      "name": "Civic Plaza Core",
+      "vibe": "Monumental, multicultural, and perpetually in motion.",
+      "landmarks": [
+        {
+          "name": "Summit Grand Hall",
+          "type": "Civic event venue and historical monument",
+          "estimated_value_usd": "150,000,000 - 220,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "150,000,000 - 220,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [
+        {
+          "name": "Union Heights",
+          "style": "Mixed-income complex with civic art installations",
+          "features": [
+            "Subsidized units overlooking landmark corridors",
+            "Transit study lab in community center"
+          ],
+          "estimated_value_usd": "220,000,000 - 310,000,000"
+        }
+      ],
+      "estimated_residential_value_combined_usd": "220,000,000 - 310,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Civic Interchange Priority Zone",
+        "Mixed-Income Mobility District"
+      ]
+    },
+    "estimated_individual_station_value_usd": "400,000,000 - 550,000,000",
+    "estimated_combined_area_value_usd": "770,000,000 - 1,080,000,000"
+  },
+  {
+    "name": "Industrial Park",
+    "nickname": "The Gearworks",
+    "line": "Green Line",
+    "type": "Heavy Commercial/Industrial Access",
+    "design_style": "No-frills brutalist design with heavy concrete forms, steel reinforcements, and functional, high-capacity shelters",
+    "features": [
+      "Pedestrian overpasses connecting the station directly to major industrial campuses",
+      "Dedicated shuttle bus loops for corporate partners",
+      "High-capacity elevators for moving large groups of workers",
+      "Durable, low-maintenance materials throughout"
+    ],
+    "function": "Provides primary transit access to the city's largest concentration of manufacturing, logistics, and industrial businesses.",
+    "transit_data": {
+      "average_daily_footfall": "15,000 passengers",
+      "modal_split": {
+        "light_rail": "80%",
+        "bus": "18%",
+        "pedestrian": "2%"
+      },
+      "served_bus_routes": ["Corporate Shuttles"]
+    },
+    "neighborhood": {
+      "name": "Summit Industrial Complex",
+      "vibe": "Productive, gritty, and purposeful—a landscape of smokestacks, warehouses, and constant activity.",
+      "landmarks": [
+        {
+          "name": "The Steelworks",
+          "type": "A massive, historic steel manufacturing plant, still partially in operation",
+          "estimated_value_usd": "200,000,000 - 280,000,000"
+        },
+        {
+          "name": "The Freight Yard",
+          "type": "A sprawling rail yard and logistics hub that is central to the region's supply chain",
+          "estimated_value_usd": "180,000,000 - 250,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "380,000,000 - 530,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [],
+      "estimated_micro_neighborhoods_value_combined_usd": "0"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Heavy Industrial Zone (I-2)",
+        "Freight and Logistics Priority Corridor"
+      ]
+    },
+    "estimated_individual_station_value_usd": "90,000,000 - 125,000,000",
+    "estimated_combined_area_value_usd": "470,000,000 - 655,000,000"
+  },
+    {
+    "name": "Chauncey Arena Junction",
+    "nickname": "Park Junction",
+    "line": "Green Line",
+    "type": "Entertainment & Recreation Hub",
+    "design_style": "Dynamic and modern, with large, sweeping curves, digital display ribbons, and color-changing LED lighting that can be customized for events",
+    "features": [
+      "Massive, high-capacity platforms and concourses to handle event crowds",
+      "Direct, covered walkway to Chauncey Arena entrance",
+      "Numerous food and merchandise kiosks that open during events",
+      "A large public plaza that serves as a pre-game or pre-concert gathering spot"
+    ],
+    "function": "The primary gateway to Chauncey Arena, the city's premier venue for major league sports and large-scale concerts and events.",
+    "transit_data": {
+      "average_daily_footfall": "10,000 passengers (non-event), 40,000+ (event)",
+      "modal_split": {
+        "light_rail": "75%",
+        "bus": "20%",
+        "pedestrian": "5%"
+      },
+      "served_bus_routes": ["401", "402", "Special Event Shuttles"],
+      "transfer_link": {
+        "is_transfer_station": true,
+        "connects_to": ["Red Line"]
+      }
+    },
+    "neighborhood": {
+      "name": "The Arena District",
+      "vibe": "Energetic, loud, and exciting—a neighborhood that comes alive with the roar of the crowd.",
+      "landmarks": [
+        {
+          "name": "Chauncey Arena",
+          "type": "A state-of-the-art sports and entertainment arena",
+          "estimated_value_usd": "600,000,000 - 850,000,000"
+        },
+        {
+          "name": "Victory Plaza",
+          "type": "An outdoor plaza with large screens, sports bars, and restaurants",
+          "estimated_value_usd": "50,000,000 - 75,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "650,000,000 - 925,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "The Fan Flats",
+          "style": "Modern apartment buildings with smaller units catering to young professionals and sports fans",
+          "residents": [
+            "Young professionals",
+            "Arena and team employees",
+            "Dedicated sports fans"
+          ],
+          "vibe": "A constant buzz of excitement, lively sports bars on every corner, and balconies decorated with team colors",
+          "estimated_value_usd": "120,000,000 - 170,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "120,000,000 - 170,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Entertainment District Overlay",
+        "High-Density Mixed-Use Zone",
+        "Pedestrian Priority Zone on Event Days"
+      ]
+    },
+    "estimated_individual_station_value_usd": "250,000,000 - 350,000,000",
+    "estimated_combined_area_value_usd": "1,020,000,000 - 1,445,000,000"
+  },
+  {
+    "name": "Fairgrounds",
+    "nickname": "The Midway Stop",
+    "line": "Green Line",
+    "type": "Event & Exhibition Access",
+    "design_style": "Festive and functional with colorful canopies, wide open plazas, and durable materials designed to handle large, seasonal crowds",
+    "features": [
+      "Extra-wide gates and flexible queueing areas for ticketing",
+      "Direct access to the main entrance of the city fairgrounds",
+      "Abundant lighting for evening events",
+      "Permanent restroom facilities and first-aid station"
+    ],
+    "function": "Provides direct access to the city's fairgrounds, which hosts the annual state fair, trade shows, festivals, and other large-scale public events.",
+    "transit_data": {
+      "average_daily_footfall": "4,000 (non-event), 25,000+ (event)",
+      "modal_split": {
+        "light_rail": "60%",
+        "bus": "20%",
+        "car/pedestrian": "20%"
+      },
+      "served_bus_routes": ["Special Event Services"]
+    },
+    "neighborhood": {
+      "name": "Exposition Park",
+      "vibe": "Seasonal, festive, and traditional—a place of nostalgia and large-scale community celebration.",
+      "landmarks": [
+        {
+          "name": "Summit City Fairgrounds & Exhibition Center",
+          "type": "A large complex of exhibition halls, outdoor stages, a midway, and agricultural barns",
+          "estimated_value_usd": "120,000,000 - 170,000,000"
+        },
+        {
+          "name": "The Livestock Pavilion",
+          "type": "A historic arena used for livestock shows and equestrian events",
+          "estimated_value_usd": "20,000,000 - 30,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "140,000,000 - 200,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "Carnival Courts",
+          "style": "Older, modest single-family homes and duplexes on a standard city grid",
+          "residents": [
+            "Working-class families",
+            "Long-term residents",
+            "Renters"
+          ],
+          "vibe": "A quiet, working-class neighborhood that becomes a hub of activity during fair season, with residents often renting out parking spaces",
+          "estimated_value_usd": "80,000,000 - 110,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "80,000,000 - 110,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Public Assembly & Event Zone",
+        "Seasonal Commercial Permit Zone"
+      ]
+    },
+    "estimated_individual_station_value_usd": "85,000,000 - 120,000,000",
+    "estimated_combined_area_value_usd": "305,000,000 - 430,000,000"
+  },
+  {
+    "name": "Green Line Terminus South",
+    "nickname": "The Meadowlands Gate",
+    "line": "Green Line",
+    "type": "Suburban-Recreational Terminus",
+    "design_style": "Park pavilion style with open-air shelters, wood-and-stone construction, and landscaping that blends into the adjacent regional park",
+    "features": [
+      "Direct trail access to the South Meadowlands Regional Park",
+      "A large park-and-ride facility catering to commuters and park visitors",
+      "A community plaza with picnic tables and a small playground",
+      "Bus loop for feeder routes serving sprawling residential districts"
+    ],
+    "function": "Southern anchor of the Green Line, serving large residential districts and providing access to a major regional park.",
+    "transit_data": {
+      "average_daily_footfall": "10,500 passengers",
+      "modal_split": {
+        "light_rail": "50%",
+        "bus": "35%",
+        "car/pedestrian": "15%"
+      },
+      "served_bus_routes": ["501", "502", "503"]
+    },
+    "neighborhood": {
+      "name": "South Meadowlands",
+      "vibe": "Suburban, active, and family-focused, with life revolving around schools, sports, and the park.",
+      "landmarks": [
+        {
+          "name": "South Meadowlands Regional Park",
+          "type": "An expansive park with sports complexes, fishing ponds, and large natural areas",
+          "estimated_value_usd": "90,000,000 - 130,000,000"
+        },
+        {
+          "name": "The Sportsplex",
+          "type": "A large, public complex of soccer fields, baseball diamonds, and basketball courts within the park",
+          "estimated_value_usd": "40,000,000 - 60,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "130,000,000 - 190,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "The Meadows",
+          "style": "Tracts of newer, large single-family homes in a classic suburban layout",
+          "residents": [
+            "Families with children",
+            "Commuters",
+            "Youth sports coaches"
+          ],
+          "vibe": "The sound of kids playing, minivans in driveways, and weekends spent at the sports fields",
+          "estimated_value_usd": "280,000,000 - 400,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "280,000,000 - 400,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Master-Planned Community Zone",
+        "Public Recreation Zone",
+        "Suburban Transit Integration Zone"
+      ]
+    },
+    "estimated_individual_station_value_usd": "140,000,000 - 200,000,000",
+    "estimated_combined_area_value_usd": "550,000,000 - 790,000,000"
+  }
+]

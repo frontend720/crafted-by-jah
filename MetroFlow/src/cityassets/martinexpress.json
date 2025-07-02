@@ -1,0 +1,863 @@
+{
+  "city_assets_fact_sheet": {
+    "city_name": "Summit City",
+    "description": "A detailed valuation of key transit stations and their surrounding assets within the fictional Summit City, providing insights into infrastructure, economic impact, and urban planning.",
+    "currency_unit": "USD",
+    "valuation_assumptions": [
+      "High-value, developed economy comparable to a major global city.",
+      "Valuations reflect present and future economic, social, and functional value, not just construction cost."
+    ],
+    "stations": [
+      {
+        "name": "Financial District Station",
+        "nickname": "The Ledger Gate",
+        "line": "Martin Express Rail",
+        "type": "Transit Center",
+        "design_style": "Steel-and-glass atrium",
+        "features": [
+          "Kinetic LED tickers displaying market data and civic updates",
+          "Poetry fragments from Tubman U students",
+          "Escalators with brushed aluminum railings",
+          "Digital kiosks with transit and stock overlays"
+        ],
+        "function": "Primary transit gateway for Summit City's financial core",
+        "transit_data": {
+          "average_daily_footfall": "22,000 passengers",
+          "modal_split": {
+            "rail": "68%",
+            "bus": "22%",
+            "pedestrian_cyclist": "10%"
+          }
+        },
+        "neighborhood": {
+          "name": "The Ledger District",
+          "vibe": "Vertical city of commerce, civic ambition, and curated public space",
+          "landmarks": [
+            {
+              "name": "Summit Civic Exchange",
+              "type": "Hybrid stock exchange and public forum",
+              "estimated_value_usd": "900,000,000 - 1,300,000,000"
+            },
+            {
+              "name": "The Vault Café",
+              "type": "Espresso bar inside a decommissioned bank vault"
+            },
+            {
+              "name": "The Ledger Steps",
+              "type": "Terraced plaza for lunch, protest, and startup pitches"
+            },
+            {
+              "name": "Tubman U Satellite Campus",
+              "type": "Evening courses in urban economics and transit futures",
+              "estimated_value_usd": "150,000,000 - 250,000,000"
+            }
+          ],
+          "estimated_landmark_value_combined_usd": "75,000,000 - 120,000,000"
+        },
+        "residential_assets": {
+          "executive_towers": [
+            {
+              "name": "Executive Towers",
+              "style": "Neo-modern with civic motifs",
+              "features": [
+                "Concierge lobby with transit mural",
+                "Rooftop lounge overlooking Civic Exchange"
+              ]
+            },
+            {
+              "name": "Summit Apartments NYC",
+              "style": "Sleek glass tower with wellness focus",
+              "features": [
+                "Spa-grade amenities",
+                "Smart climate systems",
+                "Private shuttle to Langford Commons"
+              ]
+            },
+            {
+              "name": "Liberty Towers",
+              "style": "Legacy high-rise with updated interiors",
+              "features": [
+                "Quick maintenance response",
+                "Proximity to civic institutions"
+              ]
+            },
+            {
+              "name": "The Summit",
+              "style": "Prestige tower with panoramic views",
+              "features": ["Skyline vistas", "Favored by visiting dignitaries"]
+            },
+            {
+              "name": "Southbridge Towers",
+              "style": "Community-forward executive housing",
+              "features": [
+                "Luxury balanced with civic accessibility",
+                "Highly recommended by residents"
+              ]
+            }
+          ],
+          "estimated_executive_towers_value_combined_usd": "1,750,000,000 - 3,000,000,000",
+          "micro_neighborhoods": [
+            {
+              "name": "Ledger Row",
+              "style": "Brick townhomes with wrought-iron balconies",
+              "residents": [
+                "Civic analysts",
+                "Junior policy staffers",
+                "Retired economists"
+              ],
+              "vibe": "Quiet streets, bookshop cafés, community board events like 'Budget & Biscotti'"
+            },
+            {
+              "name": "Exchange Hollow",
+              "style": "Mid-rise co-ops with art deco facades",
+              "residents": ["Freelancers", "Archivists", "Transit historians"],
+              "vibe": "Murals of old stock tickers, pie-chart shaped garden, local zine called 'The Hollow Ledger'"
+            }
+          ],
+          "estimated_micro_neighborhoods_value_combined_usd": "200,000,000 - 400,000,000"
+        },
+        "zoning_overlays": {
+          "overlay_types": [
+            "Transit-Oriented Development (TOD)",
+            "Mixed-Use Commercial Core",
+            "Civic Preservation Buffer",
+            "Vertical Density Incentive Zone"
+          ]
+        },
+        "estimated_individual_station_value_usd": "1,800,000,000 - 2,500,000,000",
+        "estimated_combined_area_value_usd": "5,075,000,000 - 7,590,000,000"
+      },
+      {
+        "name": "Terminus North Station",
+        "nickname": "The Convergence Spire",
+        "line": "Martin Express Rail",
+        "type": "Regional Terminal Hub",
+        "design_style": "Triangular steel apex with geothermal lighting",
+        "features": [
+          "Vaulted ceilings lined with commuter murals",
+          "Interactive timeline tracing Summit rail evolution",
+          "Sound installations mimicking train cadence",
+          "Observation deck with views toward Glenvale ridgelines"
+        ],
+        "function": "Northern anchor point for regional commuter flow and intermodal transfers",
+        "transit_data": {
+          "average_daily_footfall": "28,500 passengers",
+          "modal_split": {
+            "rail": "72%",
+            "shuttle_bus": "18%",
+            "bike_pedestrian": "10%"
+          }
+        },
+        "neighborhood": {
+          "name": "Northpoint Innovation District",
+          "vibe": "A networked hub of research labs, minimalist architecture, and microgreen plazas",
+          "landmarks": [
+            {
+              "name": "Glenvale Research Node",
+              "type": "Collaborative AI and sustainable transit research facility",
+              "estimated_value_usd": "800,000,000 - 1,200,000,000"
+            },
+            {
+              "name": "Elevon Circle",
+              "type": "Transit-themed sculpture park with rotating installations"
+            },
+            {
+              "name": "Spire Café",
+              "type": "Smart café with crowd-tracking for low-traffic hours"
+            },
+            {
+              "name": "The Railworks Collective",
+              "type": "Coworking studio for mobility startups"
+            }
+          ],
+          "estimated_landmark_value_combined_usd": "100,000,000 - 180,000,000"
+        },
+        "residential_assets": {
+          "executive_towers": [
+            {
+              "name": "Northward Flats",
+              "style": "Green-tinted glass with modular interiors",
+              "features": ["Energy-positive design", "Cyclist-friendly amenities"]
+            },
+            {
+              "name": "Elevon Residences",
+              "style": "Cantilevered mid-rise with adaptive balconies",
+              "features": ["Work-from-home pods", "Transit tunnel access"]
+            },
+            {
+              "name": "The Echelon",
+              "style": "Executive enclave with algorithmic concierge",
+              "features": [
+                "Data-enhanced living",
+                "Lobby sculpture by Glenvale artists"
+              ]
+            }
+          ],
+          "estimated_executive_towers_value_combined_usd": "900,000,000 - 1,650,000,000",
+          "micro_neighborhoods": [
+            {
+              "name": "Spire Street",
+              "style": "Studio-style homes with kinetic facades",
+              "residents": [
+                "Urban data analysts",
+                "Transit designers",
+                "Remote freelancers"
+              ],
+              "vibe": "Smart mailboxes, rooftop garden co-ops, monthly 'Design and Debate' sessions"
+            },
+            {
+              "name": "Nova Blocks",
+              "style": "Art-driven modular housing",
+              "residents": [
+                "Creative technologists",
+                "Transit poets",
+                "Post-doc researchers"
+              ],
+              "vibe": "LED poetry panels, QR code murals, urban hammock pods"
+            }
+          ],
+          "estimated_micro_neighborhoods_value_combined_usd": "180,000,000 - 350,000,000"
+        },
+        "zoning_overlays": {
+          "overlay_types": [
+            "Innovation Corridor Zoning",
+            "Transit Tech Buffer Zone",
+            "Eco-Efficiency Development Incentive",
+            "Cyclist Priority Loop"
+          ]
+        },
+        "estimated_individual_station_value_usd": "2,000,000,000 - 2,800,000,000",
+        "estimated_combined_area_value_usd": "4,015,000,000 - 6,210,000,000"
+      },
+      {
+        "name": "Northern Spire Station",
+        "nickname": "The Ridge Gateway",
+        "line": "Martin Express Rail",
+        "type": "Scenic Connector Hub",
+        "design_style": "Skyglass pavilions with suspended footbridges",
+        "features": [
+          "Panoramic atrium with digital horizon tracker",
+          "Terrace plaza with native flora and skyline views",
+          "Interactive transit kiosk with neighborhood audio guides",
+          "Soft-tone platform lighting to reduce visual pollution"
+        ],
+        "function": "Gateway to Summit’s northern skyline communities and recreational enclaves",
+        "transit_data": {
+          "average_daily_footfall": "12,800 passengers",
+          "modal_split": {
+            "rail": "60%",
+            "bus": "28%",
+            "bike_pedestrian": "12%"
+          }
+        },
+        "neighborhood": {
+          "name": "Skybend Ridge",
+          "vibe": "Modern hillside living with walkable luxury and natural edges",
+          "landmarks": [
+            {
+              "name": "Ridgeview Promenade",
+              "type": "Outdoor dining corridor with overlook views",
+              "estimated_value_usd": "60,000,000 - 100,000,000"
+            },
+            {
+              "name": "Cypress Trails Gateway",
+              "type": "Multi-use trailhead for parks and canyon bikeways",
+              "estimated_value_usd": "20,000,000 - 40,000,000"
+            },
+            {
+              "name": "The Spire Café North",
+              "type": "Sunlit café with weekend jazz and skyline brunch"
+            },
+            {
+              "name": "Skybend Rec Center",
+              "type": "Community wellness hub and botanical rooftop courts"
+            }
+          ],
+          "estimated_landmark_value_combined_usd": "50,000,000 - 90,000,000"
+        },
+        "residential_assets": {
+          "executive_towers": [
+            {
+              "name": "Skyline Lofts",
+              "style": "Tiered glass residences with open-plan interiors",
+              "features": [
+                "Sunset balconies",
+                "Automated shading",
+                "Soundproof smart glazing"
+              ]
+            },
+            {
+              "name": "Summit Pointe North",
+              "style": "Modernist suburban high-rise",
+              "features": [
+                "Neighborhood shuttle concierge",
+                "Shared rooftop kitchens and herb gardens"
+              ]
+            },
+            {
+              "name": "The Ridgeway",
+              "style": "Luxury eco-homes on stepped terrain",
+              "features": [
+                "Graywater gardens",
+                "Transit incentives in lease contracts"
+              ]
+            }
+          ],
+          "estimated_executive_towers_value_combined_usd": "750,000,000 - 1,350,000,000",
+          "micro_neighborhoods": [
+            {
+              "name": "Cypress Pocket",
+              "style": "Bungalow-style homes with scenic set-backs",
+              "residents": [
+                "Park rangers",
+                "Remote software teams",
+                "Retired educators"
+              ],
+              "vibe": "Birdsong mornings, open porch book clubs, Friday farmers’ stalls"
+            },
+            {
+              "name": "Spire Hollow",
+              "style": "Light-density condos with curving pathways",
+              "residents": [
+                "Civic architects",
+                "Landscape photographers",
+                "Policy fellows at Glenvale Node"
+              ],
+              "vibe": "Elevation murals, bench libraries, data-synced dog-walking network"
+            }
+          ],
+          "estimated_micro_neighborhoods_value_combined_usd": "150,000,000 - 300,000,000"
+        },
+        "zoning_overlays": {
+          "overlay_types": [
+            "Hillside Conservation Overlay",
+            "Mixed-Use Viewscape Zone",
+            "Suburban Transit Incentive District",
+            "Pedestrian Slope Corridor"
+          ]
+        },
+        "estimated_individual_station_value_usd": "800,000,000 - 1,200,000,000",
+        "estimated_combined_area_value_usd": "1,830,000,000 - 3,080,000,000"
+      },
+      {
+        "name": "SubHub Station",
+        "nickname": "The Commons Junction",
+        "line": "Martin Express Rail",
+        "type": "Park-and-Ride Convergence Node",
+        "design_style": "Timber-paneled rotunda with glass canopy",
+        "features": [
+          "Community info wall with rotating neighborhood events",
+          "Clocktower-inspired skylight with seasonal sun dial",
+          "Bike-and-ride terminals with family-safe lock pods",
+          "Sound-buffered waiting alcoves for work-from-train professionals"
+        ],
+        "function": "Regional interchange linking suburban communities to central Summit",
+        "transit_data": {
+          "average_daily_footfall": "18,200 passengers",
+          "modal_split": {
+            "rail": "55%",
+            "bus": "30%",
+            "bike_pedestrian": "15%"
+          }
+        },
+        "neighborhood": {
+          "name": "Commons Ridge",
+          "vibe": "Transit-smart suburbia with a community square spirit",
+          "landmarks": [
+            {
+              "name": "Commons Market Hall",
+              "type": "Public food court and weekend craft venue",
+              "estimated_value_usd": "40,000,000 - 70,000,000"
+            },
+            {
+              "name": "Summit Library South",
+              "type": "Modern library with digital media lounges and maker space",
+              "estimated_value_usd": "30,000,000 - 60,000,000"
+            },
+            {
+              "name": "Ridgeline Park Loop",
+              "type": "Walkable circuit park with inclusive playground and music dome"
+            },
+            {
+              "name": "Transit Grove",
+              "type": "Public plaza featuring sculptures from each Summit district"
+            }
+          ],
+          "estimated_landmark_value_combined_usd": "80,000,000 - 150,000,000"
+        },
+        "residential_assets": {
+          "executive_towers": [
+            {
+              "name": "Commons Rise",
+              "style": "Warm-tone mid-rise with garden terraces",
+              "features": [
+                "Shared rooftop greenhouse",
+                "Onsite childcare linked to transit schedules"
+              ]
+            },
+            {
+              "name": "The Grove Residences",
+              "style": "Eco-brick townhomes with modular extensions",
+              "features": [
+                "Solar-tiled rooftops",
+                "Transit access portal in every unit"
+              ]
+            }
+          ],
+          "estimated_executive_towers_value_combined_usd": "360,000,000 - 600,000,000",
+          "micro_neighborhoods": [
+            {
+              "name": "Maple Rows",
+              "style": "Front-porch bungalows with community paths",
+              "residents": [
+                "Elementary school teachers",
+                "Transit safety managers",
+                "Elderly volunteers"
+              ],
+              "vibe": "Evening walk clubs, porch talks, and hybrid car parades"
+            },
+            {
+              "name": "Birch Commons",
+              "style": "Flexible duplexes with aging-in-place features",
+              "residents": [
+                "Telehealth workers",
+                "Young families",
+                "Civic interns"
+              ],
+              "vibe": "Sidewalk chalk festivals, shared toy libraries, multi-modal block parties"
+            }
+          ],
+          "estimated_micro_neighborhoods_value_combined_usd": "120,000,000 - 250,000,000"
+        },
+        "zoning_overlays": {
+          "overlay_types": [
+            "Park-and-Ride Optimization Zone",
+            "Neighborhood Retail-Mix Incentive",
+            "Transit-School Integration Buffer",
+            "Community Green Space Mandate"
+          ]
+        },
+        "estimated_individual_station_value_usd": "600,000,000 - 900,000,000",
+        "estimated_combined_area_value_usd": "1,230,000,000 - 2,030,000,000"
+      },
+      {
+        "name": "Central Station",
+        "nickname": "The Grand Confluence",
+        "line": "All Light Rail Lines",
+        "type": "Intermodal Transfer Hub",
+        "design_style": "Cathedral-scale transit hall with arched glass vaults",
+        "features": [
+          "Interactive ceiling map of Summit's transit evolution",
+          "Terraced ticketing concourse with sculptural light columns",
+          "Surround-sound boarding alerts in multiple languages",
+          "Dining promenade with micro-kitchens from all districts"
+        ],
+        "function": "Summit City's main light rail interchange and civic showcase",
+        "transit_data": {
+          "average_daily_footfall": "64,000 passengers",
+          "modal_split": {
+            "light_rail": "62%",
+            "bus_taxi": "25%",
+            "pedestrian_bike": "13%"
+          },
+          "transfer_to_lines": ["Red Line", "Blue Line", "Green Line", "Yellow Line"]
+        },
+        "neighborhood": {
+          "name": "Civic Plaza Core",
+          "vibe": "Monumental, multicultural, and perpetually in motion",
+          "landmarks": [
+            {
+              "name": "Summit Grand Hall",
+              "type": "Civic event venue and historical monument"
+            },
+            {
+              "name": "Transit Dome Theater",
+              "type": "360° immersive cinema for city heritage and arts"
+            },
+            {
+              "name": "Union Crescent Fountain",
+              "type": "Public gathering space with programmable light displays"
+            },
+            {
+              "name": "Platform Market Square",
+              "type": "Transit-integrated shopping and food court"
+            }
+          ],
+          "estimated_landmark_value_combined_usd": "650,000,000 - 1,050,000,000"
+        },
+        "residential_assets": {
+          "executive_towers": [
+            {
+              "name": "Summit Central Lofts",
+              "style": "High-rise industrial luxury",
+              "features": [
+                "Direct elevator to transit mezzanine",
+                "Live-work zoning with panoramic boardroom lounges"
+              ]
+            },
+            {
+              "name": "Union Heights",
+              "style": "Mixed-income complex with civic art installations",
+              "features": [
+                "Subsidized units overlooking landmark corridors",
+                "Transit study lab in community center"
+              ]
+            },
+            {
+              "name": "Vista Terraces",
+              "style": "Stepped glass terraces with botanical courtyards",
+              "features": [
+                "Sky bridges to adjacent retail towers",
+                "Transit concierge service"
+              ]
+            }
+          ],
+          "estimated_executive_towers_value_combined_usd": "1,200,000,000 - 2,100,000,000",
+          "micro_neighborhoods": [
+            {
+              "name": "Crescent Row",
+              "style": "Brick live-work townhomes with retail arcades",
+              "residents": [
+                "Independent restaurateurs",
+                "Transit performance artists",
+                "Late-shift civic workers"
+              ],
+              "vibe": "Bustling at all hours, night cafes, and weekend plaza concerts"
+            },
+            {
+              "name": "Platform 9 Commons",
+              "style": "Historic flats converted from rail-era buildings",
+              "residents": [
+                "Graduate students",
+                "Civic organizers",
+                "Transit documentarians"
+              ],
+              "vibe": "Transit poetry nights, balcony rail gardens, rooftop readings"
+            }
+          ],
+          "estimated_micro_neighborhoods_value_combined_usd": "250,000,000 - 500,000,000"
+        },
+        "zoning_overlays": {
+          "overlay_types": [
+            "Civic Interchange Priority Zone",
+            "Mixed-Income Mobility District",
+            "Transit-Culture Integration Overlay",
+            "Night Economy Encouragement Zone"
+          ]
+        },
+        "estimated_individual_station_value_usd": "3,500,000,000 - 5,000,000,000",
+        "estimated_combined_area_value_usd": "5,600,000,000 - 8,650,000,000"
+      },
+      {
+        "name": "Convention Center Station",
+        "nickname": "The Concourse Atrium",
+        "line": "Blue Line",
+        "type": "Destination Platform Node",
+        "design_style": "Grand-tier pavilion fused into hospitality-convention hybrid",
+        "features": [
+          "Triple-height glass hall shared by hotel lobbies and ticket concourse",
+          "Transit chandelier installation inspired by train timetables",
+          "Concierge-integrated transit kiosk with event mode scheduling",
+          "Platform-facing terrace café with skyline and stage views"
+        ],
+        "function": "Integrated mobility gateway for Summit Convention District, tourists, and premier hospitality",
+        "transit_data": {
+          "average_daily_footfall": "31,200 passengers (event-dependent)",
+          "modal_split": {
+            "light_rail": "58%",
+            "shuttle_ride_share": "30%",
+            "pedestrian": "12%"
+          }
+        },
+        "neighborhood": {
+          "name": "Summit Convention District",
+          "vibe": "High-gloss civic spectacle, global connectivity, and urban hospitality fusion",
+          "landmarks": [
+            {
+              "name": "Summit Convention Center",
+              "type": "Mass-scale event space with retractable walls and rooftop stages",
+              "estimated_value_usd": "1,000,000,000 - 1,500,000,000"
+            },
+            {
+              "name": "Crescendo Suites (Boutique Hotel)",
+              "type": "Design-forward hotel with guest-exclusive skybar and direct platform access"
+            },
+            {
+              "name": "Grand Pinnacle Summit (Hotel Chain)",
+              "type": "Flagship luxury tower with conference wings and airport transfer concierge"
+            },
+            {
+              "name": "Atrium Steps",
+              "type": "Public art amphitheater for keynote streams and civic performances"
+            }
+          ],
+          "estimated_landmark_value_combined_usd": "930,000,000 - 1,660,000,000"
+        },
+        "residential_assets": {
+          "executive_towers": [
+            {
+              "name": "Vista Lux Residences",
+              "style": "Curved glass façade with hotel-level amenities",
+              "features": [
+                "Sky sauna and transit concierge",
+                "Sound-insulated balconies for event weeks"
+              ]
+            },
+            {
+              "name": "The Delegates’ Row",
+              "style": "Compact vertical suites with panoramic rail views",
+              "features": [
+                "Furnished live-lease options for recurring conference guests",
+                "Direct passage to convention floors"
+              ]
+            }
+          ],
+          "estimated_executive_towers_value_combined_usd": "600,000,000 - 1,100,000,000",
+          "micro_neighborhoods": [
+            {
+              "name": "Stagewalk Court",
+              "style": "Modernist row homes with neon alley walkways",
+              "residents": [
+                "Stage designers",
+                "Transit planners attending conferences",
+                "Graduate hospitality fellows"
+              ],
+              "vibe": "Pop-up art booths, local jazz mixers, portable kiosks for civic info"
+            },
+            {
+              "name": "Atrium Loop",
+              "style": "Event-adjacent midrises with modular walls",
+              "residents": [
+                "Festival organizers",
+                "Performance critics",
+                "Live-stream production teams"
+              ],
+              "vibe": "Balcony banners, window light shows, impromptu courtyard screenings"
+            }
+          ],
+          "estimated_micro_neighborhoods_value_combined_usd": "100,000,000 - 200,000,000"
+        },
+        "zoning_overlays": {
+          "overlay_types": [
+            "Event Integrated Mobility Overlay",
+            "Transit-Hospitality Co-Use Zone",
+            "Civic Display Infrastructure District",
+            "Cultural Activation Incentive Zone"
+          ]
+        },
+        "estimated_individual_station_value_usd": "1,500,000,000 - 2,200,000,000",
+        "estimated_combined_area_value_usd": "4,130,000,000 - 6,660,000,000"
+      },
+      {
+        "name": "Gateway Plaza Station",
+        "nickname": "The Culture Landing",
+        "line": "Blue Line",
+        "type": "Urban Culture Connector",
+        "design_style": "Glass-canopy pavilion with kinetic roof sculpture",
+        "features": [
+          "Rotating art display wall curated monthly by local artists",
+          "Sunken amphitheater stair plaza for live music and food trucks",
+          "Digital transit boards framed with community poetry tiles",
+          "Light ribbon path from platform to promenade trailheads"
+        ],
+        "function": "Recreational and cultural access node bridging downtown to the riverfront",
+        "transit_data": {
+          "average_daily_footfall": "19,700 passengers",
+          "modal_split": {
+            "light_rail": "52%",
+            "bus": "36%",
+            "pedestrian_bike": "12%"
+          }
+        },
+        "neighborhood": {
+          "name": "Gateway Plaza District",
+          "vibe": "Eclectic, walkable, arts-forward with a flavor of river breeze energy",
+          "landmarks": [
+            {
+              "name": "Riverfront Promenade",
+              "type": "Scenic walking trail with market carts and outdoor stages",
+              "estimated_value_usd": "70,000,000 - 120,000,000"
+            },
+            {
+              "name": "Echelon Arts House",
+              "type": "Repurposed warehouse featuring rotating exhibits and dance halls"
+            },
+            {
+              "name": "The Channel Line Food Hall",
+              "type": "Converted depot filled with local vendors and culinary pop-ups"
+            },
+            {
+              "name": "Gateway Sculpture Spine",
+              "type": "Public art corridor linking the station to the waterfront",
+              "estimated_value_usd": "145,000,000 - 250,000,000"
+            }
+          ],
+          "estimated_landmark_value_combined_usd": "145,000,000 - 250,000,000"
+        },
+        "residential_assets": {
+          "executive_towers": [
+            {
+              "name": "The Landing Lofts",
+              "style": "Brick-and-glass lofts with open industrial interiors",
+              "features": [
+                "Balconies with mural views",
+                "In-building bike garage with artist studio corner"
+              ]
+            },
+            {
+              "name": "Riverwatch Residences",
+              "style": "Stacked residential terraces with natural wood tones",
+              "features": [
+                "Smart roof shading and rain garden design",
+                "Shared deck overlooking live music plaza"
+              ]
+            }
+          ],
+          "estimated_executive_towers_value_combined_usd": "400,000,000 - 700,000,000",
+          "micro_neighborhoods": [
+            {
+              "name": "Gallery Row",
+              "style": "Mixed-use townhomes with storefront studios",
+              "residents": ["Sculptors", "Poets", "Digital media collectives"],
+              "vibe": "Open window displays, chalk art shows, ‘porch poetry’ night rotations"
+            },
+            {
+              "name": "Amp Walk",
+              "style": "Courtyard apartments with acoustic baffling architecture",
+              "residents": [
+                "Stage crew techs",
+                "Midnight bakers",
+                "Transit-nighttime staff"
+              ],
+              "vibe": "Lantern-lit corridors, nighttime jam circles, café speaker socials"
+            }
+          ],
+          "estimated_micro_neighborhoods_value_combined_usd": "150,000,000 - 300,000,000"
+        },
+        "zoning_overlays": {
+          "overlay_types": [
+            "Cultural-Transit Overlay District",
+            "Arts-Infrastructure Redevelopment Zone",
+            "Waterfront Livability Incentive",
+            "Performance Access Corridor"
+          ]
+        },
+        "estimated_individual_station_value_usd": "900,000,000 - 1,300,000,000",
+        "estimated_combined_area_value_usd": "1,665,000,000 - 2,770,000,000"
+      },
+      {
+        "name": "Airport Hotel & Tech Park Station",
+        "nickname": "The Sleep|Sync Terminal",
+        "line": "Green Line",
+        "type": "Aero-Intermodal Hub",
+        "design_style": "Biophilic smart shell with reactive exterior panels",
+        "features": [
+          "Indoor-outdoor concourse with time-shifted lighting for jetlag relief",
+          "Vertical green curtain with regional flora and air-filtered seating nooks",
+          "Transit pod charging docks embedded into plaza benches",
+          "Automated luggage concierge synced with lodging capsules and flights"
+        ],
+        "function": "Transit-served gateway to hospitality innovation, tech campus life, and post-flight recharging",
+        "transit_data": {
+          "average_daily_footfall": "22,900 passengers",
+          "modal_split": {
+            "rail": "48%",
+            "shuttle_ride_share": "42%",
+            "bike_pedestrian": "10%"
+          }
+        },
+        "neighborhood": {
+          "name": "Summit AeroTech Precinct",
+          "vibe": "Transit-fed fusion zone of overnight rhythm, digital nomadism, and streamlined energy",
+          "landmarks": [
+            {
+              "name": "Pixel Grove",
+              "type": "Open-air tech park with kinetic benches and solar bloom lounges",
+              "estimated_value_usd": "200,000,000 - 400,000,000"
+            },
+            {
+              "name": "LodgSync Nexus",
+              "type": "Modular lodging tower with adaptive pods for rest, work, or leisure",
+              "estimated_value_usd": "150,000,000 - 300,000,000"
+            },
+            {
+              "name": "Terminal Commons",
+              "type": "Mixed-reality public square with dining avatars and time-zone cafés"
+            },
+            {
+              "name": "Skytrace Pavilion",
+              "type": "Glass observatory linking flight data to civic media projections"
+            }
+          ],
+          "estimated_landmark_value_combined_usd": "70,000,000 - 130,000,000"
+        },
+        "residential_assets": {
+          "executive_towers": [
+            {
+              "name": "NOVA RestCore",
+              "style": "Lodging-lab hybrid with programmable lighting pods",
+              "features": [
+                "Circadian-focused room settings",
+                "Self-adjusting acoustic zones for sleep or collaboration"
+              ]
+            },
+            {
+              "name": "The Tarmac Terrace",
+              "style": "Runway-facing micro-suites with dual-layer smart glazing",
+              "features": [
+                "Flight-linked check-out automation",
+                "Shared “arrival gardens” and mobility gear lockers"
+              ]
+            },
+            {
+              "name": "NestLink Suites",
+              "style": "Horizontally stacked modular lodges",
+              "features": [
+                "Transit-synced pods",
+                "AI butler walls for jetlag management"
+              ]
+            }
+          ],
+          "estimated_executive_towers_value_combined_usd": "660,000,000 - 1,200,000,000",
+          "micro_neighborhoods": [
+            {
+              "name": "Layover Labyrinth",
+              "style": "Flex-loft maze with sleepwork modules and airfield murals",
+              "residents": [
+                "IT nomads",
+                "Flight staff",
+                "Frequent conference attendees"
+              ],
+              "vibe": "Snack bots, 20-min nap zones, and 24/7 digital café cabanas"
+            },
+            {
+              "name": "Sync Gardens",
+              "style": "Foliage-sculpted residential rings for 1–3 night stays",
+              "residents": [
+                "Tech recruiters",
+                "Remote boardroom teams",
+                "Visiting biotech fellows"
+              ],
+              "vibe": "Multi-timezone coworking lawns, sleep yoga groves, drone-snack pavilions"
+            }
+          ],
+          "estimated_micro_neighborhoods_value_combined_usd": "100,000,000 - 200,000,000"
+        },
+        "zoning_overlays": {
+          "overlay_types": [
+            "NextGen Lodging Framework",
+            "Hospitality-Modularity Zone",
+            "Aero-Transit Behavioral Study Grid",
+            "Digital Wayfinding Experience Overlay"
+          ]
+        },
+        "estimated_individual_station_value_usd": "1,800,000,000 - 2,600,000,000",
+        "estimated_combined_area_value_usd": "2,980,000,000 - 4,830,000,000"
+      }
+    ],
+    "total_estimated_combined_value_all_assets_usd": {
+      "low_end": "26,525,000,000",
+      "high_end": "41,820,000,000"
+    }
+  }
+}

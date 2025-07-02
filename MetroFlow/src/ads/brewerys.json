@@ -1,0 +1,23 @@
+{
+  "breweries": [
+    {
+      "business_profile": {
+        "name": "Summit Foundry Brewing Co.",
+        "sector": "Craft Brewing / Historic Landmark Brewery",
+        "located_near": "Old Mill Road Station",
+        "target_audience": [
+          "Local craft beer lovers",
+          "After-work riders",
+          "Urban heritage enthusiasts"
+        ]
+      },
+      "ad_components": {
+        "headline": "Where the Red Line Meets the Copper Line—Raise One at the Foundry",
+        "body_copy": "Born beside the bend, brewed beside the rail. At Summit Foundry Brewing Co., we’ve poured tradition into every tap since before Old Mill Road Station had benches. Swing by after work to taste our Red Rail Amber or sip a flight where metal once sparked and malt now sings.",
+        "offer_or_cta": "Present your same-day Red Line tap card for a Foundry flight at just $5—weekdays 4–7PM. Ask for the ‘Brakeman’s Pour.’",
+        "visual_cue": "Artfully weathered brick background with embossed tap handles overlaid across a silhouette of Old Mill Road Station’s iron archway",
+        "legal_footer": "This ad is sponsored by Summit Foundry Brewing Co. Not affiliated with Summit City Transit Authority. Please drink responsibly."
+      }
+    }
+  ]
+}

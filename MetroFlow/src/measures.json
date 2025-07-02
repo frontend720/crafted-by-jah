@@ -1,5 +1,11 @@
 {
   "ballot_measure_proposal": {
+    "style": "10 minute debate",
+    "proposal_number": "M523",
+    "moderated": true,
+    "funding_through": "random",
+    "viewpoints": [{"party": "conservative", "name": "Hector Ruiz", "perspective": "for"}, {"party": "progressive", "name": "Tariq Mbu", "perspective": "against"}],
+    "participants": 2,
     "title": "Gold Town West Tourism Development Initiative",
     "summary": "A proposal to designate the Gold Town West zone as a tourism hub by waiving height restrictions for hotels and spas, and permitting gambling operations in exchange for a percentage of the profits. This aims to leverage the area's historic charm to boost tourism, generate revenue, and create jobs for Summit City.",
     "aligns_with_existing_character": "This strategy aligns well with the existing 'historic mining past' and the presence of 'charming boutiques, antique shops, and local eateries', as these elements already lend themselves to a unique visitor experience.",

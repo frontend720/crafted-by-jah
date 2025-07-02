@@ -1,0 +1,23 @@
+{
+  "clothing": [
+    {
+      "business_profile": {
+        "name": "Élan at Chancellor",
+        "sector": "Upscale Fashion Boutique",
+        "located_near": "Chancellor Hills Shopping Center",
+        "target_audience": [
+          "Fashion-forward professionals",
+          "Red Line leisure shoppers",
+          "Style-savvy tourists"
+        ]
+      },
+      "ad_components": {
+        "headline": "From Rail to Runway—Define Your Look at Élan",
+        "body_copy": "Nestled within Chancellor Hills’ glass arcades, Élan at Chancellor curates timeless silhouettes and bold seasonal drops from Summit’s top designers. Whether you’re fresh from the Red Line or dressing for the Starlight Terrace, our boutique’s where your next chapter starts—with a hemline.",
+        "offer_or_cta": "Mention ‘CHANCELLOR RED’ at checkout and receive a complimentary style consult and gift bag with purchases over $200. Valid through August 31st.",
+        "visual_cue": "Monochrome model silhouette facing platform glass with faint railcar reflection, Chancellor Hills foliage and boutique brass signage in soft focus",
+        "legal_footer": "This ad is sponsored by Élan at Chancellor. Not affiliated with Summit City Transit Authority."
+      }
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "summitCityTransitIncomeMap": {
+    "incomeTiers": {
+      "Tier 1": {
+        "label": "Affluent Legacy",
+        "medianIncome": "$250,000+",
+        "color": "Deep Gold"
+      },
+      "Tier 2": {
+        "label": "High-Income Urbanites",
+        "medianIncome": "$150,000–$249,999",
+        "color": "Burnished Amber"
+      },
+      "Tier 3": {
+        "label": "Comfortable Professionals",
+        "medianIncome": "$85,000–$149,999",
+        "color": "Slate Blue"
+      },
+      "Tier 4": {
+        "label": "Mixed-Income Core",
+        "medianIncome": "$50,000–$84,999",
+        "color": "Olive Green"
+      },
+      "Tier 5": {
+        "label": "Vulnerable Communities",
+        "medianIncome": "Below $50,000",
+        "color": "Soft Charcoal"
+      }
+    },
+    "stations": [
+      {
+        "station": "Martin State Airport Station",
+        "hubType": "Major Intermodal",
+        "neighborhoods": ["Langford Heights", "Langford Summit Club Grounds"],
+        "incomeTier": "Tier 1",
+        "medianIncome": "$300,000+",
+        "walkScore": 94,
+        "transitNotes": "Direct Martin Express Rail access. Private club shuttle, walkable to Langford Commons."
+      },
+      {
+        "station": "Langford Commons Shuttle Node",
+        "hubType": "Community Connector",
+        "neighborhoods": ["Langford Commons"],
+        "incomeTier": "Tier 2",
+        "medianIncome": "$190,000",
+        "walkScore": 91,
+        "transitNotes": "Shuttle access to Martin Express Rail, dense luxury mid-rise district."
+      },
+      {
+        "station": "Chancellor Hills Station",
+        "hubType": "Retail Hub",
+        "neighborhoods": ["Chancellor Hills", "Summit Mall District"],
+        "incomeTier": "Tier 3",
+        "medianIncome": "$135,000",
+        "walkScore": 87,
+        "transitNotes": "Red Line connection, central civic amenities, adjacent to commercial core."
+      },
+      {
+        "station": "Union Hollow Station",
+        "hubType": "Cultural Node",
+        "neighborhoods": ["Union Hollow"],
+        "incomeTier": "Tier 4",
+        "medianIncome": "$73,000",
+        "walkScore": 78,
+        "transitNotes": "Orange Line access, known for cultural revitalization and civic programming."
+      },
+      {
+        "station": "Gold Town West Spur",
+        "hubType": "Transit Spur",
+        "neighborhoods": ["Gold Town West"],
+        "incomeTier": "Tier 4",
+        "medianIncome": "$62,000",
+        "walkScore": 66,
+        "transitNotes": "Emerging transit access via Orange Line extension. Historic and creative quarter."
+      },
+      {
+        "station": "Glenvale Station",
+        "hubType": "Peripheral Station",
+        "neighborhoods": ["Glenvale"],
+        "incomeTier": "Tier 5",
+        "medianIncome": "$41,000",
+        "walkScore": 61,
+        "transitNotes": "Served by Red Line. Economically vulnerable, with ongoing civic investment efforts."
+      },
+      {
+        "station": "Pinnacle Ridge Station (Future)",
+        "hubType": "Mountain Access / Regional Connector",
+        "neighborhoods": ["Skyline Timber Corridor", "Summit Slope Estates"],
+        "incomeTier": "Projected Tier 2–3",
+        "medianIncome": "$150,000 (projected)",
+        "walkScore": "65 (projected 85)",
+        "transitNotes": "Under development. Future terminus of Pinnacle Line adjacent to high-value mountain homes."
+      },
+      {
+        "station": "Summit Civic Center / Central Station",
+        "hubType": "City Core & Transfer Nexus",
+        "neighborhoods": ["Downtown Summit Core", "Summit Rail Market District"],
+        "incomeTier": "Tier 3–4",
+        "medianIncome": "$94,000",
+        "walkScore": 92,
+        "transitNotes": "Central TTA nexus for citywide transfers and government institutions."
+      },
+      {
+        "station": "Eastern Flats Terminal",
+        "hubType": "Peripheral Residential Node",
+        "neighborhoods": ["Eastern Flats"],
+        "incomeTier": "Tier 5",
+        "medianIncome": "$38,000",
+        "walkScore": 59,
+        "transitNotes": "Eastern terminus of Red Line. Transit-dependent, limited upward mobility."
+      }
+    ]
+  }
+}

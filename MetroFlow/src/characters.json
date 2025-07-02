@@ -1,0 +1,1231 @@
+{
+  "name": "Darius Quinn",
+  "role": "Podcast Contributor",
+  "identity": {
+    "sexuality": "Bisexual",
+    "privacy": "Open but private",
+    "pastRelationships": [
+      {
+        "name": "Ellis",
+        "identity": "Trans man",
+        "occupation": "Sculptor",
+        "details": "Longest relationship; left for a residency; wrote letters Darius keeps"
+      }
+    ]
+  },
+  "internalLandscape": {
+    "worldview": "Double exposure—one image shows reality, the other imagines if power shifted",
+    "traits": ["Patient", "Sharp", "Quietly hopeful"],
+    "ethos": "Documents with purpose, not spectacle; trusts footnotes and instinct"
+  },
+  "personality": {
+    "quirks": [
+      "Voice memo journal, recorded during rain or train rides",
+      "Carries old leather bag with press memories",
+      "Guilty love of bad sci-fi films"
+    ],
+    "rituals": [
+      "Silent Sundays at Prairie Light Café",
+      "Keeps 'maybe box' of objects tied to unfinished stories",
+      "Edits audio essays for private reflection"
+    ],
+    "speechStyle": {
+      "cadence": "Draws from barbershop wisdom and oral tradition",
+      "habits": [
+        "Pauses before names",
+        "Empathy-driven interviews",
+        "Intentional tone and quiet presence"
+      ]
+    }
+  },
+  "background": {
+    "hometown": "Glenvale",
+    "currentCity": "Summit City",
+    "family": {
+      "auntLena": {
+        "occupation": "Hair stylist",
+        "influence": "Taught him that faces hold stories"
+      }
+    },
+    "communityPerception": {
+      "elders": "Call him 'baby Elijah'",
+      "genZ": "Call him 'Uncle Press'"
+    },
+    "personalGrowth": {
+      "fromGlenvale": "Learned strategic survival and self-censorship",
+      "inSummit": "Found voice and contradictions in proximity to power"
+    }
+  },
+  "podcastInvolvement": {
+    "segmentTitle": "The Memory Correspondent",
+    "themes": [
+      "Archives vs. Erasure",
+      "Transit as Memory",
+      "Queer Identity and Space"
+    ],
+    "episodeIdeas": [
+      {
+        "title": "This Used to Be a Laundromat",
+        "description": "Bus routes through gentrified neighborhoods reveal buried histories"
+      },
+      {
+        "title": "A Letter to Ellis",
+        "description": "Poetic audio letter layered with archival tape and personal longing"
+      },
+      {
+        "title": "Archives Don’t Cry — But I Do",
+        "description": "Darius explores his 'maybe box' live on tape"
+      }
+    ]
+  }
+}
+
+// Malik Hampton
+
+{
+  "name": "Malik Hampton",
+  "role": "Student-Athlete and Emerging Civic Voice",
+  "identity": {
+    "sexuality": "Quietly fluid (not hidden, not hashtagged)",
+    "privacy": "Guarded in public, open in presence",
+    "pastRelationships": []
+  },
+  "internalLandscape": {
+    "worldview": "Every platform is a window and a cage. The question is who designed the glass.",
+    "traits": ["Composed", "Observant", "Self-edited"],
+    "ethos": "Legacy over logo. Visibility isn’t voice."
+  },
+  "personality": {
+    "quirks": [
+      "Plays solo pickup games under arena lights at 2 a.m.",
+      "Writes quotes on his arm in fine-tip marker",
+      "Always tips 200% when unrecognized"
+    ],
+    "rituals": [
+      "Rooftop tea at dusk, hoodie up, phone down",
+      "Re-watches quiet losses more than big wins",
+      "Keeps screenshots of meaningful DMs from young fans"
+    ],
+    "speechStyle": {
+      "cadence": "Pensive with sudden bursts—like crossover into poetry",
+      "habits": [
+        "Nods before answering",
+        "Calls people by full name when it matters",
+        "Doesn’t speak unless it lands clean"
+      ]
+    }
+  },
+  "background": {
+    "hometown": "Southside, Summit City",
+    "currentCity": "Summit City (Chancellor Rise)",
+    "family": {
+      "mother": {
+        "name": "Ruth Hampton",
+        "occupation": "ER Nurse",
+        "influence": "Discipline wrapped in grace"
+      },
+      "grandfather": {
+        "name": "Deacon Hampton",
+        "occupation": "Retired postal worker and church elder",
+        "influence": "Taught Malik silence can be sacred"
+      }
+    },
+    "communityPerception": {
+      "youngFans": "He’s goals, but chill. Like rich but still eats corner shop chips.",
+      "elders": "Quiet storm. Still waters and deep game.",
+      "media": "Brand-ready—but he keeps rewriting the caption."
+    },
+    "personalGrowth": {
+      "fromSouthside": "Learned resilience, responsibility, and how to move in a room where power doesn’t look like him.",
+      "inSummit": "Learned strategy. Learned restraint. Still deciding what to say when the mic is finally his."
+    }
+  },
+  "podcastInvolvement": {
+    "segmentTitle": "Platform Timeout (unaired microcast series)",
+    "themes": [
+      "Athlete Agency",
+      "Visibility vs. Voice",
+      "Brand Conflict and Civic Loyalty"
+    ],
+    "episodeIdeas": [
+      {
+        "title": "The Rooftop Game",
+        "description": "Malik reflects alone on his 20th-floor terrace after rejecting a brand shoot—ball in hand, skyline humming."
+      },
+      {
+        "title": "City Patience",
+        "description": "A sound essay recorded after a visit to the Glass Cube, layering voice notes, sneaker sounds, and train brakes."
+      },
+      {
+        "title": "Platform Timeout",
+        "description": "Suspended by his sponsor, Malik walks the city with no camera, no gear, just his full name and his own silence."
+      }
+    ]
+  }
+}
+
+// Elijah 'Blue' Thompkins
+
+{
+  "name": "Elijah 'Blue' Thompkins",
+  "role": "Franchise Player – Summit City Monarchs (NBA)",
+  "identity": {
+    "nicknameOrigin": "Given by grandmother for his calm nature and love of navy blue",
+    "hometown": "Chauncey Heights, Summit City",
+    "roots": "Grew up three blocks from Chauncey Arena; attended Tubman University"
+  },
+  "internalLandscape": {
+    "worldview": "Home is not a launchpad—it’s legacy. You don’t have to leave to rise.",
+    "traits": ["Composed", "Loyal", "Thoughtful", "Observant"],
+    "ethos": "Highlight reel with humility. Every pass is a form of stewardship."
+  },
+  "personality": {
+    "quirks": [
+      "Plays records at night instead of streaming",
+      "Rides transit alone weekly to reconnect with the city",
+      "Keeps a boot tray older than his fame"
+    ],
+    "rituals": [
+      "Sunrise journaling",
+      "Hands-on smoothie prep with no machines",
+      "Evening walks without earbuds"
+    ],
+    "speechStyle": {
+      "cadence": "Measured and low, with warmth beneath the quiet",
+      "habits": [
+        "Speaks with eye contact and economy",
+        "Quotes family often, especially his mom and grandfather",
+        "Prefers gestures over grandstanding"
+      ]
+    }
+  },
+  "background": {
+    "hometown": "Chauncey Heights, Summit City",
+    "residence": {
+      "building": "The Apex",
+      "location": "North side of Chauncey Heights",
+      "style": "Understated luxury with skyline and park views",
+      "details": "Wood, stone, navy accents, panoramic terrace, framed photo of his mom"
+    },
+    "family": {
+      "mother": {
+        "occupation": "Former concessions worker at old arena",
+        "influence": "Rooted him in humility and service"
+      },
+      "grandfather": {
+        "occupation": "City parks landscaper",
+        "influence": "Taught him rhythm through nature"
+      }
+    },
+    "publicPerception": {
+      "fans": "Loyal, authentic, skilled—Summit’s son",
+      "youth": "Hero who didn’t leave to become great",
+      "press": "Elusive, poetic, purpose-driven"
+    }
+  },
+  "career": {
+    "team": "Summit City Monarchs",
+    "position": "Point Forward",
+    "jerseyNumber": 0,
+    "style": "Visionary passer, offbeat tempo, surgical pivots",
+    "publicMoments": [
+      "Game-winning shot in semifinals, followed by silent homage at Market Square mural",
+      "Ongoing youth initiative: 'Courts & Curriculum'",
+      "Live appearance at Glass Cube youth forum"
+    ],
+    "offSeasonHabits": {
+      "training": "Morning runs in Moss Row with Malik Hampton",
+      "mentorship": "Godparent to a child in Tilson Walk",
+      "collaborations": "Sneaker design donations through GritLab for inclusive gear prototyping"
+    }
+  },
+  "leisureAndTastes": {
+    "style": {
+      "boutiques": ["GLASSHALO", "Form/Function"],
+      "vibe": "Elevated minimalism, rich texture, no flash",
+      "habits": "Buys sparingly but precisely—each item meaningful"
+    },
+    "hangouts": [
+      "Listening Deck in Forest Hills",
+      "Parc Modulo for private dinners",
+      "Sunset train rides just to feel the city shift"
+    ],
+    "vices": ["Jazz bootlegs", "Unmarked poetry notes", "Roaming without being seen"]
+  }
+}
+
+// Kwame Bell
+
+{
+  "name": "Kwame Bell",
+  "age": 19,
+  "pronouns": "he/him",
+  "role": "Community College Student",
+  "background": {
+    "hometown": "East Hollow, near Gold Town West Station",
+    "residence": {
+      "neighborhood": "East Hollow",
+      "description": "Lower-wealth corridor with community resilience; lives in a modest unit above an abandoned dry cleaners"
+    },
+    "formerIncarceration": {
+      "facility": "Summit Juvenile Center",
+      "details": "Recently released after serving time for a nonviolent theft charge"
+    },
+    "education": {
+      "institution": "Summit City Community College (SCCC)",
+      "campusStation": "Brookmere Station",
+      "program": "Digital Storytelling & Basic Web Development"
+    }
+  },
+  "internalLandscape": {
+    "traits": ["Quiet", "Cautious", "Perceptive", "Self-protective"],
+    "worldview": "Still unfolding—trying to build forward without forgetting the cost behind him",
+    "ethos": "Repair as resilience; motion as hope"
+  },
+  "personality": {
+    "quirks": [
+      "Keeps detention ID photo in a plastic capsule",
+      "Listens to dubbed-over cassette tapes on an old Walkman",
+      "Designs personal websites with affirmations hidden in the code"
+    ],
+    "rituals": [
+      "Rooftop alone time at dusk",
+      "Invisible ink messages for family members",
+      "Cracked pencil sketches of people on the train"
+    ],
+    "speechStyle": {
+      "cadence": "Quiet and slow, building trust before expression",
+      "habits": [
+        "Flinches slightly when complimented",
+        "Smiles more when he thinks no one’s looking",
+        "Pauses often—like he’s checking if it’s safe to be honest"
+      ]
+    }
+  },
+  "publicPerception": {
+    "community": "Still unknown by most—but those who’ve spoken with him call him ‘steady’",
+    "peers": "Smart, surprising—‘the guy who’s always drawing or fixing something’",
+    "faculty": "Emerging potential; someone who’ll matter if he keeps showing up"
+  },
+  "routine": {
+    "morning": "Up before sunrise, toast and Walkman tape listening",
+    "commute": "Blue Line ride from Gold Town West to Brookmere—usually early hours",
+    "studies": "Digital media and self-taught HTML exploration",
+    "evening": "Rooftop solitude or quiet sketching near the train wall"
+  }
+}
+
+// Shalice Morgan
+
+{
+  "name": "Shalice Morgan",
+  "age": 34,
+  "pronouns": "she/her",
+  "role": "Social Policy Analyst",
+  "education": {
+    "degree": "M.A. in Urban Social Systems",
+    "institution": "Summit State University",
+    "notes": "Completed through night school while parenting"
+  },
+  "family": {
+    "child": {
+      "name": "Kemi",
+      "age": 6,
+      "personality": "Imaginative, book-loving, insists her name means 'light after the storm'"
+    },
+    "coParenting": "Solo by choice; maintains distant but open communication with Kemi’s father, who lives out of state"
+  },
+  "residence": {
+    "neighborhood": "Union Hollow",
+    "location": "Linehands Row",
+    "type": "Two-bedroom walk-up apartment",
+    "details": "Inherited from great-aunt; filled with glass teacups, heirloom quilts, and library tote bags"
+  },
+  "internalLandscape": {
+    "traits": ["Resilient", "Articulate", "Unflinching", "Soft-centered"],
+    "ethos": "Change the system without losing your voice or your joy",
+    "reputation": "The calm in the eye of civic storms"
+  },
+  "personality": {
+    "quirks": [
+      "Watches Nina Simone clips with captions and jelly jar wine",
+      "Saves notes and trinkets in a tin labeled 'emergency wonders'",
+      "Writes love poems on the backs of unused policy memos"
+    ],
+    "rituals": [
+      "Morning mirror affirmations with daughter",
+      "Lunches at The Paper Yard café reviewing amendments",
+      "Weekly window index cards facing the Red Line with public encouragements"
+    ],
+    "speechStyle": {
+      "cadence": "Calm, firm, and a touch maternal",
+      "habits": [
+        "Never interrupts, but never repeats herself",
+        "Finishes a point with a knowing pause",
+        "Can disarm aggression with strategic warmth"
+      ]
+    }
+  },
+  "routine": {
+    "morning": "Walks to the Red Line with tea and a civic quote mug",
+    "commute": "Union Hollow Station to Civic Center offices",
+    "workday": "Analyzes family service budgets, equity policies, and neighborhood planning proposals",
+    "evening": "Storytime with Kemi, then solo jazz reflection or writing"
+  },
+  "publicPerception": {
+    "neighbors": "The one who always has extra tote bags and thoughtful questions",
+    "colleagues": "Strategic, composed, respected across departments",
+    "community": "Seen as a bridge between old Hollow values and new city dynamics"
+  }
+}
+
+// Beaumont Langford III
+
+{
+  "name": "Beaumont Langford III",
+  "age": 67,
+  "pronouns": "he/him",
+  "role": "Prestigious Member of Langford Summit Club",
+  "background": {
+    "lineage": "Great-grandson of Archibald Langford, club co-founder and early civic financier",
+    "education": "Alumni of Summit State University and Oxford (political philosophy)",
+    "occupation": "Retired diplomat, current chair of Summit Preservation Trust",
+    "wealthOrigin": "Family holdings in rail, publishing, and civic infrastructure"
+  },
+  "residence": {
+    "estateName": "Langford House",
+    "location": "Northwestern Summit City, Langford Heights",
+    "adjacency": "Overlooks the 7th hole of the Langford Summit Club course",
+    "built": 1892,
+    "architecture": "Georgian Revival with Beaux-Arts flourishes",
+    "features": {
+      "conservatory": "Glass solarium used for private meals and city planning discussions",
+      "libraryWing": [
+        "Original civic charters",
+        "Summit poetry collection",
+        "Golf logs dating to 1901"
+      ],
+      "garden": "Hidden heirloom rose garden with a reflecting pool shaped like the original city rail map",
+      "pathways": [
+        "Stone path to croquet lawn",
+        "Private gate to cigar veranda",
+        "Direct view of 'Whispering Turn' — 7th hole"
+      ]
+    }
+  },
+  "personality": {
+    "traits": [
+      "Measured",
+      "Ritualistic",
+      "Decisively charming",
+      "Quietly formidable"
+    ],
+    "quirks": [
+      "Cufflinks shaped like lanterns — a nod to civic illumination",
+      "Monte Cristo lunch tradition at the Conservatory every Friday",
+      "Handwritten golf log maintained in leather-bound ledgers"
+    ],
+    "rituals": [
+      "Morning swim in Olympic pool (lane three only)",
+      "Annual equinox toast at the croquet lawn",
+      "Silent hour in club library prior to any gala"
+    ],
+    "speechStyle": {
+      "cadence": "Deliberate and patrician, with rhythmic emphasis on civic legacy",
+      "habits": [
+        "Leads replies with historical anecdotes",
+        "Quotes obscure philosophers and Summit bylaws",
+        "Raises brow before delivering disagreement"
+      ]
+    }
+  },
+  "clubPresence": {
+    "status": "Legacy member, Board of Governors, steward of ceremonial traditions",
+    "favoredSpaces": [
+      "Conservatory restaurant",
+      "Cigar veranda",
+      "Croquet lawn",
+      "Private library wing"
+    ],
+    "relationships": {
+      "staff": "Known by name, tipped discreetly, respected deeply",
+      "members": "Consulted during civic negotiations and land matters",
+      "groundskeepers": "Trusted to preserve terrain as memory"
+    },
+    "publicReputation": {
+      "press": "Rarely photographed, occasionally quoted during civic summits",
+      "city": "Viewed as guardian of tradition and subtle power broker"
+    }
+  },
+  "personalEthos": {
+    "worldview": "Legacy isn’t possession — it’s stewardship",
+    "motto": "Discretion is the architecture of influence",
+    "values": [
+      "Civic preservation",
+      "Ritual continuity",
+      "Decency over disclosure"
+    ]
+  },
+  "storyline": {
+    "title": "The Croquet Line Dilemma",
+    "conflict": {
+      "summary": "A proposed extension of Summit’s Green Line threatens to pass within sight of Langford House’s croquet lawn.",
+      "stakes": "Club legacy vs. citywide transit equity; Beaumont’s influence is tested by younger civic voices",
+      "characters": [
+        "Shalice Morgan — social policy analyst advocating for the extension",
+        "Kwame Bell — design intern assigned to visualize the neighborhood impact",
+        "Malik Hampton — invited to a closed-door council session where tradition meets tension"
+      ]
+    },
+    "BeaumontResponse": {
+      "initial": "Seeks preservation through quiet negotiation and procedural delay",
+      "evolution": "Begins to host listening salons at Langford House, exposing rarely seen civic documents",
+      "climax": "Delivers a public address from the cigar veranda during the Legacy Gala, stating: 'If memory cannot move, it risks becoming mausoleum.'"
+    },
+    "outcome": "Design compromise retains historic sightlines while creating a new transit plaza named for Langford's original rail contributions"
+  }
+}
+
+// Amir Ezzan
+
+{
+  "name": "Amir Ezzan",
+  "age": 32,
+  "pronouns": "he/him",
+  "occupation": "Luxury Real Estate Agent",
+  "specialization": "High-end residential properties across Langford Commons, Langford Summit Club grounds, and alpine zones",
+  "residence": {
+    "neighborhood": "Langford Commons",
+    "unitType": "Top-floor luxury apartment",
+    "features": [
+      "West-facing terrace with city views",
+      "Transit map wall art",
+      "Mid-century furnishings with civic flair",
+      "Vintage record player and curated bookshelf"
+    ]
+  },
+  "personality": {
+    "traits": [
+      "Charismatic",
+      "Emotionally attuned",
+      "Strategic",
+      "Aspirational"
+    ],
+    "style": "Sharp suits, tailored minimalism, pocket squares that match his listing folio",
+    "values": [
+      "Connection to place",
+      "Architectural storytelling",
+      "Discretion",
+      "Legacy through property"
+    ]
+  },
+  "professionalEthos": {
+    "belief": "Homes aren’t just assets — they’re quiet autobiographies",
+    "clientApproach": "Curates listings based on emotional fit, historical texture, and long-term narrative potential",
+    "reputation": "Well-liked among young professionals, respected by legacy brokers, occasionally invited to civic development panels"
+  },
+  "featuredPortfolio": [
+    {
+      "name": "Miners Rest",
+      "location": "Gold Town West",
+      "style": "Restored 1880s mining bunkhouse",
+      "features": [
+        "Weathered timber siding and stone foundation",
+        "Open-concept living with exposed brick and beams",
+        "Soapstone kitchen and reclaimed potbelly stove",
+        "Loft bedroom with skylights",
+        "Detached studio with mountain views"
+      ],
+      "price": "$1.85 million",
+      "pitch": "A story you get to live inside — every nail has a memory"
+    },
+    {
+      "name": "The Fairway Stack",
+      "location": "11th Hole, Langford Summit Club",
+      "style": "Three-story luxury vertical condo",
+      "features": [
+        "Panoramic windows overlooking the course",
+        "Chef’s kitchen with quartz and brass fixtures",
+        "Primary suite with vaulted ceilings and spa bath",
+        "Micro-neighborhood access to Fairway Commons Park and The Ledger Café"
+      ],
+      "price": "$2.35 million",
+      "pitch": "Vertical rhythm meets curated community — layered living with legacy in sight"
+    },
+    {
+      "name": "Skyline Timber Lodge",
+      "location": "Pinnacle Ridge (30 minutes from city)",
+      "style": "A-frame timber ski-in/ski-out lodge",
+      "features": [
+        "Floor-to-ceiling windows and double-height fireplace",
+        "Cosmopolitan interior with brass and velvet accents",
+        "Back deck with views of mountain and distant city skyline",
+        "Smart lighting, ambient soundscape, and future Pinnacle Line connectivity"
+      ],
+      "price": "$3.95 million",
+      "pitch": "A threshold between mountain silence and civic memory — live with snow, wake with story"
+    }
+  ],
+  "emotionalArc": {
+    "hauntedProperty": {
+      "location": "Estate on the 9th hole of Langford Summit Club",
+      "meaning": "Represents Amir’s longing for quiet legacy and belonging deeper than trend"
+    },
+    "quietRitual": "Jogging past the 9th hole estate at dusk, slowing to glance without appearing to"
+  },
+  "storyline": {
+    "title": "The Listing That Looked Back",
+    "conflict": {
+      "summary": "A client declines a dream estate. Amir remains emotionally tethered to its aura.",
+      "stakes": "Professional detachment vs. personal yearning",
+      "incitingMoment": "A rooftop mixer sparks connection with the estate's owner"
+    },
+    "pivot": {
+      "conversation": "Discussion of light and legacy opens path to mentorship",
+      "result": "Private tour offered at fall’s edge"
+    },
+    "futurePotential": [
+      "Representation of legacy listings",
+      "Integration into civic property boards",
+      "A quiet rise from broker to steward"
+    ]
+  }
+}
+
+// Noah Delgado
+
+{
+  "name": "Noah Delgado",
+  "age": 39,
+  "pronouns": "he/him",
+  "occupation": "Community-Centered Real Estate Agent",
+  "specialization": "Starter homes, multi-generational housing, and middle-income buyers across Summit City’s working-class neighborhoods",
+  "residence": {
+    "neighborhood": "Vista del Sol",
+    "homeType": "1960s ranch-style home",
+    "features": [
+      "Breeze block front porch",
+      "Tool shed converted into weekend recording booth",
+      "Fridge covered in Polaroids from clients’ move-in days"
+    ]
+  },
+  "personality": {
+    "traits": [
+      "Warm and unpretentious",
+      "Detail-oriented",
+      "Emotionally intuitive",
+      "Loyal to neighborhoods overlooked by luxury developers"
+    ],
+    "style": "Button-downs with rolled sleeves, clipboard with highlighters, always smells faintly of cafecito and sunscreen",
+    "motto": "A house becomes a home when the front door creaks just right"
+  },
+  "workApproach": {
+    "clientBase": [
+      "Single parents buying their first property",
+      "Adult kids moving back near their abuelas",
+      "Longtime renters looking for a permanent front yard"
+    ],
+    "strategy": "Empowers clients with transparent pricing, loan literacy, and neighborhood history. Walks the block before he shows the home.",
+    "reputation": "Known for hand-delivering paperwork, calming nerves before closings, and giving plants as housewarming gifts"
+  },
+  "featuredPortfolio": [
+    {
+      "name": "Pine & Orbit Duplex",
+      "location": "Between Astro Glen and Vista del Sol",
+      "features": [
+        "2BD/1BA on each side",
+        "Colorful tile trim and solar updates",
+        "Half a block from Cosmica Skate Loop"
+      ],
+      "price": "$410,000",
+      "note": "Ideal for siblings buying together or a live-in/rent-out starter"
+    },
+    {
+      "name": "Jasmine Court Starter Home",
+      "location": "Eastern Flats fringe",
+      "features": [
+        "3BD/2BA mid-century ranch",
+        "Refinished kitchen with old-school charm",
+        "Walking distance to community garden and TTA Red Line"
+      ],
+      "price": "$362,500",
+      "note": "Last appraisal came in $20K above asking"
+    },
+    {
+      "name": "Luna Vista Rowhouse",
+      "location": "Union Hollow edge",
+      "features": [
+        "2BD/1.5BA with front porch and reading alcove",
+        "Upcycled wood finishes, newer roof",
+        "Blocks from local co-op and murals"
+      ],
+      "price": "$298,000",
+      "note": "Sold in 9 days to former teacher — Noah threw in a firepit"
+    }
+  ],
+  "signatureMoves": [
+    "Carries sidewalk chalk to help clients visualize yard layouts",
+    "Keeps a binder of family photos past clients send him post-move",
+    "Explains escrow with metaphors about cutting abuela’s birthday cake evenly"
+  ],
+  "relationships": {
+    "trustedNetwork": [
+      "Dana at Community Credit Union – helps structure fair loans",
+      "Luis, his cousin – does affordable roof repairs",
+      "Librada – a former client who now co-hosts housing literacy workshops with him"
+    ],
+    "peers": "Friendly with Amir Ezzan — they once co-hosted a workshop called 'Legacy Meets Livability'"
+  },
+  "goals": {
+    "shortTerm": "Turn a vacant lot into a mini homebuyer education garden",
+    "longTerm": "Create a mentorship program for young bilingual agents with roots in working-class communities"
+  }
+}
+
+// Abby Monroe
+
+{
+  "name": "Abby Monroe",
+  "age": 53,
+  "pronouns": "she/her",
+  "profession": {
+    "title": "Professor of Cultural Studies",
+    "institution": "Tubman University",
+    "specialties": [
+      "Retro-Futurism",
+      "Mid-Century Ephemera",
+      "Post-War Utopian Aesthetics",
+      "Media History & Visual Culture"
+    ],
+    "publicPrograms": [
+      "Open Orbit Saturdays – Civic lecture series at Astro Glen Civic Dome",
+      "Consults with the Astro Glen Historical Society",
+      "Occasional guest speaker on Summit City radio panels about design nostalgia"
+    ]
+  },
+  "residence": {
+    "address": "Orbit Arms, Unit 7D",
+    "neighborhood": "Astro Glen",
+    "buildingStyle": "Mid-century high-rise with cantilevered balconies",
+    "unitDetails": {
+      "features": [
+        "Sunken living room with shag carpet",
+        "Picture window overlooking Bullwinkle Blvd Station",
+        "Vintage appliances (mint green)",
+        "Curated collection of vintage postcards and archival microfilm"
+      ]
+    }
+  },
+  "personality": {
+    "traits": [
+      "Quirky",
+      "Cerebral",
+      "Playful with aesthetics",
+      "Comfortably eccentric"
+    ],
+    "style": "Retro-futurist maximalism (lavender jumpsuits, oversized sunglasses, sequined capes)",
+    "routines": [
+      "Saturday Jet Roast with orange zest",
+      "Synth bossa nova DJ sets at The Hover Room",
+      "Donating ephemera to Astro Glen Historical Society"
+    ],
+    "likes": [
+      "Modular furniture",
+      "Analogue synths",
+      "Moonbase architecture",
+      "Unironic community theater"
+    ]
+  },
+  "neighborhood": {
+    "name": "Astro Glen",
+    "station": "Bullwinkle Blvd Station",
+    "aesthetic": "Jetsons-inspired mid-century retro-futurism",
+    "features": [
+      "Lunar Park with kinetic sculptures",
+      "Astro Glen Civic Dome for film & lectures",
+      "GalaxiMart and Retrograde Records",
+      "Orbit-themed apartment towers"
+    ],
+    "culturalIdentity": "Preservation of an imagined future; civic nostalgia as community glue"
+  },
+  "typicalSaturday": {
+    "morning": [
+      "Picks up lavender biscoff wafers and Jet Roast at GalaxiMart",
+      "Wanders through Lunar Park",
+      "Prepares for lecture at Civic Dome"
+    ],
+    "afternoon": [
+      "Gives a talk on domestic feminism in mid-century ephemera",
+      "Lunch at The Hover Room (tofu melt and cherry phosphate)",
+      "Preps record set for Analog Vinyl & Vermouth Night"
+    ],
+    "evening": [
+      "Spins vinyl at The Hover Room (bossa nova, Esquivel, space disco)",
+      "Sips chilled beet gin in silver boots",
+      "Walks home beneath Bullwinkle’s glowing halo"
+    ]
+  },
+  "knownFor": [
+    "Leading walking tours in silver jumpsuits",
+    "Owning a space flute (glittered melodica)",
+    "Referring to modern tech as 'post-retro abstractions'",
+    "Once appearing on a national segment about the future that never was"
+  ]
+}
+
+// Terrance Hollowell
+
+{
+  "name": "Terrance Hollowell",
+  "age": 23,
+  "pronouns": "he/him",
+  "currentResidence": {
+    "status": "Unhoused",
+    "location": "Outskirts of Eastern Flats Terminal",
+    "shelterDetails": {
+      "encampmentType": "Makeshift tarp shelter between freight fencing and defunct billboard",
+      "seasonalAdaptations": [
+        "Uses subway insulation panels for winter cold",
+        "Solar camping lamp for evening reading",
+        "Keeps thermos and journal in a former postman's satchel"
+      ],
+      "safetyStrategy": "Stays near vending delivery zones with lighting and semi-constant foot traffic"
+    }
+  },
+  "background": {
+    "placeOfOrigin": "Born in Glenvale, Summit City",
+    "formerHousing": "Evicted from subsidized housing after aging out of foster system",
+    "education": {
+      "highSchool": "Eastern Flats Adult Program (GED)",
+      "interests": ["History documentaries", "DIY bike repair", "Public transit lore"]
+    },
+    "familyConnections": "Estranged from older brother, no contact with biological parents"
+  },
+  "personality": {
+    "traits": [
+      "Observant",
+      "Introverted but warm",
+      "Skeptical of institutions",
+      "Philosophical in bursts"
+    ],
+    "dailyRoutines": [
+      "Walks laps through Eastern Flats Terminal mid-morning for warmth and motion",
+      "Volunteers three days a week sorting recycling behind Foxtrot Market",
+      "Keeps a handwritten journal of overheard conversations and urban infrastructure theories"
+    ],
+    "speechStyle": {
+      "cadence": "Measured, with sharp pauses and long, thoughtful stares",
+      "habits": [
+        "Quotes snippets of radio shows verbatim",
+        "Sometimes lapses into elevated vocabulary unexpectedly",
+        "Refers to transit routes by number and folklore (e.g., 'old 42 line, back when it ran double')"
+      ]
+    }
+  },
+  "interests": {
+    "passions": [
+      "Transit schematics from the '60s",
+      "Street mural history in Summit",
+      "Documenting changing wind patterns through the freight corridor"
+    ],
+    "skills": [
+      "Bike maintenance",
+      "Basic first aid",
+      "Rewiring donated lamps"
+    ],
+    "goals": [
+      "Self-publish a pocket field guide to forgotten neighborhoods in Summit",
+      "Eventually apprentice at Summit Rail Maintenance Yard",
+      "Reconnect with his brother if the terms feel equal"
+    ]
+  },
+  "socialCircle": {
+    "trustedConnections": [
+      "Emory — retired electrician who brings tools and updates on zoning proposals",
+      "Candace — barista who lets him charge devices and leave notes in the tip jar",
+      "Zeke (loosely) — student who sometimes trades sandwiches for transit stories"
+    ],
+    "communityPerception": "Known as 'The Quiet Cartographer' in Eastern Flats; respected more than pitied"
+  },
+  "narrativeHooks": [
+    "Asked to consult on a community mural reflecting the 'invisible routes' of the city",
+    "Begins logging forgotten infrastructure in tandem with a Tubman U urban planning class",
+    "Discovers a sealed freight tunnel with pre-transit maps still intact"
+  ]
+}
+
+// Emory Bell
+
+{
+  "name": "Emory Bell",
+  "age": 66,
+  "pronouns": "he/him",
+  "occupation": {
+    "former": "Journeyman Electrician – Local 341",
+    "currentStatus": "Semi-retired",
+    "communityRole": "Informal infrastructure mentor in Eastern Flats"
+  },
+  "residence": {
+    "status": "Renter",
+    "location": "Edge of Glenvale, near old substation corridor",
+    "homeDescription": "Single-room converted utility shack with patched wiring, potted herbs, and a collection of antique multimeters"
+  },
+  "personality": {
+    "traits": [
+      "Steady-handed",
+      "Dry-witted",
+      "Reluctantly nurturing",
+      "Meticulous"
+    ],
+    "habits": [
+      "Cleans wire spools while talking",
+      "Uses ‘kid’ even when speaking to middle-aged folks",
+      "Carries a small insulated coffee thermos labeled ‘Don’t Ask’"
+    ],
+    "speechStyle": {
+      "cadence": "Measured drawl with occasional sparks of frustration",
+      "quotes": [
+        "They tried to bury the grid. The grid remembers.",
+        "Rust’s just memory with better lighting."
+      ]
+    }
+  },
+  "background": {
+    "birthplace": "Summit City Industrial Hospital (now defunct)",
+    "family": "Widowed, one daughter in the Navy (rarely writes), raised by a grandmother who wired houses by flashlight in the ’50s",
+    "careerMilestones": [
+      "Helped install emergency routing along the Red Line after the ’97 blackout",
+      "Quietly rewired three shelters off-record when city funds got stuck in litigation",
+      "Trained over 40 apprentices, five of whom now work for the TTA"
+    ]
+  },
+  "skillsAndKnowledge": {
+    "technicalSkills": [
+      "High-voltage diagnostics",
+      "Retrofit grid conversion",
+      "Subsurface conduit mapping"
+    ],
+    "streetKnowledge": [
+      "Knows which junction boxes whistle before failure",
+      "Maintains a mental map of tunnels nobody logged",
+      "Can identify transformers by hum pitch alone"
+    ]
+  },
+  "relationships": {
+    "Terrance Hollowell": "Brings soldering scraps and thermos top-offs; teaching him analog continuity methods",
+    "Depot Techs": "Known to walk into breaker rooms unannounced, no one minds",
+    "Local Civic Patrol": "Unofficially consulted about outages and flood backups"
+  },
+  "legacyNotes": {
+    "personalArchive": "Old manuals, switchyard sketches, Summit utility memos from the Carter era",
+    "dream": "Wants to create a public ‘powerwalk’ tour of forgotten infrastructure as civic art and memory trail",
+    "unfulfilledGoal": "Finish a hand-drawn map of underground power across Eastern Flats — he’s gotten as far as pencil outlines and coffee rings"
+  }
+}
+
+{
+  "name": "Winston Thurgood Samuels III",
+  "age": 38,
+  "pronouns": "he/him",
+  "position": "Mayor of Summit City",
+  "termStatus": "Second term, recently re-elected",
+  "background": {
+    "birthplace": "Summit City – Chancellor Hills",
+    "education": [
+      "Summit City Public Academy for Leadership (valedictorian)",
+      "BA in Rhetoric, Langford State University",
+      "MPP from Columbia University, with a semester abroad in Dubai studying civic mega-projects"
+    ],
+    "priorRoles": [
+      "City Councilor (Chancellor Ward)",
+      "Deputy Commissioner of Economic Development",
+      "Talk show host in early 20s ('From the Steps with Winston')"
+    ]
+  },
+  "personality": {
+    "traits": [
+      "Charismatically extroverted",
+      "Calculatedly transparent",
+      "Sharp-witted with a wink",
+      "Publicly relatable, privately ruthless when needed"
+    ],
+    "publicPersona": "A blend of old-school swagger and new-school savviness — often seen in three-piece suits with custom embroidery, yet insists on walking to his press conferences with a paper coffee cup",
+    "quirks": [
+      "Quotes Beyoncé and Cicero in the same speech",
+      "Owns 73 cufflinks but only wears 6 of them",
+      "Keeps a framed letter from Langston Hughes above his desk — it’s actually a well-forged replica, but no one’s verified it"
+    ]
+  },
+  "family": {
+    "spouse": {
+      "name": "Nasir Fontaine-Samuels",
+      "profession": "Restoration architect & architectural historian",
+      "publicRole": "Co-chair of the Langford Preservation Society and board member of the Civic Arts Council"
+    },
+    "pets": [
+      {
+        "name": "Balthazar",
+        "breed": "Afghan Hound",
+        "description": "Wears velvet booties on cold days and responds only to classical piano"
+      },
+      {
+        "name": "Vera",
+        "breed": "Great Pyrenees",
+        "description": "Usually found draped across Winston’s office couch like an ottoman sculpted from silk and power"
+      }
+    ]
+  },
+    "residence": {
+    "homeSharedWith": "Nasir Fontaine-Samuels",
+    "location": "Langford Heights",
+    "propertyName": "Historic Carriage House",
+    "description": "A restored 19th-century brick carriage house with vaulted ceilings, original ironwork, and a private rear courtyard",
+    "features": [
+      "Vaulted reading loft filled with architecture monographs",
+      "Private courtyard used for poetry brunches and civic salons",
+      "Restored elevator grille repurposed as a wine rack",
+      "Hidden skylight above the central stairwell"
+    ],
+    "estimatedValue": "$3.2 million"
+  },
+  "administration": {
+    "keyPriorities": [
+      "Light rail expansion (including the Pinnacle Line)",
+      "Private/public housing hybrids with cultural covenants",
+      "District-based participatory budgeting festivals"
+    ],
+    "controversies": [
+      "Alleged zoning loophole that benefited a donor’s mid-rise project near Bullwinkle Blvd Station",
+      "Delayed response to utility overcharges in Glenvale",
+      "Criticism of a photo op in Langford Commons with luxury developers during eviction hearings"
+    ],
+    "approvalRating": {
+      "citywideAverage": "68%",
+      "highest": "Langford Heights & Astro Glen",
+      "lowest": "Eastern Flats & Transit North Wards"
+    }
+  },
+  "publicSpeechStyle": {
+    "cadence": "Rising-falling with strategic pauses; breaks fourth wall when addressing public grief or civic victories",
+    "phrases": [
+      "Let me tell you why this matters...",
+      "Summit City doesn’t just rise — it reflects.",
+      "We are the blueprint *and* the builders."
+    ]
+  },
+  "reputation": {
+    "streetView": "People take selfies with him at food trucks. City workers say he knows their names — or at least fakes it well.",
+    "insiderView": "Loyal to a fault… until the tide turns. Keeps promises in public and IOUs in private.",
+    "pressView": "The most telegenic mayor since we invented public Wi-Fi — scandal-resistant but not entirely squeaky clean."
+  },
+  "narrativeHooks": [
+    "Rumors swirl about a potential gubernatorial run — which he jokes about but never quite denies",
+    "Underneath the flash, he’s quietly funding a citywide oral history archive via private trusts",
+    "Has a burner phone used only for midnight chats with Terrance Hollowell about unmarked civic tunnels"
+  ]
+}
+
+{
+  "name": "Nasir Fontaine-Samuels",
+  "age": 37,
+  "pronouns": "he/him",
+  "education": {
+    "undergraduate": {
+      "institution": "Tubman University",
+      "degree": "BFA in Architectural History",
+      "distinctions": [
+        "Graduated magna cum laude",
+        "President of the Urban Memory Collective",
+        "Documented the original Bullwinkle Blvd Station blueprints for a senior thesis project titled 'Tomorrow’s Ruins Today'"
+      ]
+    },
+    "graduate": {
+      "institution": "Pratt Institute",
+      "degree": "MA in Preservation Architecture"
+    }
+  },
+  "occupation": {
+    "title": "Preservation Architect & Civic Design Advisor",
+    "affiliations": [
+      "Co-Chair – Langford Preservation Society",
+      "Board Member – Summit Civic Arts Council",
+      "Consultant to the TTA on historically sensitive infrastructure upgrades"
+    ],
+    "notableProjects": [
+      "Restoration of Cosmica Skate Loop’s kinetic lighting system",
+      "Adaptive reuse of Union Hollow Waterworks into live/work housing for artists",
+      "Lead preservation analyst for the Pinnacle Line station integration at Skyline Timber Corridor"
+    ]
+  },
+  "residence": {
+    "homeSharedWith": "Mayor Winston Thurgood Samuels III",
+    "location": "Langford Heights",
+    "propertyName": "Historic Carriage House",
+    "description": "A restored 19th-century brick carriage house with vaulted ceilings, original ironwork, and a private rear courtyard",
+    "features": [
+      "Vaulted reading loft filled with architecture monographs",
+      "Private courtyard used for poetry brunches and civic salons",
+      "Restored elevator grille repurposed as a wine rack",
+      "Hidden skylight above the central stairwell"
+    ],
+    "estimatedValue": "$3.2 million"
+  },
+  "personality": {
+    "traits": [
+      "Understatedly sharp",
+      "Culturally attuned",
+      "Steadfast in public spaces, playful in private",
+      "Slow to anger but exquisitely cutting when necessary"
+    ],
+    "style": "Soft blazers, structured neutrals, a constant scent of pine, bergamot, or bourbon",
+    "loves": [
+      "Tactile history",
+      "Archival photographs of modernist errors",
+      "Side-eye delivered via espresso cup"
+    ]
+  },
+  "relationshipWithWinston": {
+    "dynamic": "Grounding force and quiet strategist behind Winston's spotlight moves",
+    "origin": "Met at a Tubman University fundraiser — Nasir was restoring archival sketches, Winston was campaigning for city council",
+    "publicPerception": "Summit City’s most composed power couple — equal parts spectacle and substance"
+  },
+  "rituals": [
+    "Hosts quarterly dinners for Tubman U urban planning alumni, always begins with a toast to the city's ghosts",
+    "Sends annotated postcards to past preservation apprentices — never repeats a stamp",
+    "Keeps a rotating shelf of city blueprints in the foyer, often changes them based on civic mood"
+  ],
+  "narrativeHooks": [
+    "Secretly lobbying for the inclusion of queer historic sites in the city’s landmark registry",
+    "Receives an anonymous box of mid-century signage from a demolished warehouse — possibly connected to buried TTA lore",
+    "Balancing deep loyalty to Winston with private doubts about his next big infrastructure announcement"
+  ]
+}
+
+{
+  "name": "Jericho Alvarez",
+  "age": 14,
+  "pronouns": "he/him",
+  "residence": {
+    "neighborhood": "Civic Vista",
+    "transitAccess": "Yellow Line – Civic Vista Station",
+    "homeType": "Two-bedroom apartment above a corner bodega",
+    "household": [
+      "Mother – EMT with Summit City Fire & Rescue",
+      "Older sister – Community college student studying early childhood education",
+      "Abuelo – retired machinist who watches space documentaries with Jericho every Sunday"
+    ]
+  },
+  "education": {
+    "school": "Jose Marti STEM Academy",
+    "location": "Union City",
+    "focus": "Aerospace & Applied Physics Track",
+    "activities": [
+      "Captain of the Robotics Club",
+      "Member of the Young Engineers Coalition",
+      "Volunteer tutor for 6th grade math lab"
+    ],
+    "favoriteSubjects": [
+      "Orbital mechanics",
+      "3D modeling",
+      "History of spaceflight"
+    ]
+  },
+  "personality": {
+    "traits": [
+      "Quietly intense",
+      "Endlessly curious",
+      "Loyal to his block",
+      "Dreams in schematics"
+    ],
+    "style": "Wears a patched-up bomber jacket with NASA and TTA badges, carries a sketchbook full of rocket designs and annotated subway maps",
+    "routines": [
+      "Takes the Yellow Line to school every morning with a thermos of café con leche",
+      "Stops by the Civic Vista Library twice a week to check out engineering books",
+      "Builds model rockets in the alley behind his building with recycled parts"
+    ]
+  },
+  "goals": {
+    "shortTerm": "Win the citywide STEM Expo with his prototype for a reusable micro-launch vehicle",
+    "longTerm": "Work for the Summit Aerospace Initiative or intern at a real launch facility",
+    "dream": "Design the first orbital platform launched from Summit City soil"
+  },
+  "inspirations": [
+    "His abuelo’s stories about working on early transit engines",
+    "A field trip to the Langford Civic Observatory in 5th grade",
+    "A YouTube channel run by a Cuban-American aerospace engineer who grew up in the Flats"
+  ],
+  "narrativeHooks": [
+    "Gets invited to a mentorship program run by Nasir Fontaine-Samuels and Abby Monroe",
+    "Discovers a forgotten TTA blueprint that inspires a new propulsion design",
+    "Struggles with imposter syndrome when competing against wealthier students from Langford Commons"
+  ]
+}
+
+,
+
+{
+  "name": "Trevon “Tre” Marshall",
+  "age": 26,
+  "pronouns": "he/him",
+  "residence": {
+    "neighborhood": "South Verge Commons",
+    "locationNotes": "Planned community adjacent to the Red Line’s Far South Station terminus",
+    "building": {
+      "name": "Summit Ridge Apartments",
+      "style": "Eco-modern with vertical gardens and solar glass balconies",
+      "unitType": "Live-work studio",
+      "squareFootage": 900,
+      "monthlyRent": "$3,800",
+      "features": [
+        "Exposed concrete walls with moss panels",
+        "Convertible workspace with modular shelving",
+        "Smart lighting synced to circadian rhythm",
+        "Shared rooftop greenhouse and podcast booth"
+      ]
+    }
+  },
+  "profession": {
+    "title": "Freelance Creative Strategist",
+    "focus": [
+      "Brand storytelling for ethical startups",
+      "Visual identity consulting for local nonprofits",
+      "Occasional voiceover work for civic PSAs"
+    ],
+    "workspace": "Half of his studio is dedicated to a standing desk, moodboard wall, and a vintage drafting table he found at a Glenvale salvage auction"
+  },
+  "personality": {
+    "traits": [
+      "Trend-aware but grounded",
+      "Socially agile",
+      "Quietly ambitious",
+      "Loyal to his transit zone"
+    ],
+    "style": "Earth-tone streetwear, chunky headphones, always carries a reusable water bottle with stickers from every TTA line",
+    "habits": [
+      "Starts each morning with a rooftop stretch and a turmeric latte",
+      "Rides the Red Line into Union Hollow twice a week for client meetings",
+      "Hosts monthly ‘Brand & Brunch’ sessions in the building’s shared lounge"
+    ]
+  },
+  "socialCircle": {
+    "neighbors": [
+      "A ceramicist named Miko who trades mugs for Tre’s branding help",
+      "A retired transit planner who critiques Tre’s logo symmetry",
+      "A couple who run a zero-waste bakery and let Tre test slogans on their pastry boxes"
+    ],
+    "cityConnections": [
+      "Knows Winston Samuels III from a past campaign gig — they nod in passing",
+      "Once interviewed Abby Monroe for a podcast episode on retro-futurist civic design"
+    ]
+  },
+  "goals": {
+    "shortTerm": "Land a contract with the Summit Civic Arts Council to rebrand their youth outreach program",
+    "longTerm": "Open a creative incubator near the Red Line terminus for underrepresented designers",
+    "dream": "Design the visual identity for a new TTA line — color, logo, vibe, everything"
+  },
+  "narrativeHooks": [
+    "Gets invited to a closed-door branding summit hosted by Nasir Fontaine-Samuels",
+    "Discovers an old transit mural behind a wall panel in his studio — begins documenting it",
+    "Struggles with the ethics of helping a luxury developer brand a new building near Eastern Flats"
+  ]
+}

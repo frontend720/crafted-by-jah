@@ -70,6 +70,10 @@ function App() {
   }
 
 console.log(data.metro_schedule.light_rail_lines[1].theme)
+
+
+console.log((data.metro_schedule.population + data.metro_schedule.base) * `.${Math.floor(data.metro_schedule.ridership)}`)
+
   return (
     <div style={
       // {backgroundImage: data.metro_schedule.light_rail_lines[theme === false ? 0 : 1].theme.dark}

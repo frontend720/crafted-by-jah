@@ -1,0 +1,19 @@
+{
+    "homes": [
+        {
+  "business_profile": {
+    "name": "Porchline Homes",
+    "sector": "Residential Construction - Spec Homes",
+    "located_near": "Willow Creek Station",
+    "target_audience": ["First-time buyers", "Young families", "Commuters seeking move-in ready living"]
+  },
+  "ad_components": {
+    "headline": "Spec’d Right, Ready Tonight—Porchline Homes Near the Red Line",
+    "body_copy": "Life moves fast—your home should be ready for it. At Porchline Homes, just off Willow Creek Station, we build thoughtfully crafted spec homes where keyless entries, smart finishes, and sunny porches are already waiting. Built by builders who ride the rails and live down the block.",
+    "offer_or_cta": "Tour any available unit in Willow Ridge Commons by July 30th and get $2,000 toward moving costs with proof of transit pass.",
+    "visual_cue": "A digitally rendered Craftsman-style home framed by Red Line canopy iconography and soft sunset lighting matching Willow Creek’s station mural",
+    "legal_footer": "This ad is sponsored by Porchline Homes. Not affiliated with Summit City Transit Authority."
+  }
+}
+    ]
+}

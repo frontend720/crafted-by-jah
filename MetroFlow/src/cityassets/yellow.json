@@ -1,0 +1,405 @@
+[
+  {
+    "name": "Yellow Line Terminus East",
+    "nickname": "The Sunrise Gate",
+    "line": "Yellow Line",
+    "type": "Suburban Community Hub",
+    "design_style": "Warm brick and timber construction with large, east-facing clerestory windows to catch the morning light",
+    "features": [
+      "A community plaza with a farmers' market on weekends",
+      "Integrated bus loop with covered waiting areas",
+      "A digital art installation that changes with the time of day",
+      "Secure bike storage and a small bike repair station"
+    ],
+    "function": "Eastern anchor of the Yellow Line, serving established residential neighborhoods and connecting them to the city core.",
+    "transit_data": {
+      "average_daily_footfall": "9,500 passengers",
+      "modal_split": {
+        "light_rail": "55%",
+        "bus": "35%",
+        "pedestrian/bike": "10%"
+      },
+      "served_bus_routes": []
+    },
+    "neighborhood": {
+      "name": "Eastwood Commons",
+      "vibe": "Established, comfortable, and community-oriented—a classic suburb with mature trees and a relaxed pace.",
+      "landmarks": [
+        {
+          "name": "Eastwood Public Library",
+          "type": "A modern branch library with extensive community programming",
+          "estimated_value_usd": "25,000,000 - 35,000,000"
+        },
+        {
+          "name": "Sunrise Park",
+          "type": "A large community park with sports fields, a playground, and a popular dog run",
+          "estimated_value_usd": "30,000,000 - 45,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "55,000,000 - 80,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "The Terraces",
+          "style": "A mix of 1970s split-level homes and modern infill developments",
+          "residents": [
+            "Families",
+            "City employees",
+            "Retirees"
+          ],
+          "vibe": "Weekend barbecues, quiet evenings, and a strong neighborhood watch program",
+          "estimated_value_usd": "220,000,000 - 300,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "220,000,000 - 300,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Single-Family Residential Zone (R-1)",
+        "Neighborhood Conservation District",
+        "Community Commercial Node"
+      ]
+    },
+    "estimated_individual_station_value_usd": "100,000,000 - 140,000,000",
+    "estimated_combined_area_value_usd": "375,000,000 - 520,000,000"
+  },
+  {
+    "name": "Lakeside",
+    "nickname": "The Waterfront Retreat",
+    "line": "Yellow Line",
+    "type": "Recreational & High-Value Residential Stop",
+    "design_style": "Nautical-inspired design with white and blue tones, extensive decking, and a canopy shaped like a sail",
+    "features": [
+      "An elevated platform offering panoramic views of the adjacent lake",
+      "Direct access to a public beach, marina, and waterfront promenade",
+      "Wayfinding signage pointing to boat rentals and waterfront restaurants",
+      "Public art featuring sculptures made from reclaimed boat materials"
+    ],
+    "function": "Serves a high-end residential district and a popular recreational lake, offering a resort-like atmosphere within the city.",
+    "transit_data": {
+      "average_daily_footfall": "7,800 passengers",
+      "modal_split": {
+        "light_rail": "65%",
+        "pedestrian/bike": "25%",
+        "bus": "10%"
+      },
+      "served_bus_routes": []
+    },
+    "neighborhood": {
+      "name": "Summit Lake Shores",
+      "vibe": "Affluent, leisurely, and scenic—where city life meets lakeside living.",
+      "landmarks": [
+        {
+          "name": "Summit Lake Marina & Yacht Club",
+          "type": "A private marina and social club with public access to certain amenities",
+          "estimated_value_usd": "80,000,000 - 115,000,000"
+        },
+        {
+          "name": "The Lakehouse Restaurant",
+          "type": "A fine-dining restaurant with expansive lake views",
+          "estimated_value_usd": "15,000,000 - 25,000,000"
+        },
+        {
+          "name": "Waterfront Promenade",
+          "type": "A beautifully maintained walking and cycling path around the lake",
+          "estimated_value_usd": "50,000,000 - 70,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "145,000,000 - 210,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "The Shoreline",
+          "style": "Large, modern lakefront homes with private docks and extensive glass",
+          "residents": [
+            "Corporate executives",
+            "Surgeons and other medical specialists",
+            "Successful entrepreneurs"
+          ],
+          "vibe": "The sound of water lapping, weekend sailing regattas, and exclusive cocktail parties",
+          "estimated_value_usd": "450,000,000 - 650,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "450,000,000 - 650,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Waterfront Residential Zone",
+        "View Corridor Protection Overlay",
+        "High-Value Property District"
+      ]
+    },
+    "estimated_individual_station_value_usd": "150,000,000 - 210,000,000",
+    "estimated_combined_area_value_usd": "745,000,000 - 1,070,000,000"
+  },
+  {
+    "name": "Bulwinkle Boulevard",
+    "nickname": "The Retro Row",
+    "line": "Yellow Line",
+    "type": "Historic Commercial Strip Stop",
+    "design_style": "Mid-century 'Googie' architecture with swooping rooflines, neon signage accents, and terrazzo-patterned platforms",
+    "features": [
+      "Restored vintage neon signs from the boulevard's heyday",
+      "Benches shaped like classic car fins",
+      "Historical photos showcasing the boulevard in the 1950s and 60s",
+      "A distinctive, quirky statue of a moose near the main entrance"
+    ],
+    "function": "Serves a unique and historic commercial corridor known for its vintage shops, independent businesses, and retro charm.",
+    "transit_data": {
+      "average_daily_footfall": "6,500 passengers",
+      "modal_split": {
+        "light_rail": "70%",
+        "bus": "20%",
+        "pedestrian": "10%"
+      },
+      "served_bus_routes": []
+    },
+    "neighborhood": {
+      "name": "The Boulevard District",
+      "vibe": "Nostalgic, quirky, and independent—a slice of mid-century Americana.",
+      "landmarks": [
+        {
+          "name": "The Starlight Bowl",
+          "type": "A vintage bowling alley and diner that has been in continuous operation since 1958",
+          "estimated_value_usd": "10,000,000 - 15,000,000"
+        },
+        {
+          "name": "Rocket Records",
+          "type": "A beloved independent record store specializing in vinyl",
+          "estimated_value_usd": "4,000,000 - 7,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "14,000,000 - 22,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "The Bungalows",
+          "style": "Small, post-war bungalow homes on quiet side streets off the main boulevard",
+          "residents": [
+            "Artists and musicians",
+            "Young couples and first-time buyers",
+            "Long-time residents who cherish the neighborhood's character"
+          ],
+          "vibe": "A strong sense of local pride, thriving small businesses, and community-led preservation efforts",
+          "estimated_value_usd": "130,000,000 - 180,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "130,000,000 - 180,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Historic Commercial Corridor",
+        "Independent Business Incentive Zone",
+        "Neighborhood Conservation District"
+      ]
+    },
+    "estimated_individual_station_value_usd": "80,000,000 - 110,000,000",
+    "estimated_combined_area_value_usd": "224,000,000 - 312,000,000"
+  },
+  {
+    "name": "Central Station",
+    "nickname": "The Grand Confluence",
+    "line": "Yellow Line",
+    "type": "Intermodal Transfer Hub",
+    "design_style": "Cathedral-scale transit hall with arched glass vaults",
+    "features": [
+      "Interactive ceiling map of Summit's transit evolution",
+      "Terraced ticketing concourse with sculptural light columns",
+      "Surround-sound boarding alerts in multiple languages",
+      "Dining promenade with micro-kitchens from all districts"
+    ],
+    "function": "Summit City's main light rail interchange and civic showcase. The bustling heart of the city's public transport network.",
+    "transit_data": {
+      "average_daily_footfall": "64,000 passengers",
+      "modal_split": {
+        "light_rail": "62%",
+        "bus/taxi": "25%",
+        "pedestrian/bike": "13%"
+      },
+      "served_bus_routes": [
+        "15+ city bus routes"
+      ],
+      "transfer_link": {
+        "is_transfer_station": true,
+        "connects_to": [
+          "Red Line",
+          "Blue Line",
+          "Green Line",
+          "Martin Express Rail"
+        ]
+      }
+    },
+    "neighborhood": {
+      "name": "Civic Plaza Core",
+      "vibe": "Monumental, multicultural, and perpetually in motion.",
+      "landmarks": [
+        {
+          "name": "Summit Grand Hall",
+          "type": "Civic event venue and historical monument",
+          "estimated_value_usd": "150,000,000 - 220,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "150,000,000 - 220,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [
+        {
+          "name": "Summit Central Lofts",
+          "style": "High-rise industrial luxury",
+          "features": [
+            "Direct elevator to transit mezzanine",
+            "Live-work zoning with panoramic boardroom lounges"
+          ],
+          "estimated_value_usd": "280,000,000 - 390,000,000"
+        }
+      ],
+      "estimated_residential_value_combined_usd": "280,000,000 - 390,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Civic Interchange Priority Zone",
+        "Mixed-Income Mobility District"
+      ]
+    },
+    "estimated_individual_station_value_usd": "400,000,000 - 550,000,000",
+    "estimated_combined_area_value_usd": "830,000,000 - 1,160,000,000"
+  },
+  {
+    "name": "Technology Park",
+    "nickname": "The Silicon Curve",
+    "line": "Yellow Line",
+    "type": "Corporate Tech Campus Hub",
+    "design_style": "Futuristic and minimalist with brushed metal, smart glass, and integrated fiber-optic lighting",
+    "features": [
+      "Direct, climate-controlled walkways to major tech campuses",
+      "Wireless charging surfaces on all benches and tables",
+      "An abundance of quiet 'work pods' for commuters",
+      "Real-time shuttle tracking for corporate campus buses"
+    ],
+    "function": "Serves the city's primary technology park, home to major software, biotech, and hardware companies.",
+    "transit_data": {
+      "average_daily_footfall": "18,000 passengers",
+      "modal_split": {
+        "light_rail": "75%",
+        "bus/shuttle": "20%",
+        "pedestrian": "5%"
+      },
+      "served_bus_routes": []
+    },
+    "neighborhood": {
+      "name": "Summit Tech Corridor",
+      "vibe": "Innovative, fast-paced, and highly caffeinated—a hub of ambition and technological advancement.",
+      "landmarks": [
+        {
+          "name": "Nexus Corp Global Headquarters",
+          "type": "A massive, architecturally significant tech campus with employee-only amenities",
+          "estimated_value_usd": "700,000,000 - 950,000,000"
+        },
+        {
+          "name": "The Innovation Forum",
+          "type": "A state-of-the-art conference and event center for tech industry gatherings",
+          "estimated_value_usd": "90,000,000 - 130,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "790,000,000 - 1,080,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "The Network Lofts",
+          "style": "Brand-new, high-tech apartments with smart home features, designed for the tech workforce",
+          "residents": [
+            "Software engineers",
+            "Venture capitalists",
+            "Product managers"
+          ],
+          "vibe": "A 'work hard, play hard' mentality, with luxury amenities and a seamless integration of life and work",
+          "estimated_value_usd": "350,000,000 - 480,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "350,000,000 - 480,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Technology and Research Park Zone",
+        "High-Density Residential Overlay",
+        "Corporate Campus Master Plan Overlay"
+      ]
+    },
+    "estimated_individual_station_value_usd": "220,000,000 - 300,000,000",
+    "estimated_combined_area_value_usd": "1,360,000,000 - 1,860,000,000"
+  },
+  {
+    "name": "Yellow Line Terminus West",
+    "nickname": "The Digital Nomad's Gate",
+    "line": "Yellow Line",
+    "type": "Tech-Adjacent Residential Terminus",
+    "design_style": "Sleek and modular with clean lines, integrated solar panels, and a focus on efficiency and convenience",
+    "features": [
+      "A large, comfortable co-working lounge integrated into the station",
+      "On-demand shuttle service to the Technology Park and local apartment complexes",
+      "Vending machines offering healthy snacks, drinks, and tech accessories",
+      "A large park-and-ride facility with numerous EV charging stations"
+    ],
+    "function": "Western terminus of the Yellow Line, primarily serving the residential communities where the city's tech workforce lives.",
+    "transit_data": {
+      "average_daily_footfall": "12,500 passengers",
+      "modal_split": {
+        "light_rail": "60%",
+        "bus/shuttle": "25%",
+        "car/pedestrian": "15%"
+      },
+      "served_bus_routes": []
+    },
+    "neighborhood": {
+      "name": "West Tech Village",
+      "vibe": "Modern, convenient, and quiet—a suburb designed for the lifestyles of the tech industry.",
+      "landmarks": [
+        {
+          "name": "The Circuit Green",
+          "type": "A central park with walking paths, outdoor fitness equipment, and high-speed public Wi-Fi",
+          "estimated_value_usd": "40,000,000 - 60,000,000"
+        },
+        {
+          "name": "The Hub Retail Center",
+          "type": "A lifestyle retail center with a gourmet grocery store, high-end gym, and casual restaurants",
+          "estimated_value_usd": "70,000,000 - 100,000,000"
+        }
+      ],
+      "estimated_landmark_value_combined_usd": "110,000,000 - 160,000,000"
+    },
+    "residential_assets": {
+      "executive_towers": [],
+      "micro_neighborhoods": [
+        {
+          "name": "The Byte-Sized Homes",
+          "style": "A mix of modern townhomes and luxury apartment complexes with extensive amenities",
+          "residents": [
+            "Tech workers and their families",
+            "Young professionals",
+            "Remote workers"
+          ],
+          "vibe": "Quiet and family-friendly on the surface, but with a highly connected and tech-savvy population",
+          "estimated_value_usd": "400,000,000 - 550,000,000"
+        }
+      ],
+      "estimated_micro_neighborhoods_value_combined_usd": "400,000,000 - 550,000,000"
+    },
+    "zoning_overlays": {
+      "overlay_types": [
+        "Master-Planned Community Zone",
+        "Transit-Oriented Development Incentive District",
+        "Mixed-Use (Retail/Residential) Zone"
+      ]
+    },
+    "estimated_individual_station_value_usd": "160,000,000 - 220,000,000",
+    "estimated_combined_area_value_usd": "670,000,000 - 930,000,000"
+  }
+]
