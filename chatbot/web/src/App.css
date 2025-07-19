@@ -5,6 +5,7 @@
   background-size: cover;
   height: 100vh;
   background-position: center;
+  padding-bottom: 300px
 }
 
 .chat-container-empty {
@@ -100,4 +101,23 @@
 
 .welcome-container {
   font-weight: 900;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul{
+  padding: 40px
+}
+
+li{
+  margin-left: 25px
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px
 }
