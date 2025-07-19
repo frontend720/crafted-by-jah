@@ -2,12 +2,10 @@ const express = require("express");
 const axios = require("axios");
 const { Mistral } = require("@mistralai/mistralai");
 const chatRouter = express.Router();
-const instructions = require("../instructions.json")
+const instructions = require("../instructions.json");
 
 const client = new Mistral({ apiKey: process.env.API_KEY });
 chatRouter.post("/", (req, res) => {
-  const prefix =
-    "You are a helpful chat assistant. You reply in a southern AAVE dialect";
   const responses = [];
   const chatResponse = client.chat.complete({
     model: "mistral-large-latest",
@@ -17,7 +15,7 @@ chatRouter.post("/", (req, res) => {
       {
         role: "user",
         content: req.body.content + instructions.instruction,
-      }
+      },
     ],
   });
   chatResponse
@@ -28,6 +26,40 @@ chatRouter.post("/", (req, res) => {
         res
           .status(200)
           .send(response.choices.map((choice) => choice.message.content));
+      }
+    })
+    .catch((error) => {
+      res.status(500).send(error.message);
+    });
+});
+
+chatRouter.post("/image_analysis", (req, res) => {
+  const analysisResponse = client.chat.complete({
+    model: "pixtral-12b",
+    messages: [
+      {
+        role: "user",
+        content: [
+          {
+            type: "text",
+            text:
+              req.body.text +
+              instructions.instruction +
+              "include a detailed description of the image in your response" + instructions.prepend,
+          },
+          { type: "image_url", imageUrl: req.body.imageUrl },
+        ],
+      },
+    ],
+  });
+  analysisResponse
+    .then((response) => {
+      if (!response) {
+        res.status(400).send({
+          message: "No image to analyze, please pic an image and try again",
+        });
+      } else {
+        res.status(200).send(response.choices[0].message.content);
       }
     })
     .catch((error) => {
