@@ -10,7 +10,10 @@ chatRouter.post("/", (req, res) => {
   const chatResponse = client.chat.complete({
     model: "mistral-large-latest",
     safePrompt: false,
-    maxTokens: 500,
+    maxTokens: 1000,
+    temperature: 1,
+    topP: 1,
+    n: 3,
     messages: [
       {
         role: "user",
@@ -36,6 +39,9 @@ chatRouter.post("/", (req, res) => {
 chatRouter.post("/image_analysis", (req, res) => {
   const analysisResponse = client.chat.complete({
     model: "pixtral-12b",
+    maxTokens: 500,
+    temperature: 1,
+    topP: 1,
     messages: [
       {
         role: "user",
@@ -43,9 +49,7 @@ chatRouter.post("/image_analysis", (req, res) => {
           {
             type: "text",
             text:
-              req.body.text +
-              instructions.instruction +
-              "include a detailed description of the image in your response" + instructions.prepend,
+              req.body.text + instructions.prepend,
           },
           { type: "image_url", imageUrl: req.body.imageUrl },
         ],

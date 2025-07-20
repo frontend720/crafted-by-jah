@@ -1,56 +1,50 @@
 import React from "react";
-import { storage } from "./config";
-import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
-import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
 
 export default function ImageUpload() {
-  const [image, setImage] = React.useState("");
-  const [url, setUrl] = React.useState("");
-  const imageRef = ref(storage, `images/${uuidv4()}`);
-
-  function uploadImage() {
-    uploadBytes(imageRef, image)
-      .then((snapshot) => {
-        return getDownloadURL(snapshot.ref);
-      })
-      .then((url) => {
-        setUrl(url);
-      });
-  }
-
-  function interpretImage() {
+  function request(e) {
+    e.preventDefault()
     axios({
       method: "POST",
-      url: `${import.meta.env.VITE_NGROK_URL}/image_analysis`,
+      url: "https://api.deepgram.com/v1/speak?model=aura-2-thalia-en",
       data: {
-        imageUrl: url,
+        body: "This is some new text for text to speech",
+      },
+      headers: {
+        Authorization: import.meta.env.VITE_TEXT_TO_SPEECH_API_KEY,
+        "Content-Type": "application/json",
       },
     })
       .then((data) => {
-        console.log(data);
+        console.log(data.data);
       })
       .catch((error) => {
         console.log(error);
       });
   }
+//   async function newRequest() {
+//     const url = "https://api.deepgram.com/v1/speak?model=aura-2-thalia-en";
+//     const options = {
+//       method: "POST",
+//       headers: {
+//         Authorization: import.meta.env.VITE_TEXT_TO_SPEECH_API_KEY,
+//         "Content-Type": "application/json",
+//       },
+//       body: '{"text":"Hello, welcome to Deepgram!"}',
+//     };
 
-  React.useEffect(() => {
-    interpretImage();
-  }, [url]);
-  console.log(url);
-  React.useEffect(() => {
-    uploadImage();
-  }, [image]);
+//     try {
+//       const response = await fetch(url, options);
+//       const data = await response.json();
+//       console.log(data);
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   }
   return (
     <div>
-      ImageUpload
-      <input
-        type="file"
-        // value={image}
-        onChange={(e) => setImage(e.target.files[0])}
-      />
-      <img src={url} width={100} alt="" />
+      <button onClick={request}>Send Request</button>
+      {import.meta.env.VITE_TEXT_TO_SPEECH_API_KEY}
     </div>
   );
 }

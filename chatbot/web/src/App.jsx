@@ -4,13 +4,14 @@ import axios from "axios";
 import "./App.css";
 import Chat from "./Chat";
 import ImageUpload from "./ImageUpload.jsx"
-
-axios.defaults.headers.common["ngrok-skip-browser-warning"] = true;
+import Navbar from "./Navbar.jsx";
+// axios.defaults.headers.common["ngrok-skip-browser-warning"] = true;
 
 function App() {
 
   return (
     <div>
+      <Navbar />
       <Chat />
       {/* <ImageUpload /> */}
     </div>
