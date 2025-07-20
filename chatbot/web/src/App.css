@@ -188,3 +188,35 @@ li{
 li{
   padding: 0px
 }
+
+.upper-flex{
+  /* display: flex; */
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: space-between;
+  
+}
+
+.settings-button{
+  background: none !important;
+  margin-left: 15px;
+  border: none;
+  margin-bottom: 5px
+}
+
+p{
+  margin: 20px 0px
+}
+
+.set_buttons{
+  background: none;
+  border: none;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  cursor: pointer; /* Keep the button clickable */
+
+  /* Optional but good practice: make the button a flex container too */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

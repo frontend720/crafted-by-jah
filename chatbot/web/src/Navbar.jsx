@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { GoHomeFill } from "react-icons/go";
 import { MdSettingsSuggest } from "react-icons/md";
 import { GoArchive } from "react-icons/go";
@@ -9,18 +10,22 @@ export default function Navbar() {
     <div>
       <nav className="navbar">
         <div className="flex-container">
-          <label>
-            <GoHomeFill />
-          </label>
+          <Link to="/">
+            <label>
+              <GoHomeFill />
+            </label>
+          </Link>
           <label>
             <BsChatLeftFill />
           </label>
           <label>
             <GoArchive />
           </label>
-          <label>
-            <MdSettingsSuggest />
-          </label>
+          <Link to="/settings">
+            <label>
+              <MdSettingsSuggest />
+            </label>
+          </Link>
         </div>
       </nav>
     </div>

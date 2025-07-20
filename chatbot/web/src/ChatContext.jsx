@@ -18,7 +18,9 @@ function ChatContext({ children }) {
   const [imageToggle, setImageToggle] = useState(false);
   const [toggleModal, setToggleModal] = useState(false);
   const [size, setSize] = useState(false);
-  const [conversationName, setConversationName] = useState("")
+  const [conversationName, setConversationName] = useState("");
+  const [topP, setTopP] = useState()
+  const [isResponding, setIsResponding] = useState(false)
   function handleConversationSubmit(e) {
     e.preventDefault();
 
@@ -36,6 +38,9 @@ function ChatContext({ children }) {
           currentPrompt +
           chatHistory.map((chat) => chat?.question + chat?.response) +
           currentPrompt,
+        topP: Number(topP) || 0.5,
+        name: assistant,
+        instructions: instructions,
       },
     })
       .then((res) => {
@@ -57,10 +62,13 @@ function ChatContext({ children }) {
         if (chatId) {
           // If we have a chatId, it's an existing conversation, so PATCH
           patchChatToBackend(chatId, newExchange);
+          setIsResponding(false)
         } else {
           // If no chatId, it's a new conversation, so POST to create
           postNewChatToBackend(newExchange);
+          setIsResponding(false)
         }
+        setIsResponding(true)
       })
       .catch((error) => {
         console.error("Error in AI conversation API call:", error);
@@ -78,6 +86,7 @@ function ChatContext({ children }) {
       .patch(`${import.meta.env.VITE_NGROK_URL}/chat/${id}`, payload)
       .then((res) => {
         console.log("Chat updated successfully:", res.data);
+        setIsResponding(false)
       })
       .catch((error) => {
         console.error(
@@ -115,6 +124,26 @@ function ChatContext({ children }) {
         );
       });
   }
+
+  //   // function to load an existing conversation
+  //   const loadExistingConversation = async (id) => {
+  //     try {
+  //       const res = await axios.get(
+  //         `${import.meta.env.VITE_NGROK_URL}/chat/${id}`
+  //       );
+  //       setChatId(res.data._id);
+  //       setConversationName(
+  //         res.data.conversationName || `Chat ${id.substring(0, 5)}...`
+  //       );
+  //       setChatHistory(res.data.chat || []); // Make sure to handle if 'chat' array is empty
+  //       //   setResponse("");
+  //       console.log("Loaded existing conversation:", res.data);
+  //     } catch (error) {
+  //       console.error("Error loading conversation:", error);
+  //       setChatId(null); // Clear ID if loading fails
+  //       setChatHistory([]);
+  //     }
+  //   };
 
   function toggleImageText() {
     setImageToggle((prev) => !prev);
@@ -159,12 +188,35 @@ function ChatContext({ children }) {
   }, [url]);
 
   useEffect(() => {
-      uploadImage();
+    uploadImage();
   }, [image]);
 
   function isModalVisible() {
     setToggleModal((prev) => !prev);
   }
+
+  // User Settings
+
+  const [assistant, setAssistant] = useState("");
+  const [instructions, setInstructions] = useState("");
+//   const [topP, setTopP] = useState(0.5);
+  const [temperature, setTemperature] = useState("");
+
+  function tempChange() {
+    if (topP < 0.5) {
+      setTemperature("Factual questions & answers");
+    } else if (topP > 0.5) {
+      setTemperature("Creative writing & conversations");
+    } else {
+      setTemperature("General Conversations & Brainstorming");
+    }
+  }
+  console.log(topP);
+  //
+
+  useEffect(() => {
+    tempChange();
+  }, [topP]);
 
   return (
     <RouteContext.Provider
@@ -192,7 +244,16 @@ function ChatContext({ children }) {
         setUrl,
         setInterpretation,
         conversationName,
-        setConversationName
+        setConversationName,
+        setInstructions,
+        setTopP,
+        setAssistant,
+        temperature,
+        setTemperature,
+        topP,
+        assistant,
+        instructions,
+        isResponding
       }}
     >
       {children}
