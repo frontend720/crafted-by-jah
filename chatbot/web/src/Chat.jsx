@@ -42,7 +42,8 @@ export default function Chat() {
     // conversationName,
     setConversationName,
     assistant,
-    isResponding
+    isResponding,
+
   } = useContext(RouteContext);
 
   const [toggleForm, setToggleForm] = useState(false);
@@ -62,8 +63,8 @@ console.log(isResponding)
           className="welcome-container"
         >
           <div>
-            <h1 className="quays-world">Tariq's World</h1>
-            <label>To talk to Quay, type something</label>
+            <h1 className="quays-world">{assistant === "" ? "Tariq's" :`${assistant}'s`} World</h1>
+            <label>To talk to {assistant === "" ? "Tariq" :`${assistant}`}, type something</label>
           </div>
         </div>
         <div className="upper-flex">
@@ -160,6 +161,7 @@ console.log(isResponding)
                 <p className="prompt">
                   <strong className="participants">You:</strong> {item.question}
                 </p>
+                <img width="100%" src={item.image} alt={item.imageDescription} />
                 <strong className="participants">
                   {assistant || "Deandre"}:
                 </strong>

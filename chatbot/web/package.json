@@ -9,9 +9,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "npm run build && surge ./dist chat-with-quay.surge.sh"
+    "deploy": "npm run build && surge ./dist chat-with-tariq.surge.sh"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.20.7",
     "axios": "^1.10.0",
     "firebase": "^12.0.0",
     "react": "^19.1.0",

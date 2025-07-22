@@ -19,8 +19,11 @@ function ChatContext({ children }) {
   const [toggleModal, setToggleModal] = useState(false);
   const [size, setSize] = useState(false);
   const [conversationName, setConversationName] = useState("");
-  const [topP, setTopP] = useState()
-  const [isResponding, setIsResponding] = useState(false)
+  const [topP, setTopP] = useState();
+  const [isResponding, setIsResponding] = useState(false);
+  const [location, setLocation] = useState(null);
+  const [latitude, setLatitude] = useState(null);
+  const [longitude, setLongitude] = useState(null);
   function handleConversationSubmit(e) {
     e.preventDefault();
 
@@ -36,12 +39,16 @@ function ChatContext({ children }) {
         content:
           interpretation +
           currentPrompt +
-          chatHistory.map((chat) => chat?.question + chat?.response) +
+          chatHistory.map((chat) => chat?.question + chat?.response),
           currentPrompt,
         topP: Number(topP) || 0.5,
         name: assistant,
         instructions: instructions,
+        image: url,
+        imageDescription: interpretation,
       },
+
+      //  + `Users location: ${latitude, longitude}. Always convert these coordinates to the end users city and state when providing the  data`
     })
       .then((res) => {
         let aiResponse = res.data;
@@ -55,26 +62,33 @@ function ChatContext({ children }) {
         setResponse(aiResponse); // Update latest AI response state
 
         // Add the new exchange to local history for immediate display
-        const newExchange = { question: currentPrompt, response: aiResponse };
+        const newExchange = {
+          question: currentPrompt,
+          response: aiResponse,
+          image: url || null,
+          imageDescription: interpretation || null,
+        };
         setChatHistory((prevHistory) => [...prevHistory, newExchange]);
-
+        setUrl("")
         // *** Determine whether to POST (new chat) or PATCH (existing chat) ***
         if (chatId) {
           // If we have a chatId, it's an existing conversation, so PATCH
           patchChatToBackend(chatId, newExchange);
-          setIsResponding(false)
+          setIsResponding(false);
         } else {
           // If no chatId, it's a new conversation, so POST to create
           postNewChatToBackend(newExchange);
-          setIsResponding(false)
+          setIsResponding(false);
         }
-        setIsResponding(true)
+        setIsResponding(true);
       })
       .catch((error) => {
         console.error("Error in AI conversation API call:", error);
         setResponse("Error getting response from AI.");
       });
   }
+
+  console.log(interpretation, url);
 
   function patchChatToBackend(id, exchange) {
     // The payload for PATCH must match what your backend's $push expects
@@ -86,7 +100,7 @@ function ChatContext({ children }) {
       .patch(`${import.meta.env.VITE_NGROK_URL}/chat/${id}`, payload)
       .then((res) => {
         console.log("Chat updated successfully:", res.data);
-        setIsResponding(false)
+        setIsResponding(false);
       })
       .catch((error) => {
         console.error(
@@ -199,7 +213,7 @@ function ChatContext({ children }) {
 
   const [assistant, setAssistant] = useState("");
   const [instructions, setInstructions] = useState("");
-//   const [topP, setTopP] = useState(0.5);
+  //   const [topP, setTopP] = useState(0.5);
   const [temperature, setTemperature] = useState("");
 
   function tempChange() {
@@ -211,7 +225,7 @@ function ChatContext({ children }) {
       setTemperature("General Conversations & Brainstorming");
     }
   }
-  console.log(topP);
+
   //
 
   useEffect(() => {
@@ -253,7 +267,9 @@ function ChatContext({ children }) {
         topP,
         assistant,
         instructions,
-        isResponding
+        isResponding,
+        setLatitude,
+        setLongitude,
       }}
     >
       {children}

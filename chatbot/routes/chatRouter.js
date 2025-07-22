@@ -3,6 +3,7 @@ const axios = require("axios");
 const { Mistral } = require("@mistralai/mistralai");
 const chatRouter = express.Router();
 const instructions = require("../instructions.json");
+const moment = require("moment")
 
 const client = new Mistral({ apiKey: process.env.API_KEY });
 chatRouter.post("/", (req, res) => {
@@ -12,12 +13,13 @@ chatRouter.post("/", (req, res) => {
     safePrompt: false,
     maxTokens: 1000,
     temperature: 1,
-    topP: 1,
-    n: 3,
+    topP: req.body.topP,
+    n: 1,
     messages: [
       {
         role: "user",
-        content: req.body.content + instructions.instruction,
+        content: req.body.content + instructions.section_one + (req.body.name || "Tariq") + instructions.section_two + "if the user provides any special instruction they are as follows " + req.body.instructions + 
+      "The time is currently" + moment().format('LLL')
       },
     ],
   });

@@ -13,10 +13,19 @@ const ConversationSchema = new mongoose.Schema({
       },
       timestamp: {
         type: String,
-        default: moment().format('lll')
-      }
+        default: moment().format("lll"),
+      },
+      image: {
+        type: String,
+        // required: true,
+      },
+      imageDescription: {
+        type: String,
+        // required: true,
+      },
     },
   ],
+
   conversationName: {
     type: String,
   },

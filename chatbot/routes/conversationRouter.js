@@ -66,6 +66,19 @@ conversationRouter.get("/:id", (req, res) => {
     });
 });
 
+conversationRouter.get("/", (req, res) => {
+  const conversation = Conversation.find({})
+  conversation.then((data) => {
+    if (!data) {
+      res.status(400).send({message: "No conversations to retrieve"})
+    } else {
+      res.status(200).send(data)
+    }
+  }).catch((error) => {
+    res.status(500).send(error.message)
+  })
+})
+
 conversationRouter.delete("/:id", (req, res) => {
   const { id } = req.params;
   if (!id) {
