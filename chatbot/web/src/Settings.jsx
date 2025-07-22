@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import "./Settings.css";
 import { RouteContext } from "./ChatContext";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import { FaLocationArrow } from "react-icons/fa";
 import { IoThumbsUpSharp } from "react-icons/io5";
 
@@ -15,17 +14,9 @@ export default function Settings({ form_toggle, onCloseForm }) {
     topP,
     assistant,
     instructions,
-    setLatitude,
-    setLongitude,
-    latitude,
-    longitude,
+  
   } = useContext(RouteContext);
-  //   const [assistant, setAssistant] = useState("");
-  //   const [instructions, setInstructions] = useState("");
-  //   const [topP, setTopP] = useState(0.5);
-  //   const [temperature, setTemperature] = useState("");
-  const [lat, setLat] = useState(null)
-  const [long, setLong] = useState(null)
+
 
   function tempChange() {
     if (topP < 0.5) {
@@ -35,36 +26,6 @@ export default function Settings({ form_toggle, onCloseForm }) {
     } else {
       setTemperature("General Conversations & Brainstorming");
     }
-  }
-
-  function getLocation(e) {
-    e.preventDefault();
-    function success(pos) {
-      const crd = pos.coords;
-      console.log("Your current location is");
-      console.log(`Latitude is: ${crd.latitude}`);
-      console.log(`Longitude is: ${crd.longitude}`);
-      setLatitude(crd.latitude);
-      // setLatitude(84.3831);
-      setLongitude(crd.longitude);
-      setLat("Lat: "+crd.latitude + ", ")
-      setLong("Long: " +crd.longitude)
-      // setLongitude(33.7833);
-    }
-
-    const options = {
-      enableHighAccuracy: true,
-      timeout: 5000,
-      maximumAge: 0,
-    };
-
-    function error(err) {
-      console.warn(`ERROR(${err.code}): ${err.message}`);
-    }
-
-    console.log(
-      navigator.geolocation.getCurrentPosition(success, error, options)
-    );
   }
 
   useEffect(() => {
@@ -116,19 +77,6 @@ export default function Settings({ form_toggle, onCloseForm }) {
             Mode: {temperature}
           </label>
         </div>
-        <div className="location-container">
-          <button className="location-button" onClick={getLocation}>
-            <label className="location-label" htmlFor="">
-              Get Current Location
-            </label>
-            <FaLocationArrow size="16px" />
-          </button>
-          {lat=== null ? "" : <IoThumbsUpSharp size="30" color="green" />}
-        </div>
-        <label style={{marginTop: 16}} htmlFor="">
-
-        {lat}{long}
-        </label>
       </form>
     </div>
   );

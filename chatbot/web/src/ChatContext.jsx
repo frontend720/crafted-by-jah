@@ -21,9 +21,6 @@ function ChatContext({ children }) {
   const [conversationName, setConversationName] = useState("");
   const [topP, setTopP] = useState();
   const [isResponding, setIsResponding] = useState(false);
-  const [location, setLocation] = useState(null);
-  const [latitude, setLatitude] = useState(null);
-  const [longitude, setLongitude] = useState(null);
   function handleConversationSubmit(e) {
     e.preventDefault();
 
@@ -268,8 +265,7 @@ function ChatContext({ children }) {
         assistant,
         instructions,
         isResponding,
-        setLatitude,
-        setLongitude,
+       
       }}
     >
       {children}
