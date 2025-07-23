@@ -18,6 +18,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "https://esm.sh/remark-gfm@4";
 import { RouteContext } from "./ChatContext";
 import Settings from "./Settings";
+import avatar from "./assets/FA62F2D2-CBBD-447E-8EB1-5C37F04E5F1F_1_102_o.jpeg"
 
 export default function Chat() {
   const {
@@ -39,11 +40,9 @@ export default function Chat() {
     setResponse,
     setUrl,
     setInterpretation,
-    // conversationName,
     setConversationName,
     assistant,
-    isResponding,
-
+    isResponding
   } = useContext(RouteContext);
 
   const [toggleForm, setToggleForm] = useState(false);
@@ -161,10 +160,14 @@ console.log(isResponding)
                 <p className="prompt">
                   <strong className="participants">You:</strong> {item.question}
                 </p>
-                <img width="100%" src={item.image} alt={item.imageDescription} />
+                 {item?.image && <img width="100%" src={item?.image} alt={item?.imageDescription} />}
+                 <div className="system">
+
+               <img className="avatar" width="30px" src={avatar} alt="" />
                 <strong className="participants">
-                  {assistant || "Deandre"}:
+                  {assistant || "Tariq"}:
                 </strong>
+                 </div>
                 <ReactMarkdown remarkPlugins={remarkGfm}>
                   {item.response}
                 </ReactMarkdown>

@@ -16,7 +16,7 @@ function App() {
         <Route index element={<Chat />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Chat /> */}
       {/* <ImageUpload /> */}
     </div>

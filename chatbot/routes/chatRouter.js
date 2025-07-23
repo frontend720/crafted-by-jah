@@ -19,7 +19,7 @@ chatRouter.post("/", (req, res) => {
       {
         role: "user",
         content: req.body.content + instructions.section_one + (req.body.name || "Tariq") + instructions.section_two + "if the user provides any special instruction they are as follows " + req.body.instructions + 
-      "The time is currently" + moment().format('LLL')
+      "The time is currently" + moment().format('LLL') + "Please carefully follow these rules and guidelines " + instructions.rules + "this is a description of your physical representation  " + instructions.avatar + "Use this description to further develop your personality"
       },
     ],
   });
