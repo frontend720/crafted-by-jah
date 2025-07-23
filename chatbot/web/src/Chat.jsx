@@ -59,14 +59,29 @@ export default function Chat() {
     e.preventDefault();
     setToggleForm((prev) => !prev);
   }
+
+  const [clear, setClear] = useState(() => {
+    const remove = localStorage.removeItem("conversation");
+    return remove;
+  });
+
+  console.log(clear)
   console.log(isResponding);
   return (
     <>
       <div
-        className={chatId === null ? "chat-container-empty" : "chat-container"}
+        className={
+          chatHistory.length === 0 && chatId === null
+            ? "chat-container-empty"
+            : "chat-container"
+        }
       >
         <div
-          style={chatId === null ? { display: "" } : { display: "none" }}
+          style={
+            chatHistory.length === 0 && chatId === null
+              ? { display: "" }
+              : { display: "none" }
+          }
           className="welcome-container"
         >
           <div className="title-container">
@@ -88,8 +103,13 @@ export default function Chat() {
               setResponse("");
               setUrl("");
               setInterpretation("");
+              setClear()
             }}
-            style={chatId !== null ? { opacity: 1 } : { opacity: 0 }}
+            style={
+              chatId !== null
+                ? { opacity: 1 }
+                : { opacity: 0 }
+            }
             className="new-button"
           >
             <MdArrowBackIosNew
@@ -119,7 +139,9 @@ export default function Chat() {
 
         <form
           className={
-            chatId === null ? "form-container-empty" : "form-container"
+            chatHistory.length === 0 && chatId === null
+              ? "form-container-empty"
+              : "form-container"
           }
           onSubmit={handleConversationSubmit}
         >

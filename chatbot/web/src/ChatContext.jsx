@@ -11,8 +11,34 @@ function ChatContext({ children }) {
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
   const [interpretation, setInterpretation] = useState();
-  const [chatId, setChatId] = useState(null);
-  const [chatHistory, setChatHistory] = useState([]);
+  const [chatId, setChatId] = useState(() => {
+    try {
+      const savedChat = localStorage.getItem("chatId");
+      return savedChat ? JSON.parse(savedChat) : null;
+    } catch (error) {
+      console.log("No chat ID", error);
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem("chatId", JSON.stringify(chatId));
+    console.log("Successdully saved chat ID");
+  }, [chatId]);
+
+  const [chatHistory, setChatHistory] = useState(() => {
+    try {
+      const savedConversation = localStorage.getItem("conversation");
+      return savedConversation ? JSON.parse(savedConversation) : [];
+    } catch (error) {
+      console.log("No conversation to retrieve", error);
+    }
+  });
+
+  useEffect(() => {
+    localStorage.setItem("conversation", JSON.stringify(chatHistory));
+    console.log("Successfully received conversation");
+  }, [chatHistory]);
+
   const [url, setUrl] = useState("");
   const [image, setImage] = useState(null);
   const [imageToggle, setImageToggle] = useState(false);
@@ -255,7 +281,7 @@ function ChatContext({ children }) {
         topP,
         assistant,
         instructions,
-        isResponding
+        isResponding,
       }}
     >
       {children}
