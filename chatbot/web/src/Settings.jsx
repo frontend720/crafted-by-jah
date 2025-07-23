@@ -3,6 +3,7 @@ import "./Settings.css";
 import { RouteContext } from "./ChatContext";
 import { FaLocationArrow } from "react-icons/fa";
 import { IoThumbsUpSharp } from "react-icons/io5";
+import { AuthContext } from "./AuthContext";
 
 export default function Settings({ form_toggle, onCloseForm }) {
   const {
@@ -16,6 +17,7 @@ export default function Settings({ form_toggle, onCloseForm }) {
     instructions,
   
   } = useContext(RouteContext);
+  const{logout} = useContext(AuthContext)
 
 
   function tempChange() {
@@ -77,6 +79,7 @@ export default function Settings({ form_toggle, onCloseForm }) {
             Mode: {temperature}
           </label>
         </div>
+        <label htmlFor="" onClick={logout}>Logout</label>
       </form>
     </div>
   );

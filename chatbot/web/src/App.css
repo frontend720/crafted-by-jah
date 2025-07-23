@@ -8,6 +8,10 @@
   padding-bottom: 100px;
 }
 
+.title-container{
+  margin: 36px auto
+}
+
 .chat-container-empty {
   padding: 6px;
   background-image: url("./assets/quay.png");
@@ -22,7 +26,17 @@
   margin: 0px;
   padding: 0px !important;
   font-family: "TikTok Sans", sans-serif;
-  font-weight: 900;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center !important;
+  color: #f8f8f8
+}
+
+.summary{
+  font-size: 20px;
+  font-family: "TikTok Sans", sans-serif;;
+  font-weight: 300;
+  color: #f8f8f8
 }
 
 .prompt {
@@ -214,7 +228,7 @@ li {
 }
 
 .upper-flex {
-  /* display: flex; */
+  display: flex;
   flex-direction: row;
   /* align-items: center; */
   justify-content: space-between;
@@ -261,4 +275,88 @@ p {
   flex-direction: row;
   align-items: center;
   color: #444444 
+}
+
+.auth-title{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  margin: 24px auto;
+  color: #e8e8e8
+}
+
+.auth-container{
+  background: #444444;
+  min-height: 100vh
+}
+
+.auth-form{
+  width: 96%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-inputs{
+  font-size: 18px;
+  background: none !important;
+  border: 2px solid #e8e8e8;
+  padding: 3px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  width: 100%;
+  color: #e8e8e8;
+}
+
+.auth-inputs:focus{
+  outline: none
+}
+
+.auth-input-container{
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #e8e8e8;
+  /* align-items: center */
+  border-radius: 6px;
+  padding-right: 6px
+}
+
+.password-input{
+  margin-bottom: 0px !important;
+  border: none;
+}
+
+.password-input:focus{
+  outline: none
+}
+
+.auth-inputs::placeholder{
+  color: #e8e8e849
+}
+
+.authentication-button{
+  margin-top: 24px;
+  font-size: 14px;
+  padding: 8px;
+  font-weight: 300;
+  border-radius: 6px;
+  border: none;
+  background: rgb(124, 206, 69);
+  margin-bottom: 36px;
+  color: #e8e8e8
+}
+
+.authentication-type{
+  background: none;
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+  color: #e8e8e8;
+  letter-spacing: 1px;
+}
+
+.error-label{
+  text-align: center;
+  margin: 2px auto;
+  margin-bottom: 32px;
+  font-family: "Ubuntu", sans-serif;
+  color: #e8e8e8
 }

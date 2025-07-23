@@ -13,6 +13,7 @@ import { IoSend } from "react-icons/io5";
 import { LuSmilePlus } from "react-icons/lu";
 import { TbMoodLookDown } from "react-icons/tb";
 import { MdSettingsSuggest } from "react-icons/md";
+import { AiOutlineLogout } from "react-icons/ai";
 import { FaInfo } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "https://esm.sh/remark-gfm@4";
@@ -20,11 +21,11 @@ import { RouteContext } from "./ChatContext";
 import Settings from "./Settings";
 import { ThemeContext } from "./ThemeContext";
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
-import avatar from "./assets/FA62F2D2-CBBD-447E-8EB1-5C37F04E5F1F_1_102_o.jpeg"
+import avatar from "./assets/FA62F2D2-CBBD-447E-8EB1-5C37F04E5F1F_1_102_o.jpeg";
+import { AuthContext } from "./AuthContext";
 
 export default function Chat() {
-
-  const {onThemeChange, theme} = useContext(ThemeContext)
+  const { onThemeChange, theme } = useContext(ThemeContext);
   const {
     handleConversationSubmit,
     prompt,
@@ -46,10 +47,11 @@ export default function Chat() {
     setInterpretation,
     setConversationName,
     assistant,
-    isResponding
+    isResponding,
   } = useContext(RouteContext);
+  const { logout } = useContext(AuthContext);
 
-  console.log(theme)
+  console.log(theme);
 
   const [toggleForm, setToggleForm] = useState(false);
 
@@ -57,7 +59,7 @@ export default function Chat() {
     e.preventDefault();
     setToggleForm((prev) => !prev);
   }
-console.log(isResponding)
+  console.log(isResponding);
   return (
     <>
       <div
@@ -67,9 +69,14 @@ console.log(isResponding)
           style={chatId === null ? { display: "" } : { display: "none" }}
           className="welcome-container"
         >
-          <div>
-            <h1 className="quays-world">{assistant === "" ? "Tariq's" :`${assistant}'s`} World</h1>
-            <label>To talk to {assistant === "" ? "Tariq" :`${assistant}`}, type something</label>
+          <div className="title-container">
+            <h1 className="quays-world">
+              {assistant === "" ? "Tariq's" : `${assistant}'s`} World
+            </h1>
+            <label className="summary">
+              To talk to {assistant === "" ? "Tariq" : `${assistant}`}, type
+              something
+            </label>
           </div>
         </div>
         <div className="upper-flex">
@@ -85,7 +92,10 @@ console.log(isResponding)
             style={chatId !== null ? { opacity: 1 } : { opacity: 0 }}
             className="new-button"
           >
-            <MdArrowBackIosNew style={theme ? {color: "#d6d6d6"}: {color: "#444444"}} size="20px" />
+            <MdArrowBackIosNew
+              style={theme ? { color: "#d6d6d6" } : { color: "#444444" }}
+              size="20px"
+            />
           </button>
         </div>
         <Settings
@@ -112,9 +122,7 @@ console.log(isResponding)
             chatId === null ? "form-container-empty" : "form-container"
           }
           onSubmit={handleConversationSubmit}
-          
         >
-          
           <div className="preview-flex">
             <img
               style={url === "" ? { display: "none" } : { display: "" }}
@@ -135,7 +143,7 @@ console.log(isResponding)
           </div>
           <TextareaAutosize
             maxRows={4}
-            className={chatId === null ? "textarea-empty": "textarea"}
+            className={chatId === null ? "textarea-empty" : "textarea"}
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
             placeholder="What's up?"
@@ -143,7 +151,10 @@ console.log(isResponding)
           <div className="flex">
             <div className="set_buttons">
               <label htmlFor="upload-button">
-                <LuSmilePlus color={chatId === null ? "#e8e8e8" : "#333333"} size="20px" />
+                <LuSmilePlus
+                  color={chatId === null ? "#e8e8e8" : "#333333"}
+                  size="20px"
+                />
               </label>
               <input
                 id="upload-button"
@@ -152,14 +163,34 @@ console.log(isResponding)
                 onChange={(e) => setImage(e.target.files[0])}
               />
               <button className="settings-button" onClick={toggleChange}>
-                <MdSettingsSuggest color={chatId === null ? "#e8e8e8" : "#333333"} size="25px" />
+                <MdSettingsSuggest
+                  color={chatId === null ? "#e8e8e8" : "#333333"}
+                  size="25px"
+                />
               </button>
-              <button style={chatId === null ? {display: "none"} : {display: ""}}  onClick={onThemeChange} className="settings-button">
-                {!theme? <IoMoonOutline size="25px" color={chatId === null ? "#e8e8e8" : "#333333"} /> : <IoSunnyOutline size="25px" color={chatId === null ? "#e8e8e8" : "#333333"}/>}
+              <button
+                style={chatId === null ? { display: "none" } : { display: "" }}
+                onClick={onThemeChange}
+                className="settings-button"
+              >
+                {!theme ? (
+                  <IoMoonOutline
+                    size="25px"
+                    color={chatId === null ? "#e8e8e8" : "#333333"}
+                  />
+                ) : (
+                  <IoSunnyOutline
+                    size="25px"
+                    color={chatId === null ? "#e8e8e8" : "#333333"}
+                  />
+                )}
               </button>
             </div>
             <button className="submit-button" type="submit">
-              <IoSend color={chatId === null ? "#e8e8e8" : "#333333"} size="20px" />
+              <IoSend
+                color={chatId === null ? "#e8e8e8" : "#333333"}
+                size="20px"
+              />
             </button>
           </div>
         </form>
@@ -167,24 +198,39 @@ console.log(isResponding)
         <div style={{ marginTop: "20px", padding: "10px", paddingBottom: 200 }}>
           <>
             {chatHistory.map((item, index) => (
-              <div className="response-container" key={index} style={{ marginBottom: "10px" }}>
+              <div
+                className="response-container"
+                key={index}
+                style={{ marginBottom: "10px" }}
+              >
                 <p className="prompt">
                   <strong className="participants">You:</strong> {item.question}
                 </p>
-                 {item?.image && <img width="100%" src={item?.image} alt={item?.imageDescription} />}
-                 <div className={theme? "system": "system-light"}>
-
-               <img className="avatar" width="30px" src={avatar} alt={"../../instructions.json"} />
-                <strong className="participants">
-                  {assistant || "Tariq"}:
-                </strong>
-                 </div>
-                 <div style={theme ? {color: "#d6d6d6"}: {color: "#444444"}}>
-
-                <ReactMarkdown remarkPlugins={remarkGfm}>
-                  {item.response}
-                </ReactMarkdown>
-                 </div>
+                {item?.image && (
+                  <img
+                    width="100%"
+                    src={item?.image}
+                    alt={item?.imageDescription}
+                  />
+                )}
+                <div className={theme ? "system" : "system-light"}>
+                  <img
+                    className="avatar"
+                    width="30px"
+                    src={avatar}
+                    alt={"../../instructions.json"}
+                  />
+                  <strong className="participants">
+                    {assistant || "Tariq"}:
+                  </strong>
+                </div>
+                <div
+                  style={theme ? { color: "#d6d6d6" } : { color: "#444444" }}
+                >
+                  <ReactMarkdown remarkPlugins={remarkGfm}>
+                    {item.response}
+                  </ReactMarkdown>
+                </div>
               </div>
             ))}
           </>
