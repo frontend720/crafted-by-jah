@@ -3,9 +3,9 @@
 .chat-container {
   padding: 6px;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
-  padding-bottom: 300px
+  padding-bottom: 100px;
 }
 
 .chat-container-empty {
@@ -14,7 +14,7 @@
   background-size: cover;
   height: 100vh;
   background-position: center;
-   display: flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -27,17 +27,23 @@
 
 .prompt {
   text-align: right;
-  font-family: "Monterrat", sans-serif;
+  font-family: "TikTok Sans", sans-serif;
   padding: 8px;
-  background: rgba(0, 0, 0, 0.099);
+  background: rgb(96, 120, 59);
   display: block;
-  border-radius: 10px;
-  margin-bottom: 6px
+  border-radius: 6px;
+  margin-bottom: 16px;
+  color: #f3f3f3;
 }
 
 .response {
   margin-top: 16px;
   font-family: "Monterrat", sans-serif;
+}
+
+.response-container {
+  font-family: "TikTok Sans", sans-serif;
+  text-align: left !important;
 }
 
 .form-container-empty {
@@ -51,7 +57,8 @@
   padding: 1%;
   background: rgb(101, 63, 11, 0.9);
   border-radius: 10px;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+  color: #575050;
   /* border: 2px solid */
   /* padding-bottom: 100px */
 }
@@ -67,8 +74,9 @@
   padding: 1%;
   /* background: rgb(101, 63, 11, 0.9); */
   border-radius: 10px;
-  background: #333333;
-  margin-bottom: 30px
+  background: #dfd4d4e8;
+  margin-bottom: 30px;
+  border: 1px solid #333333;
 }
 
 .new-button {
@@ -84,11 +92,28 @@
   font-size: 16px;
   border: none;
   background: none;
+  color: #555555;
+  font-family: "Montserrat", sans-serif;
+}
+
+.textarea-empty {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background: none;
   color: #e8e8e8;
   font-family: "Montserrat", sans-serif;
 }
-.textarea::placeholder {
+
+.textarea-empty::placeholder {
   color: #e8e8e8;
+}
+
+.textarea-empty:focus{
+  outline: none
+}
+.textarea::placeholder {
+  color: #555555;
 }
 .textarea:focus {
   outline: none;
@@ -113,25 +138,25 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  color: rgb(41, 33, 13)
+  color: rgb(41, 33, 13);
 }
 
-ul{
-  padding: 40px
+ul {
+  padding: 40px;
 }
 
-li{
-  margin-left: 25px
+li {
+  margin-left: 25px;
 }
 
-.flex{
+.flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10px
+  margin-top: 10px;
 }
 
-.modal{
+.modal {
   width: 95%;
   margin: 0px auto;
   background: #444444d0;
@@ -141,27 +166,26 @@ li{
   flex-direction: column;
   overflow-y: auto;
   flex: 1;
-  padding-bottom: 50px
+  padding-bottom: 50px;
 }
 
-.preview-flex{
+.preview-flex {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.modal-button{
+.modal-button {
   width: 100px;
   padding: 6px;
   font-weight: 900;
   font-size: 18px;
   margin-bottom: 10px;
   background: rgb(72, 93, 104);
-  border: none
+  border: none;
 }
 
-
-.navbar{
+.navbar {
   position: fixed;
   bottom: 0;
   z-index: 99;
@@ -170,12 +194,12 @@ li{
   margin-bottom: 0px !important;
   padding-bottom: 0px !important;
   font-size: 24px;
-  
+
   padding-left: 5px;
-  padding-right: 10px
+  padding-right: 10px;
 }
 
-.flex-container{
+.flex-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -183,32 +207,31 @@ li{
   list-style: none;
   padding: 8px;
   width: 90%;
-  margin: 0px auto
+  margin: 0px auto;
 }
-li{
-  padding: 0px
+li {
+  padding: 0px;
 }
 
-.upper-flex{
+.upper-flex {
   /* display: flex; */
   flex-direction: row;
   /* align-items: center; */
   justify-content: space-between;
-  
 }
 
-.settings-button{
+.settings-button {
   background: none !important;
   margin-left: 15px;
   border: none;
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
-p{
-  margin: 20px 0px
+p {
+  margin: 20px 0px;
 }
 
-.set_buttons{
+.set_buttons {
   background: none;
   border: none;
   padding: 0; /* Remove default padding */
@@ -221,13 +244,21 @@ p{
   justify-content: center;
 }
 
-.avatar{
+.avatar {
   margin-right: 10px;
-  border-radius: 10px
+  border-radius: 10px;
 }
 
-.system{
+.system {
   display: flex;
   flex-direction: row;
   align-items: center;
+  color: #d6d6d6
+}
+
+.system-light {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #444444 
 }
