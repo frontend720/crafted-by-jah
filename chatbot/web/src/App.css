@@ -173,7 +173,7 @@ li {
 .modal {
   width: 95%;
   margin: 0px auto;
-  background: #444444d0;
+  background: #444444;
   padding: 2%;
   border-radius: 10px;
   display: flex;
@@ -181,6 +181,53 @@ li {
   overflow-y: auto;
   flex: 1;
   padding-bottom: 50px;
+  font-family: 'Arial', sans-serif;
+  position: fixed;
+  top: 0;
+  margin-top: 150px;
+  color: #e8e8e8;
+  letter-spacing:  1.25px;
+  font-weight: 500;
+  max-height: 500px;
+    transform: translate(-50%, -50%);
+  left: 50%;
+  top: 25%;
+  height: auto
+  
+}
+
+.modal-light {
+  width: 95%;
+  margin: 0px auto;
+  background: #e8e8e8;
+  padding: 2%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  flex: 1;
+  padding-bottom: 50px;
+  font-family: 'Arial', sans-serif;
+  color: #444444;
+  letter-spacing:  1.25px;
+    position: fixed;
+  top: 0;
+  margin-top: 150px;
+  font-weight: 500;
+  max-height:  500px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 25%
+}
+
+.modal-content-scrollable {
+  flex-grow: 1; /* This is key! Allows it to take up available vertical space */
+  overflow-y: auto; /* Makes the content scrollable vertically */
+  overflow-x: hidden; /* Prevents horizontal scroll unless absolutely necessary */
+  padding-right: 10px; /* Add some padding to prevent scrollbar from hugging content */
+  /* If you have a header/footer, you might need to adjust height/max-height instead of flex-grow */
+  /* For example: height: calc(100% - [height_of_header_and_button]); */
+  padding-bottom: 100px
 }
 
 .preview-flex {
@@ -190,13 +237,17 @@ li {
 }
 
 .modal-button {
-  width: 100px;
+  width: 45px;
   padding: 6px;
   font-weight: 900;
   font-size: 18px;
   margin-bottom: 10px;
   background: rgb(72, 93, 104);
   border: none;
+  display: block;
+  border-radius: 50px;
+  padding-top: 10px;
+  color: #e8e8e8
 }
 
 .navbar {
@@ -275,6 +326,15 @@ p {
   flex-direction: row;
   align-items: center;
   color: #444444 
+}
+
+.title{
+  font-size: 4em;
+  font-weight: 300;
+  font-family: 'TikTok Sans', sans-serif;
+  margin-bottom: 1em;
+  margin-top: 16px;
+  color: #e8e8e8c8
 }
 
 .auth-title{
@@ -359,4 +419,9 @@ p {
   margin-bottom: 32px;
   font-family: "Ubuntu", sans-serif;
   color: #e8e8e8
+}
+
+.chat-image{
+  margin-bottom: 10px;
+  border-radius: 2px
 }

@@ -4,6 +4,7 @@ import { RouteContext } from "./ChatContext";
 import { FaLocationArrow } from "react-icons/fa";
 import { IoThumbsUpSharp } from "react-icons/io5";
 import { AuthContext } from "./AuthContext";
+import { ThemeContext } from "./ThemeContext";
 
 export default function Settings({ form_toggle, onCloseForm }) {
   const {
@@ -19,6 +20,7 @@ export default function Settings({ form_toggle, onCloseForm }) {
   } = useContext(RouteContext);
   const{logout} = useContext(AuthContext)
 
+  const {theme} = useContext(ThemeContext)
 
   function tempChange() {
     if (topP < 0.5) {
@@ -36,7 +38,7 @@ export default function Settings({ form_toggle, onCloseForm }) {
 
   return (
     <div style={form_toggle} className="App">
-      <form className="settings-form" action="">
+      <form className={theme ? "settings-form": "settings-form-light"} action="">
         <input
           className="settings-inputs"
           type="text"

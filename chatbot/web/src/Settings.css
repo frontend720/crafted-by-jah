@@ -1,7 +1,7 @@
 .settings-form {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   width: 97%;
   margin: 0px auto;
   background: #444444;
@@ -9,6 +9,25 @@
   padding: 10px;
   color: #e8e8e8;
   font-family: "TikTok Sans", sans-serif;
+  bottom: 0;
+  margin-bottom: 200px
+  /* height: 100vh */
+  /* width: 300px; */
+}
+
+.settings-form-light {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 97%;
+  margin: 0px auto;
+  background: #e8e8e8;
+  padding-bottom: 20px;
+  padding: 10px;
+  color: #444444;
+  font-family: "TikTok Sans", sans-serif;
+  bottom: 0;
+  margin-bottom: 200px
   /* height: 100vh */
   /* width: 300px; */
 }

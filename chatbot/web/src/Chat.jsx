@@ -21,6 +21,7 @@ import { RouteContext } from "./ChatContext";
 import Settings from "./Settings";
 import { ThemeContext } from "./ThemeContext";
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
+import { IoCloseSharp } from "react-icons/io5";
 import avatar from "./assets/FA62F2D2-CBBD-447E-8EB1-5C37F04E5F1F_1_102_o.jpeg";
 import { AuthContext } from "./AuthContext";
 
@@ -65,7 +66,7 @@ export default function Chat() {
     return remove;
   });
 
-  console.log(clear)
+  console.log(clear);
   console.log(isResponding);
   return (
     <>
@@ -102,14 +103,10 @@ export default function Chat() {
               setConversationName("");
               setResponse("");
               setUrl("");
-              setInterpretation("");
-              setClear()
+              setInterpretation("Upload an image to get an image description");
+              setClear();
             }}
-            style={
-              chatId !== null
-                ? { opacity: 1 }
-                : { opacity: 0 }
-            }
+            style={chatId !== null ? { opacity: 1 } : { opacity: 0 }}
             className="new-button"
           >
             <MdArrowBackIosNew
@@ -126,15 +123,18 @@ export default function Chat() {
         {/* For example: <button onClick={() => loadExistingConversation("some_existing_id")}>Load Existing</button> */}
         <div
           style={toggleModal ? { display: "" } : { display: "none" }}
-          className="modal"
+          className={theme ? "modal":"modal-light"}
         >
           <button className="modal-button" onClick={isModalVisible}>
-            Close
+            <IoCloseSharp size="24px" />
           </button>
+          <div className="modal-content-scrollable">
+
           <ReactMarkdown
             children={interpretation}
             remarkPlugins={[remarkGfm]}
           />
+          </div>
         </div>
 
         <form
@@ -150,17 +150,14 @@ export default function Chat() {
               style={url === "" ? { display: "none" } : { display: "" }}
               onClick={imageSize}
               src={url}
-              width={size ? "25px" : "100px"}
+              width={!size ? "25px" : "100px"}
               alt=""
             />
             <FaInfo
               size="20px"
-              style={
-                imageToggle
-                  ? { display: "", marginLeft: 10 }
-                  : { display: "none" }
-              }
+              style={{ display: "", marginLeft: 10 }}
               onClick={isModalVisible}
+              color={chatId === null ? "#e8e8e8" : "#333333"}
             />
           </div>
           <TextareaAutosize
@@ -233,6 +230,7 @@ export default function Chat() {
                     width="100%"
                     src={item?.image}
                     alt={item?.imageDescription}
+                    className="chat-image"
                   />
                 )}
                 <div className={theme ? "system" : "system-light"}>

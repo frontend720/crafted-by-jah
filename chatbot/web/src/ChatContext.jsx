@@ -10,7 +10,7 @@ const RouteContext = createContext();
 function ChatContext({ children }) {
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
-  const [interpretation, setInterpretation] = useState();
+  const [interpretation, setInterpretation] = useState("Upload an image to get an image description");
   const [chatId, setChatId] = useState(() => {
     try {
       const savedChat = localStorage.getItem("chatId");
@@ -22,7 +22,7 @@ function ChatContext({ children }) {
 
   useEffect(() => {
     localStorage.setItem("chatId", JSON.stringify(chatId));
-    console.log("Successdully saved chat ID");
+    console.log("Successfully saved chat ID");
   }, [chatId]);
 
   const [chatHistory, setChatHistory] = useState(() => {

@@ -29,6 +29,7 @@ export default function Authentication() {
   return (
     <div className="auth-container">
       <form className="auth-form" action="">
+        <h1 className="title">TariqChat</h1>
         <label className="auth-title" style={{textAlign: "center"}} htmlFor="">{!authToggle ? "Login" : "Signup"}</label>
         <input
         className="auth-inputs"
