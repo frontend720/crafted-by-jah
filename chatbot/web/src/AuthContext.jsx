@@ -12,7 +12,7 @@ const AuthContext = React.createContext();
 function AuthContextProvider({ children }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [confirm, setConfirm] = useState("");
+//   const [confirm, setConfirm] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [authObj, setAuthObj] = useState(() => {

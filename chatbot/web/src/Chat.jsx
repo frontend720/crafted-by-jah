@@ -222,7 +222,7 @@ export default function Chat() {
                 key={index}
                 style={{ marginBottom: "10px" }}
               >
-                <p className="prompt">
+                <p className={theme ? "prompt" : "prompt-light"}>
                   <strong className="participants">You:</strong> {item.question}
                 </p>
                 {item?.image && (
@@ -245,6 +245,7 @@ export default function Chat() {
                   </strong>
                 </div>
                 <div
+                className={theme ? "response" : "response-light"}
                   style={theme ? { color: "#d6d6d6" } : { color: "#444444" }}
                 >
                   <ReactMarkdown remarkPlugins={remarkGfm}>
@@ -253,6 +254,10 @@ export default function Chat() {
                 </div>
               </div>
             ))}
+                <div style={isResponding ? {display: ""} : {display: "none"}} className={theme ? "typing":"typing-light"}>
+                <label htmlFor="">{assistant === "" ? "Tariq's" : `${assistant}'s`} typing</label>
+                <div className="loader"></div>
+                </div>
           </>
         </div>
       </div>

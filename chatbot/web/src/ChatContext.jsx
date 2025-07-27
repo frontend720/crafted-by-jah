@@ -48,9 +48,6 @@ function ChatContext({ children }) {
   const [topP, setTopP] = useState();
   const [isResponding, setIsResponding] = useState(false);
 
-  const [chat, setChat] = useState([]);
-  const [id, setId] = useState();
-
   function handleConversationSubmit(e) {
     e.preventDefault();
 

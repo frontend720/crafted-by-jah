@@ -32,7 +32,7 @@ export default function Authentication() {
         <h1 className="title">TariqChat</h1>
         <label className="auth-title" style={{textAlign: "center"}} htmlFor="">{!authToggle ? "Login" : "Signup"}</label>
         <input
-        className="auth-inputs"
+        className="auth-inputs email-input"
           type="text"
           name="email"
           value={email}
@@ -49,7 +49,7 @@ export default function Authentication() {
           onChange={onPasswordChange}
           placeholder="Password"
         />
-        <label onClick={onVisible} style={{marginTop: 6, marginLeft: 10, color: "#e8e8e8"}} htmlFor="">{!visible ? <IoEye /> : <IoEyeOff />}</label>
+        <label onClick={onVisible} style={{marginTop: 6, marginLeft: 10, color: "#e8e8e8"}} htmlFor="">{!visible ? <IoEye size="24px" /> : <IoEyeOff size="24px" />}</label>
         </div>
         <button className="authentication-button" style={{textTransform: "uppercase"}} onClick={authToggle ? createUser : signin}>Continue</button>
         <label className="error-label" htmlFor="">
