@@ -13,6 +13,7 @@ app.use(express.json())
 mongoose.connect(process.env.URI)
 
 app.use("/", require("./videoRouter"))
+app.use("/auth", require("./authRouter"))
 
 app.listen(4200, ()=>{
     console.log("Server listening on port 4200")
