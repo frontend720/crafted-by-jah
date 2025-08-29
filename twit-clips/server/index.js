@@ -6,11 +6,6 @@ const app = express()
 const morgan = require("morgan")
 const cors = require("cors")
 
-const corsOptions = {
-  origin: "http://localhost:5173", // Your frontend's origin
-  optionsSuccessStatus: 200 // For legacy browser support
-};
-
 app.use(cors())
 app.use(morgan("dev"))
 app.use(express.json())

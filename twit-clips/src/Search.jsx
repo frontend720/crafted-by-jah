@@ -1,28 +1,16 @@
 import { useState, useRef, useContext, useEffect } from "react";
-import {
-  Card,
-  CardContent,
-  CardActions,
-  Button,
-  Typography,
-  Box,
-} from "@mui/material";
+import { Card, CardContent, CardActions, Box } from "@mui/material";
 import ReactPlayer from "react-player";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
-import { IoPlay, IoPause } from "react-icons/io5";
-import { BsFillSave2Fill } from "react-icons/bs";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaRegHeart } from "react-icons/fa";
 import {
   MediaController,
   MediaControlBar,
   MediaTimeRange,
   MediaTimeDisplay,
   MediaVolumeRange,
-  MediaPlaybackRateButton,
   MediaPlayButton,
-  MediaSeekBackwardButton,
-  MediaSeekForwardButton,
   MediaMuteButton,
   MediaFullscreenButton,
 } from "media-chrome/react";
@@ -63,17 +51,10 @@ export default function Search() {
   const collection_id = "68af3df67ca71283a9b13406";
   const { saveVideo, getVideos, videos, updateVideoList, newRequest } =
     useContext(AxiosContext);
-  const {
-    tweetList,
-    username,
-    newTweetRequest,
-    onChange,
-    continueTweetRequests,
-    toggleNavbar,
-  } = useContext(APIContext);
-  console.log(newRequest);
-  const [playback, setPlayback] = useState(50);
+  const { tweetList, continueTweetRequests } = useContext(APIContext);
+
   const [isSaved, setIsSaved] = useState(false);
+  const [isPlaying, __________] = useState(false);
 
   function saveChange() {
     setIsSaved((prev) => !prev);
@@ -93,10 +74,6 @@ export default function Search() {
     getVideos(collection_id);
   }, [newRequest]);
 
-  console.log(tweetList);
-
-  console.log(videos?.data?.urls);
-
   return (
     <div style={{ paddingTop: 20 }}>
       <NewSearch
@@ -104,7 +81,6 @@ export default function Search() {
           tweetList.length === 0 ? { display: "" } : { display: "none" }
         }
       />
-
       {tweetList?.map((tweet) => (
         <>
           <Card
@@ -114,6 +90,7 @@ export default function Search() {
                 ? { display: "none" }
                 : { display: "" }
             }
+            key={tweet.tweet_id}
           >
             <CardContent>
               <label className="username" htmlFor="">
@@ -136,6 +113,7 @@ export default function Search() {
                     playbackRate={1}
                     ref={reactPlayerRef}
                     onReady={handlePlayerReady}
+                    playing={isPlaying}
                   />
                   <MediaControlBar>
                     <MediaPlayButton />
@@ -148,6 +126,9 @@ export default function Search() {
                 </MediaController>
               </Box>
             </CardContent>
+            <p className="tweet-text" htmlFor="">
+              {tweet.text}
+            </p>
             <CardActions>
               <div className="save-container">
                 <label
@@ -177,7 +158,7 @@ export default function Search() {
                           )
                   }
                 >
-                  <BsFillSave2Fill
+                  <FaRegHeart
                     onClick={saveChange}
                     color={isSaved ? "#ffffff" : "#ffffff"}
                     size="24px"

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState, createContext, useEffect } from "react";
+import { useState, createContext } from "react";
 
 const APIContext = createContext();
 
@@ -7,7 +7,7 @@ function APIContextProvider(props) {
   const [username, setUsername] = useState("");
   const [tweetList, setTweetList] = useState([]);
   const [continuationToken, setContinuationToken] = useState("");
-  const [toggleNavbar, setToggleNavbar] = useState(false)
+  const [toggleNavbar, _____________] = useState(false)
 
   function newTweetRequest(e) {
     e.preventDefault();
@@ -26,7 +26,7 @@ function APIContextProvider(props) {
       .then((data) => {
         setTweetList(data.data.results);
         setContinuationToken(data.data.continuation_token);
-        // setToggleNavbar(prev => !prev)
+        setUsername("")
       })
       .catch((error) => {
         console.log(error.message);
@@ -57,15 +57,10 @@ function APIContextProvider(props) {
       });
   }
 
-  // DAAHCgABGzeLAeT___ILAAIAAAATMTk1NTkyMjYxODgzMTI1NzcwNggAAwAAAAIAAA
-
   function onChange(e) {
     const { value } = e.target;
     setUsername(value);
   }
-
-  console.log(username);
-  console.log(continuationToken);
 
   return (
     <APIContext.Provider

@@ -1,10 +1,8 @@
-import React, { useContext, useState, useRef, useEffect } from "react";
+import { useContext, useState, useRef, useEffect } from "react";
 import {
   Card,
   CardContent,
   CardActions,
-  Button,
-  Typography,
   Box,
 } from "@mui/material";
 import {
@@ -13,10 +11,7 @@ import {
   MediaTimeRange,
   MediaTimeDisplay,
   MediaVolumeRange,
-  MediaPlaybackRateButton,
   MediaPlayButton,
-  MediaSeekBackwardButton,
-  MediaSeekForwardButton,
   MediaMuteButton,
   MediaFullscreenButton,
 } from "media-chrome/react";
@@ -29,7 +24,7 @@ export default function Saves() {
   const { videos, getVideos, deleteVideo, response } = useContext(AxiosContext);
   const [seek, setSeek] = useState(0);
 
-  const speed= [1, 0.75, 0.5, 0.25, 0.10];
+  const speed = [1, 0.75, 0.5, 0.25, 0.1];
   const [option, setOption] = useState(0);
   function optionChange() {
     setOption((prev) => (prev + 1) % speed.length);
@@ -59,7 +54,13 @@ export default function Saves() {
     }
   }
 
-  console.log(videos?.data?.urls[0]._id);
+  const [auto, setAuto] = useState(false);
+
+  function isAutoPlay() {
+    setAuto((prev) => !prev);
+  }
+
+  console.log(videos?.data?.urls);
   return (
     <div>
       <Card className="card">
@@ -81,6 +82,8 @@ export default function Saves() {
                 ref={reactPlayerRef}
                 onReady={handlePlayerReady}
                 playbackRate={speed[option]}
+                onEnded={auto ? next : ""}
+                playing={auto}
               />
               <MediaControlBar>
                 <button
@@ -91,8 +94,6 @@ export default function Saves() {
                   <MdSkipPrevious />
                 </button>
                 <MediaPlayButton />
-                {/* <MediaSeekBackwardButton seekOffset={10} /> */}
-                {/* <MediaSeekForwardButton seekOffset={10} /> */}
                 <MediaTimeRange />
                 <MediaTimeDisplay showDuration />
                 <MediaMuteButton />
@@ -126,15 +127,20 @@ export default function Saves() {
             </div>
           </div>
         </CardActions>
-        <div style={{textAlign: "center"}}>
-          <button
-          className="playback-rate-button"
-            onClick={optionChange}
-          >
+        <div style={{ textAlign: "center" }}>
+          <button className="playback-rate-button" onClick={optionChange}>
             {speed[option]}
           </button>
         </div>
       </Card>
+      <div
+      className="auto-play-button-container"
+      >
+        <label>{seek + 1 + " of " + videos.data.urls.length}</label>
+        <button className="auto-play-button" onClick={isAutoPlay}>
+          Turn auto play {auto ? "OFF" : "ON"}
+        </button>
+      </div>
     </div>
   );
 }

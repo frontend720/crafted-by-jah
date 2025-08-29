@@ -166,10 +166,11 @@ a{
 
 .media-control-button{
   width: 20px !important;
-  padding: 5px;
+  padding: 2px;
   border-radius: 0px !important;
   background: #00000098;
-  color: #ffffff
+  color: #ffffff;
+  font-size: 20px
 }
 
 .media-control-button:focus{
@@ -193,4 +194,24 @@ a{
 
 .playback-rate-button{
   margin-bottom: 20px
+}
+
+.tweet-text{
+  color: #ffffff;
+  /* padding: 6px; */
+  width: 95%;
+  margin: 16px
+}
+
+.auto-play-button-container{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  align-items: center;
+}
+
+.auto-play-button{
+  width: 50%;
+  margin-top: 16px
 }
