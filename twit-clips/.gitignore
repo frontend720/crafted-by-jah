@@ -13,6 +13,7 @@ dist-ssr
 *.local
 
 tweets.json
+.env
 
 # Editor directories and files
 .vscode/*

@@ -7,10 +7,11 @@ const AxiosContext = createContext();
 
 function AxiosContextProvider(props) {
   const [videos, setVideos] = useState();
-  const[ newRequest, setNewRequest] = useState(false)
+  const [newRequest, setNewRequest] = useState(false);
+  const [response, setResponse] = useState()
 
-  function onRequest(){
-    setNewRequest(prev => !prev)
+  function onRequest() {
+    setNewRequest((prev) => !prev);
   }
   function saveVideo(url, handle) {
     const payload = {
@@ -28,7 +29,7 @@ function AxiosContextProvider(props) {
     })
       .then((data) => {
         console.log(data);
-        onRequest()
+        onRequest();
       })
       .catch((error) => {
         console.log(error);
@@ -51,7 +52,7 @@ function AxiosContextProvider(props) {
     })
       .then((data) => {
         console.log(data);
-        onRequest()
+        onRequest();
       })
       .catch((error) => {
         console.log(error);
@@ -71,8 +72,31 @@ function AxiosContextProvider(props) {
       });
   }
 
+  function deleteVideo(id, video_url) {
+    axios({
+      method: "DELETE",
+      url: import.meta.env.VITE_ENDPOINT + "/" + id + "/" + video_url,
+    })
+      .then((data) => {
+        setResponse(data + "Video Delete");
+      })
+      .catch((error) => {
+        console.log(error.data);
+      });
+  }
+
   return (
-    <AxiosContext.Provider value={{ saveVideo, updateVideoList, getVideos, videos, newRequest }}>
+    <AxiosContext.Provider
+      value={{
+        saveVideo,
+        updateVideoList,
+        getVideos,
+        deleteVideo,
+        videos,
+        newRequest,
+        response
+      }}
+    >
       {props.children}
     </AxiosContext.Provider>
   );

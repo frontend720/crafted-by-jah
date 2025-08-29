@@ -3,6 +3,8 @@ const express = require("express");
 const videoRouter = express.Router();
 const Video = require("./videoSchema.js");
 
+// Start a new video collection
+
 videoRouter.post("/", (req, res) => {
   const savedVideo = new Video(req.body);
   savedVideo
@@ -18,6 +20,8 @@ videoRouter.post("/", (req, res) => {
       res.status(500).send({ message: "Internal server error." + error.code });
     });
 });
+
+// !Retrieve a video
 
 videoRouter.get("/", (req, res) => {
   const getVideos = Video.find({});
@@ -37,6 +41,8 @@ videoRouter.get("/", (req, res) => {
     });
 });
 
+// Retrieve all videos
+
 videoRouter.get("/:id", (req, res) => {
   const { id } = req.params;
   const getVideo = Video.findOne({ _id: id });
@@ -51,9 +57,11 @@ videoRouter.get("/:id", (req, res) => {
       }
     })
     .catch((error) => {
-      res.status(500).send({ message: "Internal server error." + error.code});
+      res.status(500).send({ message: "Internal server error." + error.code });
     });
 });
+
+// Add another video
 
 videoRouter.patch("/:id", (req, res) => {
   const { id } = req.params;
@@ -76,6 +84,32 @@ videoRouter.patch("/:id", (req, res) => {
     });
 });
 
+// Delete Saved Video
+
+videoRouter.delete("/:id/:url_id", (req, res) => {
+  const { id, url_id } = req.params;
+  const deleteUrl = Video.findOneAndUpdate(
+    { _id: id },
+    { $pull: { urls: { _id: url_id } } },
+    { new: true }
+  );
+  deleteUrl
+    .then((data) => {
+      if (!id && url_id) {
+        res
+          .status(400)
+          .send({ message: "Cant delete video without URL and ID" });
+      } else {
+        res.status(200).send({message: "Updated video collection and deleted video with ID "+ url_id});
+      }
+    })
+    .catch((error) => {
+      res.status(500).send(error.message);
+    });
+});
+
+// Drop Video Collection
+
 videoRouter.delete("/:id", (req, res) => {
   const { id } = req.params;
   const deleteVideo = Video.findOneAndDelete({ _id: id });
@@ -86,7 +120,9 @@ videoRouter.delete("/:id", (req, res) => {
           .status(400)
           .send({ message: "Unable to delete video without video ID" });
       } else {
-        res.status(200).send(data);
+        res
+          .status(200)
+          .send({ message: "Successfully dropped collection with ID " + id });
       }
     })
     .catch((error) => {

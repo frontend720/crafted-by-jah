@@ -1,0 +1,140 @@
+import React, { useContext, useState, useRef, useEffect } from "react";
+import {
+  Card,
+  CardContent,
+  CardActions,
+  Button,
+  Typography,
+  Box,
+} from "@mui/material";
+import {
+  MediaController,
+  MediaControlBar,
+  MediaTimeRange,
+  MediaTimeDisplay,
+  MediaVolumeRange,
+  MediaPlaybackRateButton,
+  MediaPlayButton,
+  MediaSeekBackwardButton,
+  MediaSeekForwardButton,
+  MediaMuteButton,
+  MediaFullscreenButton,
+} from "media-chrome/react";
+import ReactPlayer from "react-player";
+import { AxiosContext } from "./AxiosContext";
+import { MdSkipPrevious, MdSkipNext } from "react-icons/md";
+import { FaTrashCan } from "react-icons/fa6";
+
+export default function Saves() {
+  const { videos, getVideos, deleteVideo, response } = useContext(AxiosContext);
+  const [seek, setSeek] = useState(0);
+
+  const speed= [1, 0.75, 0.5, 0.25, 0.10];
+  const [option, setOption] = useState(0);
+  function optionChange() {
+    setOption((prev) => (prev + 1) % speed.length);
+  }
+
+  const collection_id = "68af3df67ca71283a9b13406";
+
+  function next() {
+    setSeek((prev) => prev + 1);
+  }
+
+  function prev() {
+    setSeek((prev) => prev - 1);
+  }
+
+  useEffect(() => {
+    getVideos(collection_id);
+  }, [response]);
+
+  const reactPlayerRef = useRef(null);
+  const mediaControllerRef = useRef(null);
+
+  function handlePlayerReady() {
+    const internal = reactPlayerRef.current.getInternalPlayer();
+    if (mediaControllerRef.current) {
+      mediaControllerRef.current.media = internal;
+    }
+  }
+
+  console.log(videos?.data?.urls[0]._id);
+  return (
+    <div>
+      <Card className="card">
+        <CardContent>
+          <Box
+            sx={{
+              width: "100%",
+              my: 2,
+            }}
+            className="player-container-box"
+          >
+            <MediaController className="resizable-media-container">
+              <ReactPlayer
+                slot="media"
+                width="100%"
+                height="100%"
+                className="react-player"
+                src={videos?.data?.urls[seek].url}
+                ref={reactPlayerRef}
+                onReady={handlePlayerReady}
+                playbackRate={speed[option]}
+              />
+              <MediaControlBar>
+                <button
+                  disabled={seek === 0 ? true : false}
+                  className="media-control-button"
+                  onClick={prev}
+                >
+                  <MdSkipPrevious />
+                </button>
+                <MediaPlayButton />
+                {/* <MediaSeekBackwardButton seekOffset={10} /> */}
+                {/* <MediaSeekForwardButton seekOffset={10} /> */}
+                <MediaTimeRange />
+                <MediaTimeDisplay showDuration />
+                <MediaMuteButton />
+                <MediaVolumeRange />
+                <button
+                  disabled={
+                    seek === videos?.data?.urls.length - 1 ? true : false
+                  }
+                  className="media-control-button"
+                  onClick={next}
+                >
+                  <MdSkipNext />
+                </button>
+                <MediaFullscreenButton />
+              </MediaControlBar>
+            </MediaController>
+          </Box>
+        </CardContent>
+        <CardActions>
+          <div className="name-container" style={{ width: "100vw" }}>
+            <div></div>
+            <label className="saved-user-handle" htmlFor="">
+              {videos?.data?.urls[seek].handle}
+            </label>
+            <div
+              onClick={() =>
+                deleteVideo(collection_id, videos?.data?.urls[seek]._id)
+              }
+            >
+              <FaTrashCan color="#fff" />
+            </div>
+          </div>
+        </CardActions>
+        <div style={{textAlign: "center"}}>
+          <button
+          className="playback-rate-button"
+            onClick={optionChange}
+          >
+            {speed[option]}
+          </button>
+        </div>
+      </Card>
+    </div>
+  );
+}
