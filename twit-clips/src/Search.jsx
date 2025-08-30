@@ -51,7 +51,7 @@ export default function Search() {
   const collection_id = "68af3df67ca71283a9b13406";
   const { saveVideo, getVideos, videos, updateVideoList, newRequest } =
     useContext(AxiosContext);
-  const { tweetList, continueTweetRequests } = useContext(APIContext);
+  const { tweetList, continueTweetRequests, continuationToken } = useContext(APIContext);
 
   const [isSaved, setIsSaved] = useState(false);
   const [isPlaying, __________] = useState(false);
@@ -73,6 +73,8 @@ export default function Search() {
   useEffect(() => {
     getVideos(collection_id);
   }, [newRequest]);
+
+  console.log(continuationToken)
 
   return (
     <div style={{ paddingTop: 20 }}>
@@ -174,6 +176,7 @@ export default function Search() {
           tweetList.length === 0 ? { display: "none" } : { width: "100vw" }
         }
         onClick={continueTweetRequests}
+        disabled={!continuationToken}
       >
         Continue Tweets
       </button>
