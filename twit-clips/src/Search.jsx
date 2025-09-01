@@ -74,11 +74,6 @@ export default function Search() {
 
   return (
     <div style={{ paddingTop: 20 }}>
-      {/* <NewSearch
-        visibility={
-          tweetList.length === 0 ? { display: "" } : { display: "none" }
-        }
-      /> */}
       {tweetList.length === 0 && !error && <NewSearch />}
       {error && (
         <div className="welcome-container">
