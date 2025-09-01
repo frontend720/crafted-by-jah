@@ -1,5 +1,5 @@
 import { useContext, useState, useRef, useEffect } from "react";
-import { Card, CardContent, CardActions, Box } from "@mui/material";
+import { Card, CardContent, CardActions, Box, Skeleton } from "@mui/material";
 import {
   MediaController,
   MediaControlBar,
@@ -14,17 +14,18 @@ import ReactPlayer from "react-player";
 import { AxiosContext } from "./AxiosContext";
 import { MdSkipPrevious, MdSkipNext } from "react-icons/md";
 import { FaTrashCan } from "react-icons/fa6";
+import { AuthContext } from "./AuthContext";
 
 export default function Saves() {
-  const { videos, getVideos, deleteVideo, response } = useContext(AxiosContext);
+  const { videos, getVideos, deleteVideo, newRequest } =
+    useContext(AxiosContext);
+  const { user } = useContext(AuthContext);
 
   const speed = [1, 0.75, 0.5, 0.25, 0.1];
   const [option, setOption] = useState(0);
   function optionChange() {
     setOption((prev) => (prev + 1) % speed.length);
   }
-
-  const collection_id = "68af3df67ca71283a9b13406";
 
   function next() {
     setSeek((prev) => prev + 1);
@@ -35,8 +36,10 @@ export default function Saves() {
   }
 
   useEffect(() => {
-    getVideos(collection_id);
-  }, [response]);
+    if (user) {
+      getVideos(user);
+    }
+  }, [newRequest]);
 
   const reactPlayerRef = useRef(null);
   const mediaControllerRef = useRef(null);
@@ -47,6 +50,7 @@ export default function Saves() {
       mediaControllerRef.current.media = internal;
     }
   }
+  const reversedUrls = [...(videos[0]?.urls || [])].reverse();
 
   const [auto, setAuto] = useState(false);
 
@@ -54,17 +58,24 @@ export default function Saves() {
     setAuto((prev) => !prev);
   }
 
-  const reversedUrls = [...(videos?.data?.urls || [])].reverse();
   const [seek, setSeek] = useState(0);
-  
-  if (!videos?.data?.urls) {
+
+  if (!reversedUrls) {
     return (
       <div className="loading-message">
-        <Card style={{width: "90%"}} className="card">
+        <Card style={{ width: "90%" }} className="card">
           <CardContent>
             <Box>
-              <h2 style={{color: "#f7f7f7"}}>Loading Library</h2>
-              <p style={{color: "#f7f7f7"}}>Please Wait</p>
+              <div style={{ width: "90%", margin: "0px auto" }}>
+                {speed.map(() => (
+                  <>
+                    <Skeleton
+                      style={{ margin: " 10px 0px" }}
+                      variant="rounded"
+                    />
+                  </>
+                ))}
+              </div>
             </Box>
           </CardContent>
         </Card>
@@ -137,9 +148,7 @@ export default function Saves() {
             <label className="saved-user-handle" htmlFor="">
               {reversedUrls[seek]?.handle}
             </label>
-            <div
-              onClick={() => deleteVideo(collection_id, reversedUrls[seek]._id)}
-            >
+            <div onClick={() => deleteVideo(user, reversedUrls[seek]._id)}>
               <FaTrashCan color="#fff" />
             </div>
           </div>
@@ -151,7 +160,7 @@ export default function Saves() {
         </div>
       </Card>
       <div className="auto-play-button-container">
-        <label>{seek + 1 + " of " + videos.data.urls.length}</label>
+        <label>{seek + 1 + " of " + reversedUrls.length}</label>
         <button className="auto-play-button" onClick={isAutoPlay}>
           Turn auto play {auto ? "OFF" : "ON"}
         </button>

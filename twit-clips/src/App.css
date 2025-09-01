@@ -20,6 +20,16 @@
   line-height: 60px
 }
 
+.welcome-container{
+  position: absolute;
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  min-width: 90%;
+  text-align: center
+}
+
 a{
   text-decoration: none;
   color: #fff
@@ -28,21 +38,30 @@ a{
 .new-search-form{
    display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   margin: 100px auto;
+  align-items: center;
+  text-align: center
+}
+
+.welcome-subtitle{
+  font-size: 24px;
+  font-weight: 300
 }
 
 .input-container{
   display: flex;
   flex-direction: column;
-  width: 100vw
+  width: 100vw;
+  margin: 0px auto
 
 }
 
 .input-flex{
   display: flex;
   flex-direction: row;
-  align-items: center
+  align-items: center;
+  max-width: 80%
 }
 
 .username-input{
@@ -103,9 +122,6 @@ li{
   padding: 0px !important;
 }
 
-.react-player__preview{
-  /* min-height: 400px !important */
-}
 
 .username {
   font-weight: 900;
@@ -128,6 +144,14 @@ li{
   background: #222 !important;
   width: 100vw !important;
   padding: 0px !important;
+}
+
+.continue-btn{
+  padding: 18px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #f7f7f7;
+  padding-bottom:30px
 }
 
 .action-container{
@@ -214,4 +238,72 @@ a{
 .auto-play-button{
   width: 50%;
   margin-top: 16px
+}
+
+.authentication-container{
+  width: 100vw;
+}
+
+.auth-input-container{
+    background: rgba(128, 128, 128, 0.605);
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 24px auto
+}
+
+.authentication-button{
+  width: 90%;
+  margin: 32px auto;
+   font-size: 18px;
+  padding: 10px;
+  color: #f7f7f7
+}
+
+.auth-input{
+  background: none;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  width: 100%
+}
+
+.auth-icon{
+  padding: 0px 8px
+}
+
+.auth-input:focus{
+  outline: none
+}
+
+.auth-input::placeholder{
+  color: #f7f7f7c4
+}
+
+.authentication-form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0px auto
+}
+
+.auth-title{
+  text-align: center;
+  font-weight: 400;
+  line-height: 55px;
+  margin-top: 60px;
+  text-transform: uppercase;
+  font-size: 32px
+}
+.toggle-auth{
+  background: transparent;
+  border: none;
+  margin-top: 42px;
+  text-align: center
+}
+
+.toggle-auth:focus{
+  outline: none
 }

@@ -8,9 +8,9 @@ function APIContextProvider(props) {
   const [tweetList, setTweetList] = useState([]);
   const [continuationToken, setContinuationToken] = useState(null);
   const [toggleNavbar, _____________] = useState(false)
+  const [error, setError] = useState("")
 
-  function newTweetRequest(e) {
-    e.preventDefault();
+  function newTweetRequest() {
     axios({
       method: "POST",
       url: "https://twitter154.p.rapidapi.com/user/tweets",
@@ -24,11 +24,12 @@ function APIContextProvider(props) {
       },
     })
       .then((data) => {
-        setTweetList(()=>data.data.results);
+        setTweetList(()=>data.data.results || []);
         setContinuationToken(data.data.continuation_token);
+        setError(data.data.detail)
       })
       .catch((error) => {
-        console.log(error.message);
+        console.log(error.response);
       });
   }
 
@@ -39,9 +40,7 @@ function continueTweetRequests(e) {
     url: "https://twitter154.p.rapidapi.com/user/tweets/continuation",
     data: {
       username: username,
-      limit: 40,
-      // CORRECTED: Use the state variable here
-    //   continuation_token: continuationToken, 
+      limit: 40, 
       continuation_token: continuationToken
     },
     headers: {
@@ -50,13 +49,12 @@ function continueTweetRequests(e) {
     },
   })
     .then((data) => {
-      // CORRECTED: This line must be active
       setTweetList((prevTweets) => [...prevTweets, ...(data.data.results || [])]);
  
       setContinuationToken(data.data.continuation_token);
     })
     .catch((error) => {
-      console.log(error.message);
+      console.log(error);
     });
 }
 
@@ -67,6 +65,9 @@ function continueTweetRequests(e) {
   function onChange(e) {
     const { value } = e.target;
     setUsername(value);
+        if (error) {
+      setError("");
+    }
   }
 
   return (
@@ -76,10 +77,12 @@ function continueTweetRequests(e) {
         username,
         toggleNavbar,
         setUsername,
+        setTweetList,
         newTweetRequest,
         continueTweetRequests,
         onChange,
-        continuationToken
+        continuationToken,
+        error
       }}
     >
       {props.children}

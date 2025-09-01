@@ -6,19 +6,20 @@ axios.defaults.headers.common["ngrok-skip-browser-warning"] = true;
 const AxiosContext = createContext();
 
 function AxiosContextProvider(props) {
-  const [videos, setVideos] = useState();
+  const [videos, setVideos] = useState([]);
   const [newRequest, setNewRequest] = useState(false);
   const [response, setResponse] = useState()
 
   function onRequest() {
     setNewRequest((prev) => !prev);
   }
-  function saveVideo(url, handle) {
+  function saveVideo(url, handle, userId) {
     const payload = {
       urls: [
         {
           url: url,
           handle: handle,
+          userId: userId
         },
       ],
     };
@@ -65,7 +66,7 @@ function AxiosContextProvider(props) {
       url: import.meta.env.VITE_ENDPOINT + "/" + id,
     })
       .then((data) => {
-        setVideos(data);
+        setVideos(data.data);
       })
       .catch((error) => {
         console.log(error.code);
@@ -79,6 +80,7 @@ function AxiosContextProvider(props) {
     })
       .then((data) => {
         setResponse(data + "Video Delete");
+        onRequest()
       })
       .catch((error) => {
         console.log(error.data);
