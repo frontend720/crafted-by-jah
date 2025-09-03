@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-icon {
+  color: #f5f5f5;
+}
+
+.nav-icon.active {
+  color: #2f89fc;
+}
+
+.navbar {
+  display: flex;
+  width: 80%;
+  max-width: 80%;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #222222b1;
+  align-content: center;
+  align-items: center;
+  border-radius: 16px;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 24px;
+  /* Correct centering fix */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.weather-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.weather-widget-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background-color: #f0f4f89c; /* Light background for contrast */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.weather-main-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  text-align: right;
+  width: 100%;
+  justify-content: center;
+}
+
+.weather-temp-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.weather-temp {
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.weather-feels-like {
+  font-size: 1em;
+  color: #666;
+}
+
+.weather-description {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #555;
+}
+
+.weather-icon {
+  width: 80px;
+  height: auto;
+}
+
+.weather-date {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.weather-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.weather-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #4a90e2;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.weather-buttons button:hover {
+  background-color: #3b7ad1;
+}
+
+.weather-buttons button:disabled {
+  background-color: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+
+.input-area-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  align-items: center;
+}
+
+.model-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  color: #f7f7f7;
+  font-family: "Inter", sans-serif
+}
+img{
+  margin: 16px auto
+}
+  
+
