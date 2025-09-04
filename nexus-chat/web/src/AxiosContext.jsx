@@ -23,14 +23,16 @@ function AxiosContextProvider({ children }) {
   const [styledIndex, setStyleIndex] = useState(0);
 
   const style_array = [
-    { style: "3D Model" },
-    { style: "Analog Film" },
-    { style: "Anime" },
-    { style: "Cinematic" },
-    { style: "Comic Book" },
+    { style: "3D Model", name: "3D Model" },
+    { style: "Analog Film", name: "Analog Film" },
+    { style: "Anime", name: "Anime" },
+    { style: "Cinematic", name: "Cinematic" },
+    { style: "Comic Book", name: "Comic Book" },
+    {style: undefined, name: "None"}
   ];
 
   const style_model = style_array[styledIndex].style;
+  const style_name = style_array[styledIndex].name
   
   function changeStyle(){
       setStyleIndex(prev =>( prev + 1) % style_array.length)
@@ -203,6 +205,7 @@ const temp = text_model[modelIndex].temp
         isRequestComplete,
         isImageProcessing,
         style_model,
+        style_name,
         text_model,
         welcomeImageText,
         welcomeChatText,

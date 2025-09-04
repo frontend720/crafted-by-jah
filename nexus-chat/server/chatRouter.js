@@ -59,8 +59,8 @@ chatRouter.post("/chat", (req, res) => {
 });
 
 function generateRandomSeed() {
-  const min = 800000000;
-  const max = 999999999;
+  const min = 450000000;
+  const max = 800000000;
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -78,13 +78,15 @@ chatRouter.post("/image", (req, res) => {
       prompt: instructions.image + req.body.prompt,
       height: 1024,
       width: 1024,
-      steps: 30,
-      cfg_scale: 19,
+      steps: 20,
+      cfg_scale: 5,
       seed: randomSeed,
       lora_strength: 75,
       safe_mode: false,
       return_binary: false,
       hide_watermark: true,
+      seed: 74679787,
+   
       style_preset: req.body.style_preset
     },
   })

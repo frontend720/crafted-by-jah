@@ -20,11 +20,13 @@ export default function ProfileContainer() {
   const { onThemeChange, themes, themeIndex } =
     useContext(ThemeContext);
 
-  const { weatherData, getWeatherAndLocationInformation, address, changeStyle, style_model, changeModel, text_model, modelIndex } =
+  const { weatherData, getWeatherAndLocationInformation, address, changeStyle, style_model, style_name, changeModel, text_model, modelIndex } =
     useContext(AxiosContext);
 
   const changeTheme = themes[themeIndex].gradient;
   const themeName = themes[themeIndex].name;
+
+  console.log(style_model)
 
   return (
     <Container background={changeTheme}>
@@ -93,7 +95,7 @@ export default function ProfileContainer() {
        <ChangeThemeContainer>
         <ThemeButton background="#709078" onClick={changeStyle}>Image Style</ThemeButton>
         <ThemeText color="#709078" className="theme-text" htmlFor="">
-          {style_model}
+          {style_name}
         </ThemeText>
       </ChangeThemeContainer>
       {/* <button onClick={changeModel}>{text_model[modelIndex].model}</button> */}
