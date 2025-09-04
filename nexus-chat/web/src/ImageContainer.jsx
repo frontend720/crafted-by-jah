@@ -1,16 +1,27 @@
-import React, { useContext, useState } from "react";
-import { Container } from "./UIComponents";
+import React, { useContext, useState, useEffect } from "react";
+
 import { ThemeContext } from "./ThemeContext";
-import { InputContainer, StyledTextarea, SendButton } from "./UIComponents";
+import {
+  Container,
+  InputContainer,
+  StyledTextarea,
+  SendButton,
+  WelcomeContainer,
+  WelcomeText,
+  WelcomeTitle,
+} from "./UIComponents";
 import { BiPaint } from "react-icons/bi";
 import { AxiosContext } from "./AxiosContext";
 export default function ImageContainer() {
   const { localTheme, themes, themeIndex } = useContext(ThemeContext);
-  const { generateNewImageRequest, imageUrl, imageArray } =
-    useContext(AxiosContext);
+  const {
+    generateNewImageRequest,
+    imageUrl,
+    imageArray,
+    isImageProcessing,
+    welcomeImageText,
+  } = useContext(AxiosContext);
   const [prompt, setPrompt] = useState("");
-
-  console.log(prompt);
 
   function onPromptChange(e) {
     setPrompt(e.target.value);
@@ -57,11 +68,27 @@ export default function ImageContainer() {
     setPrompt("");
   }
 
-  console.log(localTheme);
-
   const changeTheme = themes[themeIndex].gradient;
+
+  const [degrees, setDegrees] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setDegrees((prevDegrees) => (prevDegrees + 1) % 360);
+    }, 25);
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <Container bottom="350px" background={changeTheme}>
+      {welcomeImageText ? (
+        <WelcomeContainer>
+          <WelcomeTitle>Ready to create something awesome?</WelcomeTitle>
+          <WelcomeText>
+            Tell me what to draw, and I'll make it for you!
+          </WelcomeText>
+        </WelcomeContainer>
+      ) : null}
       <div>
         <label htmlFor=""></label>
         {imageArray?.map((image) => (
@@ -69,6 +96,17 @@ export default function ImageContainer() {
             <img src={image} width="100%" alt="" />
           </>
         ))}
+        <div
+          style={
+            isImageProcessing
+              ? {
+                  width: "100%",
+                  height: "400px",
+                  background: `linear-gradient(${degrees}deg,rgba(216, 226, 220, 1) 0%, rgba(255, 229, 217, 1) 50%, rgba(255, 202, 212, 1) 100%)`,
+                }
+              : { display: "none" }
+          }
+        ></div>
         <div className="input-area-wrapper">
           <InputContainer position="inherit" width="100%" display="block">
             <div style={{ display: "flex", flexDirection: "row" }}>
@@ -81,7 +119,10 @@ export default function ImageContainer() {
                 <BiPaint size="24px" color="#e8e8e8" />
               </SendButton>
             </div>
-            <div className="model-container">
+            <div
+              style={{ marginBottom: "0px !important" }}
+              className="model-container"
+            >
               <SendButton onClick={onModelChange} padding="16px 0px">
                 Change Model
               </SendButton>

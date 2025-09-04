@@ -13,19 +13,24 @@ import {
   ListItem,
   H1,
   Strong,
+  BubbleContainer,
+  Bubbles,
+  WelcomeContainer,
+  WelcomeText,
+  WelcomeTitle,
 } from "./UIComponents.jsx";
 import { ThemeContext } from "./ThemeContext.jsx";
 import { GrSend } from "react-icons/gr";
 import { AxiosContext } from "./AxiosContext.jsx";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import styled from "styled-components";
 
 export default function ChatContainer() {
-  const { localTheme, themes, themeIndex } = useContext(ThemeContext);
-  const { newChatRequest, chatLog } = useContext(AxiosContext);
+  const { themes, themeIndex } = useContext(ThemeContext);
+  const { newChatRequest, chatLog, isRequestComplete, welcomeChatText } =
+    useContext(AxiosContext);
 
-  console.log(chatLog);
+  //   console.log(chatLog);
 
   const [userPrompt, setUserPrompt] = useState("");
 
@@ -35,17 +40,28 @@ export default function ChatContainer() {
 
   function handleSendClick() {
     if (userPrompt.trim() !== "") {
-      newChatRequest("Deandre", userPrompt), setUserPrompt("");
+      newChatRequest("Deandre", userPrompt, "Jared"), setUserPrompt("");
     }
   }
 
   const changeTheme = themes[themeIndex].gradient;
 
+  const loadingBubbles = [1, 2, 3, 4];
+
   return (
     <div className="App">
       <Container background={changeTheme}>
+        {welcomeChatText ? (
+          <WelcomeContainer>
+            <WelcomeTitle>Welcome!</WelcomeTitle>
+            <WelcomeText>
+              What's on your mind? Feel free to start our conversation.
+            </WelcomeText>
+          </WelcomeContainer>
+        ) : null}
         {chatLog.map((message, index) => (
           <TextContainer
+            key={index}
             radius={message.sender === "user" ? "10px 0px 10px 10px" : ""}
             align={message.sender === "user" ? "flex-end" : "flex-start"}
             isUser={message.sender == "user" ? "#dabdbdb1" : "#5a6b61b5"}
@@ -62,7 +78,6 @@ export default function ChatContainer() {
               <ReactMarkdown
                 remarkPlugins={[remarkGfm]}
                 components={{
-                  // Pass your styled components to format the markdown output
                   p: ({ node, ...props }) => (
                     <MessageText
                       weight={500}
@@ -77,7 +92,7 @@ export default function ChatContainer() {
                   ul: UL,
                   ol: OL,
                   li: ListItem,
-                  p: P
+                  p: P,
                 }}
               >
                 {message.text}
@@ -85,6 +100,15 @@ export default function ChatContainer() {
             )}
           </TextContainer>
         ))}
+        {isRequestComplete === false ? (
+          <BubbleContainer>
+            {loadingBubbles.map((_, index) => (
+              <Bubbles key={index} delay={index * 0.2} />
+            ))}
+          </BubbleContainer>
+        ) : (
+          ""
+        )}
         <InputContainer>
           <StyledTextarea
             onChange={onPromptChange}
@@ -93,7 +117,7 @@ export default function ChatContainer() {
             maxRows={7}
             className="chat-textarea"
           />
-          <SendButton onClick={() => handleSendClick("DeAndre", userPrompt)}>
+          <SendButton onClick={() => handleSendClick()}>
             <GrSend size="24px" color="#e8e8e8" />
           </SendButton>
         </InputContainer>

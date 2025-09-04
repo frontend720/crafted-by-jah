@@ -14,37 +14,32 @@ chatRouter.post("/chat", (req, res) => {
       "Content-Type": "application/json",
     },
     data: {
-      model: "venice-uncensored",
+      model: req.body.model,
       messages: [
         {
           role: "system",
-          content: `${instructions.instructions} ${req.body.timestamp} ${instructions.instructions_suffix} ${instructions.bot_name} ${req.body.name} ${instructions.rules}`,
+          content: `I am a virtual boyfriend and assistant who responds to the name ${req.body.bot_name}. when asked, my job is to assist a man named ${req.body.name} and keep him company. The current time is:  ${req.body.timestamp}. These are the general instructions for me, follow them closely: ${instructions.instructions}. Strictly follow these rules: ${instructions.rules}.  ${instructions.weather} +
+            ${req.body.weather} +
+            ${instructions.location} +
+            ${req.body.location}`,
         },
         {
           role: "user",
-          content:
-            instructions.weather +
-            req.body.weather +
-            instructions.location +
-            req.body.location +
-            "this is the current user prompt " +
-            req.body.prompt +
-            "respond to this prompt " +
-            "this is the current chat history thread " +
-            req.body.chatLog +
-            " use this thread to keep track of conversation context",
+          content: `This is the log of the current conversation: + ${req.body.chatLog} + This is the prompt to be appended: + ${req.body.prompt} + Review the conversation log to maintain context and order. If no log exists, greet the user appropriately. Respond to the user's prompt by considering the full conversation context`,
         },
       ],
       venice_parameters: {
         enable_web_search: "on",
-        include_venice_system_prompt: true,
+        include_venice_system_prompt: false,
+        enable_web_citations: false,
       },
-      //   frequency_penalty: 1,
-      max_tokens: 600,
-      //   max_completion_tokens: 90,
+      // frequency_penalty: 1,
       stream: false,
       repetition_penalty: 1.25,
       presence_penalty: 1.25,
+      max_tokens: req.body.tokens,
+      top_p: req.body.top_p,
+      temperature: req.body.temp
     },
   })
     .then((data) => {
@@ -83,13 +78,14 @@ chatRouter.post("/image", (req, res) => {
       prompt: instructions.image + req.body.prompt,
       height: 1024,
       width: 1024,
-      steps: 40,
+      steps: 30,
       cfg_scale: 19,
       seed: randomSeed,
       lora_strength: 75,
       safe_mode: false,
       return_binary: false,
       hide_watermark: true,
+      style_preset: req.body.style_preset
     },
   })
     .then((response) => {
@@ -105,6 +101,43 @@ chatRouter.post("/image", (req, res) => {
       res.status(500).send({
         message: "Image generation failed",
         error: error.response?.data || error.message,
+      });
+    });
+});
+
+chatRouter.post("/in-paint", (req, res) => {
+    const {image, prompt} = req.body
+  if (!prompt || !image) {
+    res
+      .status(400)
+      .send({ message: "Can't send request without image or edit prompt" });
+  }
+  axios({
+    method: "POST",
+    url: "https://api.venice.ai/api/v1/image/edit",
+    headers: {
+      Authorization: `Bearer ${process.env.VENICE_API_KEY}`,
+      "Content-Type": "application/json",
+    },
+    data: {
+      prompt: prompt,
+      image: image,
+
+    },
+  })
+    .then((response) => {
+      if (!response) {
+        res
+          .status(400)
+          .send({ message: "Unable to complete request. Try again later." });
+      } else {
+        res.status(200).send(response.data);
+      }
+    })
+    .catch((error) => {
+      res.status(500).send({
+        code: error.code,
+        message: error.message,
       });
     });
 });
@@ -125,19 +158,10 @@ chatRouter.post("/weather", async (req, res) => {
     });
     return res.status(200).send(response.data);
   } catch (error) {
-    return res
-      .status(500)
-      .send({ message: "Internal server error. " + error.message });
+    return res.status(500).send({ message: error.message });
   }
 });
 
 console.log(process.env.OPEN_WEATHER_API);
-
-console.log(
-  instructions.instructions,
-  instructions.instructions_suffix,
-  instructions.bot_name,
-  instructions.rules
-);
 
 module.exports = chatRouter;

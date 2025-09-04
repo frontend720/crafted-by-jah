@@ -66,13 +66,13 @@ function ThemeContextProvider({children}){
     setThemeIndex(localTheme)
   }, [localTheme])
 
-  console.log(themes[themeIndex].gradient)
+  // console.log(themes[themeIndex].gradient)
 
   useEffect(() => {
     try {
       const currentTheme =themes[themeIndex].gradient
       localStorage.setItem("theme", JSON.stringify(currentTheme));
-      console.log(`Succesfully added ${themes[themeIndex].gradient} to localStorage`);
+      // console.log(`Succesfully added ${themes[themeIndex].gradient} to localStorage`);
     } catch (error) {
       console.log(error);
     }

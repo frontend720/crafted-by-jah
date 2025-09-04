@@ -137,7 +137,9 @@
   justify-content: space-between;
   margin-top: 16px;
   color: #f7f7f7;
-  font-family: "Inter", sans-serif
+  font-family: "Inter", sans-serif;
+
+
 }
 img{
   margin: 16px auto

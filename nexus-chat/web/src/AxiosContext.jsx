@@ -16,20 +16,63 @@ function AxiosContextProvider({ children }) {
   const [weatherData, setWeatherData] = useState();
   const [address, setAddress] = useState();
   const [imageUrl, setImageUrl] = useState("");
+  const [isRequestComplete, setIsRequestComplete] = useState(true);
+  const [welcomeImageText, setWelcomeImageText] = useState(true)
+  const [welcomeChatText, setWelcomeChatText] = useState(true)
 
-  function newChatRequest(name, prompt) {
+  const [styledIndex, setStyleIndex] = useState(0);
+
+  const style_array = [
+    { style: "3D Model" },
+    { style: "Analog Film" },
+    { style: "Anime" },
+    { style: "Cinematic" },
+    { style: "Comic Book" },
+  ];
+
+  const style_model = style_array[styledIndex].style;
+  
+  function changeStyle(){
+      setStyleIndex(prev =>( prev + 1) % style_array.length)
+    }
+
+    const [modelIndex, setModelIndex] = useState(0)
+    
+    const text_model = [
+      {model: "venice-uncensored", name: "Venice Unleashed (Uncensored)", tokens: 750, top_p: 0.75, temp: 0.9},
+      {model: "dolphin-2.9.2-qwen2-72b", name: "Dolphin Insight (Uncensored)", tokens: 275, top_p: 0.2, temperature: 0.4},
+      {model: "llama-3.1-405b", name: "Llama Pro", tokens: 500,  top_p: 0.2, temperature: 0.7}
+    ]
+
+    function changeModel(){
+        setModelIndex(prev => (prev + 1) % text_model.length)
+    }
+//   console.log(style_model)
+console.log(text_model[modelIndex].model)
+const chat_model = text_model[modelIndex].model
+const tokens = text_model[modelIndex].tokens
+const top_p = text_model[modelIndex].top_p
+const temp = text_model[modelIndex].temp
+
+  function newChatRequest(name, prompt, username) {
+    console.log(name, prompt, username);
     const chat = chatLog.map((chat) => chat.sender + chat.text);
     console.log(chat);
     axios({
       method: "POST",
       url: `${import.meta.env.VITE_NGROK_URL}/chat`,
       data: {
-        name: name,
-        chatLog: chatLog.map((chat) => chat?.sender, chat?.text),
+        bot_name: name,
         prompt: prompt,
+        name: username,
+        chatLog: chat,
         timestamp: moment().format("LLL"),
         location: address,
         weather: `${weatherData?.current.weather[0].description}, ${weatherData?.current.feels_like}°`,
+        model: chat_model,
+        tokens: tokens,
+        top_p: top_p,
+        temp: temp
       },
     })
       .then((response) => {
@@ -45,13 +88,17 @@ function AxiosContextProvider({ children }) {
           },
         ];
         setChatLog((prev) => [...prev, ...newChatEntries]);
+        setIsRequestComplete(true);
       })
       .catch((error) => {
         console.log(error);
       });
+    setIsRequestComplete(false);
+    setWelcomeChatText(false)
   }
 
   const [imageArray, setImageArray] = useState([]);
+  const [isImageProcessing, setIsImageProcessing] = useState(false);
 
   function generateNewImageRequest(prompt, model) {
     axios({
@@ -60,16 +107,20 @@ function AxiosContextProvider({ children }) {
       data: {
         prompt: prompt,
         model: model,
+        style_preset: style_model
       },
     })
       .then((url) => {
         setImageUrl(url.data.imageUrl);
-        const newUrl = url.data.imageUrl
+        const newUrl = url.data.imageUrl;
         setImageArray((prev) => [...prev, newUrl]);
+        setIsImageProcessing(false);
       })
       .catch((error) => {
         console.log(error);
       });
+    setIsImageProcessing(true);
+    setWelcomeImageText(false)
   }
 
   function getWeatherAndLocationInformation() {
@@ -101,14 +152,14 @@ function AxiosContextProvider({ children }) {
         }&units=imperial`,
       });
       setWeatherData(response.data);
-      console.log(response);
+    //   console.log(response);
     } catch (error) {
       console.error("Weather API Error:", error.message);
     }
   }
 
-  console.log(imageArray)
-  console.log(imageUrl)
+//   console.log(imageArray);
+//   console.log(imageUrl);
 
   function getPreciseLocation() {
     geocode(RequestType.LATLNG, `${coords?.latitude},${coords?.longitude}`)
@@ -117,7 +168,7 @@ function AxiosContextProvider({ children }) {
         setAddress(address);
       })
       .catch((error) => {
-        console.log(error);
+        return (error);
       });
   }
 
@@ -125,7 +176,7 @@ function AxiosContextProvider({ children }) {
     getPreciseLocation();
   }, [coords]);
 
-  console.log(weatherData);
+//   console.log(weatherData);
 
   //   useEffect(() => {
   //     getWeatherAndLocationInformation();
@@ -141,12 +192,21 @@ function AxiosContextProvider({ children }) {
         newChatRequest,
         getWeatherAndLocationInformation,
         generateNewImageRequest,
+        changeStyle,
+        changeModel,
         weatherData,
         coords,
         chatLog,
         address,
         imageUrl,
-        imageArray
+        imageArray,
+        isRequestComplete,
+        isImageProcessing,
+        style_model,
+        text_model,
+        welcomeImageText,
+        welcomeChatText,
+        modelIndex
       }}
     >
       {children}

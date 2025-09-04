@@ -1,5 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import TextareaAutosize from "react-textarea-autosize";
+
+const pulse = keyframes`
+  0%{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0.5;
+  }
+`;
 
 const Container = styled.div`
   border: ${({ border }) => (border ? border : "none")};
@@ -8,8 +20,31 @@ const Container = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-//   padding-bottom: 200px;
-padding-bottom: ${({bottom}) => bottom ? bottom : "200px"}
+  //   padding-bottom: 200px;
+  padding-bottom: ${({ bottom }) => (bottom ? bottom : "200px")};
+`;
+
+const WelcomeContainer = styled.div`
+  width: 85%;
+  max-width: 90%;
+  align-self: ${({ align }) => (align ? align : "flex-start")};
+  border-radius: 16px;
+  padding: 12px 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin: 100px auto;
+  background-color: #f0f4f89c;
+`;
+
+const WelcomeTitle = styled.h2`
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 25px
+`;
+
+const WelcomeText = styled.p`
+  color: #66666699;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px
 `;
 
 const MessageText = styled.p`
@@ -48,7 +83,7 @@ const ChangeThemeContainer = styled.div`
 `;
 
 const ThemeButton = styled.button`
-  background: #4f46e5;
+  background: ${({ background }) => (background ? background : "#4f46e5")};
   color: white;
   padding: 8px 16px;
   border: none;
@@ -57,15 +92,15 @@ const ThemeButton = styled.button`
   font-family: "Inter", sans-serif;
   cursor: pointer;
   transition: background 0.3s ease;
-  &:hover {
-    background: #4338ca;
-  }
+  //   &:hover {
+  //     background: #4338ca;
+  //   }
 `;
 
 const ThemeText = styled.label`
   font-size: 14px;
   font-weight: 500;
-  color: #4338ca;
+  color: ${({ color }) => (color ? color : "#4338ca")};
   font-family: "Inter", sans-serif;
 `;
 
@@ -103,7 +138,7 @@ const SendButton = styled.button`
   padding: ${({ padding }) => (padding ? padding : "10px 16px")};
   border: none;
   border-radius: 8px;
-    font-weight: 500;
+  font-weight: 500;
 
   font-family: "Inter", sans-serif;
 
@@ -226,6 +261,25 @@ const LocationButton = styled.button`
   }
 `;
 
+const BubbleContainer = styled.div`
+  width: 40%;
+  padding: 10px;
+  background: #5a6b61b5;
+  border-radius: 25px 25px 25px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+`;
+
+const Bubbles = styled.div`
+  width: 25px;
+  height: 25px;
+  background: rgba(163, 163, 163, 1);
+  border-radius: 50%;
+  animation: ${pulse} 1.4s ease-in-out infinite;
+  animation-delay: ${(props) => props.delay}s;
+`;
+
 export {
   Container,
   MessageText,
@@ -248,4 +302,9 @@ export {
   Heading,
   Paragraph,
   LocationButton,
+  BubbleContainer,
+  Bubbles,
+  WelcomeContainer,
+  WelcomeText,
+  WelcomeTitle,
 };

@@ -12,25 +12,19 @@ import {
   LocationButton,
 } from "./UIComponents";
 import { FaLocationCrosshairs } from "react-icons/fa6";
-
-import weather from "./weather.json";
 import dayjs from "dayjs";
 import { AxiosContext } from "./AxiosContext";
-import data from "./data.json";
+
 
 export default function ProfileContainer() {
-  const { localTheme, onThemeChange, themes, themeIndex } =
+  const { onThemeChange, themes, themeIndex } =
     useContext(ThemeContext);
-  console.log(localTheme);
 
-  const { weatherData, getWeatherAndLocationInformation, address, coords } =
+  const { weatherData, getWeatherAndLocationInformation, address, changeStyle, style_model, changeModel, text_model, modelIndex } =
     useContext(AxiosContext);
-  console.log(weatherData);
 
   const changeTheme = themes[themeIndex].gradient;
   const themeName = themes[themeIndex].name;
-
-  console.log(address);
 
   return (
     <Container background={changeTheme}>
@@ -96,6 +90,19 @@ export default function ProfileContainer() {
           )}
         </div>
       </WeatherContainer>
+       <ChangeThemeContainer>
+        <ThemeButton background="#709078" onClick={changeStyle}>Image Style</ThemeButton>
+        <ThemeText color="#709078" className="theme-text" htmlFor="">
+          {style_model}
+        </ThemeText>
+      </ChangeThemeContainer>
+      {/* <button onClick={changeModel}>{text_model[modelIndex].model}</button> */}
+        <ChangeThemeContainer>
+        <ThemeButton background="#001B2E" onClick={changeModel}>Chat Model</ThemeButton>
+        <ThemeText color="#001B2E" className="theme-text" htmlFor="">
+          {text_model[modelIndex].name}
+        </ThemeText>
+      </ChangeThemeContainer>
     </Container>
   );
 }
