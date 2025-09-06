@@ -1,0 +1,42 @@
+.container {
+  width: 100vw !important;
+  min-height: 100vh !important;
+  overflow-y: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-messages {
+  flex: 1; /* This makes the message area fill all available space */
+  overflow-y: auto; /* Adds scrolling for the chat history */
+  padding-bottom: 20px;
+}
+
+.message_wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.message_wrapper.left-aligned {
+  justify-content: flex-start;
+}
+
+.ion-card {
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+
+textarea::placeholder{
+    color: #968e8e !important
+}
+
+.textarea{
+    color: #fbf5ec !important
+}
+
+.textarea-light{
+    color: #141515
+}

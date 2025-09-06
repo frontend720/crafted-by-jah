@@ -1,7 +1,12 @@
 import axios from "axios";
 import { createContext, useState, useEffect } from "react";
+import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 import moment from "moment";
 import { setDefaults, geocode, RequestType } from "react-geocode";
+import { storage } from "./firebaseConfig";
+import { v4 as uuidv4 } from "uuid";
+
+console.log(storage);
 
 setDefaults({
   key: import.meta.env.VITE_GEOCODING_API_KEY,
@@ -17,8 +22,10 @@ function AxiosContextProvider({ children }) {
   const [address, setAddress] = useState();
   const [imageUrl, setImageUrl] = useState("");
   const [isRequestComplete, setIsRequestComplete] = useState(true);
-  const [welcomeImageText, setWelcomeImageText] = useState(true)
-  const [welcomeChatText, setWelcomeChatText] = useState(true)
+  const [welcomeImageText, setWelcomeImageText] = useState(true);
+  const [welcomeChatText, setWelcomeChatText] = useState(true);
+
+  const [firebase_image_url, setFirebase_image_url] = useState(null);
 
   const [styledIndex, setStyleIndex] = useState(0);
 
@@ -28,33 +35,51 @@ function AxiosContextProvider({ children }) {
     { style: "Anime", name: "Anime" },
     { style: "Cinematic", name: "Cinematic" },
     { style: "Comic Book", name: "Comic Book" },
-    {style: undefined, name: "None"}
+    { style: undefined, name: "None" },
   ];
 
   const style_model = style_array[styledIndex].style;
-  const style_name = style_array[styledIndex].name
-  
-  function changeStyle(){
-      setStyleIndex(prev =>( prev + 1) % style_array.length)
-    }
+  const style_name = style_array[styledIndex].name;
 
-    const [modelIndex, setModelIndex] = useState(0)
-    
-    const text_model = [
-      {model: "venice-uncensored", name: "Venice Unleashed (Uncensored)", tokens: 750, top_p: 0.75, temp: 0.9},
-      {model: "dolphin-2.9.2-qwen2-72b", name: "Dolphin Insight (Uncensored)", tokens: 275, top_p: 0.2, temperature: 0.4},
-      {model: "llama-3.1-405b", name: "Llama Pro", tokens: 500,  top_p: 0.2, temperature: 0.7}
-    ]
+  function changeStyle() {
+    setStyleIndex((prev) => (prev + 1) % style_array.length);
+  }
 
-    function changeModel(){
-        setModelIndex(prev => (prev + 1) % text_model.length)
-    }
-//   console.log(style_model)
-console.log(text_model[modelIndex].model)
-const chat_model = text_model[modelIndex].model
-const tokens = text_model[modelIndex].tokens
-const top_p = text_model[modelIndex].top_p
-const temp = text_model[modelIndex].temp
+  const [modelIndex, setModelIndex] = useState(0);
+
+  const text_model = [
+    {
+      model: "venice-uncensored",
+      name: "Venice Unleashed (Uncensored)",
+      tokens: 750,
+      top_p: 0.75,
+      temp: 0.9,
+    },
+    {
+      model: "dolphin-2.9.2-qwen2-72b",
+      name: "Dolphin Insight (Uncensored)",
+      tokens: 275,
+      top_p: 0.2,
+      temperature: 0.4,
+    },
+    {
+      model: "llama-3.1-405b",
+      name: "Llama Pro",
+      tokens: 500,
+      top_p: 0.2,
+      temperature: 0.7,
+    },
+  ];
+
+  function changeModel() {
+    setModelIndex((prev) => (prev + 1) % text_model.length);
+  }
+  //   console.log(style_model)
+  console.log(text_model[modelIndex].model);
+  const chat_model = text_model[modelIndex].model;
+  const tokens = text_model[modelIndex].tokens;
+  const top_p = text_model[modelIndex].top_p;
+  const temp = text_model[modelIndex].temp;
 
   function newChatRequest(name, prompt, username) {
     console.log(name, prompt, username);
@@ -74,7 +99,7 @@ const temp = text_model[modelIndex].temp
         model: chat_model,
         tokens: tokens,
         top_p: top_p,
-        temp: temp
+        temp: temp,
       },
     })
       .then((response) => {
@@ -96,7 +121,7 @@ const temp = text_model[modelIndex].temp
         console.log(error);
       });
     setIsRequestComplete(false);
-    setWelcomeChatText(false)
+    setWelcomeChatText(false);
   }
 
   const [imageArray, setImageArray] = useState([]);
@@ -107,9 +132,9 @@ const temp = text_model[modelIndex].temp
       method: "POST",
       url: `${import.meta.env.VITE_NGROK_URL}/image`,
       data: {
-        prompt: prompt,
+        prompt: prompt + description,
         model: model,
-        style_preset: style_model
+        style_preset: style_model,
       },
     })
       .then((url) => {
@@ -122,7 +147,7 @@ const temp = text_model[modelIndex].temp
         console.log(error);
       });
     setIsImageProcessing(true);
-    setWelcomeImageText(false)
+    setWelcomeImageText(false);
   }
 
   function getWeatherAndLocationInformation() {
@@ -154,14 +179,14 @@ const temp = text_model[modelIndex].temp
         }&units=imperial`,
       });
       setWeatherData(response.data);
-    //   console.log(response);
+      //   console.log(response);
     } catch (error) {
       console.error("Weather API Error:", error.message);
     }
   }
 
-//   console.log(imageArray);
-//   console.log(imageUrl);
+  //   console.log(imageArray);
+  //   console.log(imageUrl);
 
   function getPreciseLocation() {
     geocode(RequestType.LATLNG, `${coords?.latitude},${coords?.longitude}`)
@@ -170,7 +195,7 @@ const temp = text_model[modelIndex].temp
         setAddress(address);
       })
       .catch((error) => {
-        return (error);
+        return error;
       });
   }
 
@@ -178,12 +203,45 @@ const temp = text_model[modelIndex].temp
     getPreciseLocation();
   }, [coords]);
 
-//   console.log(weatherData);
+  //   console.log(weatherData);
+  const imageRef = ref(storage, `nexus-chat/${uuidv4()}`);
+  function imageToInterpret(image) {
+    uploadBytes(imageRef, image)
+      .then((snapshot) => {
+        return getDownloadURL(snapshot.ref);
+      })
+      .then((url) => {
+        setFirebase_image_url(url);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }
 
-  //   useEffect(() => {
-  //     getWeatherAndLocationInformation();
-  //   }, []);
+  useEffect(() => {
+    if(firebase_image_url !== null){
+        interpretation()
+    }
+  }, [firebase_image_url])
 
+  const [description, setDescription] = useState(null);
+
+  function interpretation() {
+    axios({
+      method: "POST",
+      url: `${import.meta.env.VITE_NGROK_URL}/vision`,
+      data: {
+        image: firebase_image_url,
+      },
+    })
+      .then((response) => {
+        setDescription(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+console.log(description)
   useEffect(() => {
     getWeather();
   }, [coords]);
@@ -196,6 +254,7 @@ const temp = text_model[modelIndex].temp
         generateNewImageRequest,
         changeStyle,
         changeModel,
+        imageToInterpret,
         weatherData,
         coords,
         chatLog,
@@ -209,7 +268,9 @@ const temp = text_model[modelIndex].temp
         text_model,
         welcomeImageText,
         welcomeChatText,
-        modelIndex
+        modelIndex,
+        firebase_image_url,
+        description,
       }}
     >
       {children}

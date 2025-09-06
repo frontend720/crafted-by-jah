@@ -1,0 +1,25 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0px auto;
+  padding-top: 30px;
+}
+
+.option-button{
+    border-radius: 5px;
+}
+
+.card-dark{
+    background: #1c1c1d!important
+}
+
+.card-light{
+    background: #ffffff !important
+}
+
+ion-card{
+    --margin: 0px !important
+}

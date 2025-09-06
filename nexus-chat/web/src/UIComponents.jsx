@@ -134,7 +134,8 @@ const StyledTextarea = styled(TextareaAutosize)`
 `;
 
 const SendButton = styled.button`
-  color: white;
+  color:${({color}) => color ? "color" : "#ffffff"};
+  background: ${({background}) => (background  ? background : "")};
   padding: ${({ padding }) => (padding ? padding : "10px 16px")};
   border: none;
   border-radius: 8px;
@@ -280,6 +281,73 @@ const Bubbles = styled.div`
   animation-delay: ${(props) => props.delay}s;
 `;
 
+const ModalOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: ${({display}) => display ? display : "flex"};
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+`;
+
+// The actual modal content container
+const ModalContent = styled.div`
+  background: white;
+  padding: 16px 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  background: #888
+`;
+
+const FileInputLabel = styled.label`
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 2px dashed #555555;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #f0f0f0;
+    border-color: #555;
+  }
+    font-family: "Inter", sans-serif;
+`;
+
+const InspirationImage = styled.img`
+    max-width: 80%;
+    max-height: 450px;
+    margin: 0px auto
+`
+const CancelLabel = styled.button`
+  position: absolute;
+  top: 10px;
+  right: ${({right}) => right ? right : 15};
+  left: ${({left}) => left ? left : 0}
+  
+  background: none;
+  border: none;
+  font-size: 1.5em; /* Adjust as needed */
+  cursor: pointer;
+  color: #888;
+  padding: 5px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #333;
+  }
+`;
+
 export {
   Container,
   MessageText,
@@ -307,4 +375,9 @@ export {
   WelcomeContainer,
   WelcomeText,
   WelcomeTitle,
+  ModalOverlay,
+  ModalContent,
+  FileInputLabel,
+  InspirationImage,
+  CancelLabel
 };

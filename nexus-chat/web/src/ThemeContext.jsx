@@ -8,42 +8,52 @@ function ThemeContextProvider({children}){
   {
     name: "Soft Sky Blue",
     gradient: "linear-gradient(to bottom, #f0f4f8, #e0e7f0)",
+    color: "#555555"
   },
   {
     name: "Gentle Rose & Cream",
     gradient: "linear-gradient(to bottom, #fdf5f5, #f5f0f5)",
+    color: "#555555"
   },
   {
     name: "Mint & White",
     gradient: "linear-gradient(to bottom, #f5fcf9, #eaf5f0)",
+    color: "#555555"
   },
   {
     name: "Lavender Dream",
     gradient: "linear-gradient(to bottom, #f9f6ff, #eef1ff)",
+    color: "#555555"
   },
   {
     name: "Golden Hour",
     gradient: "linear-gradient(to bottom, #fff7e6, #f7e6c4)",
+    color: "#555555"
   },
   {
     name: "Deep Midnight Blue",
     gradient: "linear-gradient(to bottom, #1a2a3a, #0d121c)",
+    color: "#e8e8e8"
   },
   {
     name: "Twilight Ocean",
     gradient: "linear-gradient(to bottom, #132731, #0a171d)",
+    color: "#e8e8e8"
   },
   {
     name: "Cosmic Dust",
     gradient: "linear-gradient(to bottom, #2b2b41, #1e1e2d)",
+    color: "#e8e8e8"
   },
   {
     name: "Smoked Plum",
     gradient: "linear-gradient(to bottom, #211c2b, #15111b)",
+    color: "#e8e8e8"
   },
   {
     name: "Deep Forest",
     gradient: "linear-gradient(to bottom, #192a2a, #0d1212)",
+    color: "#e8e8e8"
   },
 ];
 
@@ -65,8 +75,6 @@ function ThemeContextProvider({children}){
   useEffect(() => {
     setThemeIndex(localTheme)
   }, [localTheme])
-
-  // console.log(themes[themeIndex].gradient)
 
   useEffect(() => {
     try {

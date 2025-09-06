@@ -9,8 +9,15 @@ import {
   WelcomeContainer,
   WelcomeText,
   WelcomeTitle,
+  ModalContent,
+  ModalOverlay,
+  FileInputLabel,
+  InspirationImage,
+  CancelLabel
 } from "./UIComponents";
 import { BiPaint } from "react-icons/bi";
+import { GrClose } from "react-icons/gr";
+import { FaWandMagicSparkles } from "react-icons/fa6";
 import { AxiosContext } from "./AxiosContext";
 export default function ImageContainer() {
   const { localTheme, themes, themeIndex } = useContext(ThemeContext);
@@ -20,8 +27,13 @@ export default function ImageContainer() {
     imageArray,
     isImageProcessing,
     welcomeImageText,
+    imageToInterpret,
+    firebase_image_url,
+    description,
   } = useContext(AxiosContext);
   const [prompt, setPrompt] = useState("");
+  const [url, setUrl] = useState(null);
+  const [isInspirationModalOpen, setIsInspirationModalOpen] = useState(false);
 
   function onPromptChange(e) {
     setPrompt(e.target.value);
@@ -68,6 +80,10 @@ export default function ImageContainer() {
     setPrompt("");
   }
 
+  function onModalInspirationChange() {
+    setIsInspirationModalOpen((prev) => !prev);
+  }
+
   const changeTheme = themes[themeIndex].gradient;
 
   const [degrees, setDegrees] = useState(0);
@@ -79,8 +95,17 @@ export default function ImageContainer() {
     return () => clearInterval(intervalId);
   }, []);
 
+  useEffect(() => {
+    if (url !== null) {
+      imageToInterpret(url);
+    }
+  }, [url]);
+
   return (
     <Container bottom="350px" background={changeTheme}>
+     <CancelLabel style={isInspirationModalOpen ? {display: "none"} : {display: "", background: "transparent"}} onClick={onModalInspirationChange} right="0">
+        <FaWandMagicSparkles size="30px" />
+     </CancelLabel>
       {welcomeImageText ? (
         <WelcomeContainer>
           <WelcomeTitle>Ready to create something awesome?</WelcomeTitle>
@@ -111,6 +136,7 @@ export default function ImageContainer() {
           <InputContainer position="inherit" width="100%" display="block">
             <div style={{ display: "flex", flexDirection: "row" }}>
               <StyledTextarea
+                maxLength={1000}
                 name="prompt"
                 value={prompt}
                 onChange={onPromptChange}
@@ -131,6 +157,36 @@ export default function ImageContainer() {
           </InputContainer>
         </div>
       </div>
+      <ModalOverlay display={isInspirationModalOpen ? "" : "none"}>
+        <ModalContent>
+             <CancelLabel style={{background: "none"}} right="0px" onClick={onModalInspirationChange}>
+       <GrClose />
+      </CancelLabel>
+          <input
+            type="file"
+            name="url"
+            onChange={(e) => setUrl(e.target.files[0])}
+            id="file-upload"
+            style={{ display: "none" }}
+          />
+          <FileInputLabel htmlFor="file-upload">
+            Choose {firebase_image_url === null ? "" : "Different"} Image to Upload
+          </FileInputLabel>
+          <InspirationImage src={firebase_image_url} />
+          <SendButton onClick={onModalInspirationChange} style={firebase_image_url === null ? {display: "none"} : { width: "100%" }} background="#444444 !important">
+            <label
+              style={{
+                color: "#e7e7e7",
+                textAlign: "center !important",
+                fontWeight: 700,
+              }}
+              htmlFor=""
+            >
+              Finish
+            </label>
+          </SendButton>
+        </ModalContent>
+      </ModalOverlay>
     </Container>
   );
 }
