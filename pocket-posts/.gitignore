@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 .env
-
+tweets.json
 # testing
 /coverage
 
