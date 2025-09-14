@@ -1,0 +1,37 @@
+.social-card-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px 5px 0px
+}
+
+.social-card-footer{
+    padding: 5px
+}
+
+.username-flex-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-light{
+    --background: #222222;
+    color: #dadada
+}
+
+.card-dark{
+    --background: #e8e8e8;
+    color: #222222
+}
+
+.video-player{
+    min-width: 100% !important
+}
+
+.save-container{
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: right, */
+}

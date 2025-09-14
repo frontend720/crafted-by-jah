@@ -1,0 +1,69 @@
+.count-label-visible{
+    display: block
+}
+
+.count-label-hidden{
+    display: none
+}
+
+.card {
+  /* Box model and spacing */
+  background-color: #dadada; /* White background */
+  border-radius: 12px; /* Slightly rounded corners */
+  padding: 24px; /* Generous padding for content */
+  margin: 16px; /* Space around the card */
+  color: #222222;
+  font-weight: 800;
+
+  /* Sizing */
+  /* max-width: 300px; */
+  /* width: 100%; */
+
+  /* Typography */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  color: #333; /* Dark grey text */
+  font-size: 16px; /* Readable font size */
+  line-height: 1.5; /* Good line spacing */
+  text-align: center; /* Center the text */
+
+  /* Shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Transition for a smooth effect on hover */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-dark {
+  /* Box model and spacing */
+  background-color: #444444; /* White background */
+  border-radius: 12px; /* Slightly rounded corners */
+  padding: 24px; /* Generous padding for content */
+  margin: 16px; /* Space around the card */
+  color: #dadada;
+  font-weight: 800;
+
+  /* Sizing */
+  /* max-width: 300px; */
+  /* width: 100%; */
+
+  /* Typography */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  /* color: #333; Dark grey text */
+  font-size: 16px; /* Readable font size */
+  line-height: 1.5; /* Good line spacing */
+  text-align: center; /* Center the text */
+
+  /* Shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* Transition for a smooth effect on hover */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Add a subtle interactive effect on hover */
+.card:hover {
+  transform: translateY(-5px); /* Lift the card slightly */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Increase the shadow */
+}
